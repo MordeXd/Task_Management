@@ -7,27 +7,40 @@ venv/
 *.egg-info/
 dist/
 build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Node
 node_modules/
 npm-debug.log
 yarn-error.log
+yarn.lock
+package-lock.json
+frontend/dist/
+frontend/build/
 
 # Environment
 .env
 .env.local
 .env.*.local
+.env.example
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
 # OS
 .DS_Store
 Thumbs.db
+*.swp
+*.sav
 
 # Misc
 *.log
 *.tmp
+.cache/graphify-out/
