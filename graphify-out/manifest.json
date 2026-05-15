@@ -1,0 +1,130 @@
+{
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\config.py": {
+    "mtime": 1778877532.6052403,
+    "hash": "434a49f3d299573eb6ef8f8aa6a42d8d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\run.py": {
+    "mtime": 1778877542.8398504,
+    "hash": "b59fbccb7a5f9881014db58e5330a8ab"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\__init__.py": {
+    "mtime": 1778879203.1919384,
+    "hash": "ed4a190569429e4e7155ca16d8dcbfc9"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\eslint.config.js": {
+    "mtime": 1778663925.6461964,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\vite.config.ts": {
+    "mtime": 1778878561.5426865,
+    "hash": "316cc7b5cd94e223a97add017cd9116d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\App.tsx": {
+    "mtime": 1778878913.5557537,
+    "hash": "1ecd3181ce6710bbb87fedf92dd8710c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\main.tsx": {
+    "mtime": 1778663926.0001955,
+    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1778878318.148747,
+    "hash": "2171fb63f55c30244b1ec3a14f55b557"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\button.tsx": {
+    "mtime": 1778878269.6231458,
+    "hash": "6e54b9aa0b5c7805096912b5fa143a03"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\card.tsx": {
+    "mtime": 1778878302.3156917,
+    "hash": "9a707f9b183eaf0336ce03ad6968d8c3"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\carousel.tsx": {
+    "mtime": 1778878451.2003765,
+    "hash": "a983b1258b995d2d9f657a66d322011d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1778878405.854643,
+    "hash": "4c7dc596a9de746a26a3dd649c69349c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1778878474.5141137,
+    "hash": "9f29730edfc886936b6ff796a2921738"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\form.tsx": {
+    "mtime": 1778878378.5199862,
+    "hash": "832f29bf8ea6a7f5e21c37e28bde10b4"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\input.tsx": {
+    "mtime": 1778878310.5757873,
+    "hash": "2dbce824a916746f9f48c1fa14bcaf3d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\select.tsx": {
+    "mtime": 1778878347.1313424,
+    "hash": "d5550384abce08957906022fbec41616"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\sheet.tsx": {
+    "mtime": 1778878432.523904,
+    "hash": "969c5e264842ac62cc56df9fccfa90ad"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\skeleton.tsx": {
+    "mtime": 1778878323.0633128,
+    "hash": "7121cacf1941999a10dabed32936c7c9"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\table.tsx": {
+    "mtime": 1778878357.9796565,
+    "hash": "d647d17fa318e7cb77b16a869cfbcf94"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1778878331.6446426,
+    "hash": "f0e894606ec18a83987cda0436045dae"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\toast.tsx": {
+    "mtime": 1778879043.2742622,
+    "hash": "f9e54fac7af1008ece99dd8df61d268f"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1778878248.8193986,
+    "hash": "7ff08ad10c631633dc0de80aef5992d7"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\CLAUDE.md": {
+    "mtime": 1778877308.1498551,
+    "hash": "747e73a5e1af4b72c0d65c9169c23199"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\README.md": {
+    "mtime": 1778876901.0560894,
+    "hash": "a276f3751b941085d23a487f27c6c21c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\requirements.txt": {
+    "mtime": 1778877696.6830602,
+    "hash": "0352068705a605998b641317135eff49"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\index.html": {
+    "mtime": 1778877908.334494,
+    "hash": "33bd262affcefea92f1509cda449a19c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\README.md": {
+    "mtime": 1778663925.7671938,
+    "hash": "f6e3faf55d738cf2affe1b44195f27cf"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\public\\favicon.svg": {
+    "mtime": 1778663925.843196,
+    "hash": "7e840862161341271697daa99a40d76b"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\public\\icons.svg": {
+    "mtime": 1778663925.878197,
+    "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\hero.png": {
+    "mtime": 1778663925.798208,
+    "hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\react.svg": {
+    "mtime": 1778663925.9121978,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\vite.svg": {
+    "mtime": 1778663925.943197,
+    "hash": "9960a24288958394ac50e57ff638b036"
+  }
+}
