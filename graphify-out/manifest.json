@@ -1,4 +1,8 @@
 {
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\celery_app.py": {
+    "mtime": 1778909516.1548808,
+    "hash": "024bbba6179b45b0c133af9832c26711"
+  },
   "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\config.py": {
     "mtime": 1778877532.6052403,
     "hash": "434a49f3d299573eb6ef8f8aa6a42d8d"
@@ -7,9 +11,33 @@
     "mtime": 1778877542.8398504,
     "hash": "b59fbccb7a5f9881014db58e5330a8ab"
   },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\seed_superadmin.py": {
+    "mtime": 1778908252.5195603,
+    "hash": "daeb4d49e8170bb6a0ca2ee39c044ba7"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\test_auth.py": {
+    "mtime": 1778912385.7009568,
+    "hash": "56b107e73636891a6fa3ad6ca745e33c"
+  },
   "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\__init__.py": {
-    "mtime": 1778879203.1919384,
-    "hash": "ed4a190569429e4e7155ca16d8dcbfc9"
+    "mtime": 1778908736.365614,
+    "hash": "b12f0ad7babdf915981636036ef7de10"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\models\\user.py": {
+    "mtime": 1778909331.0336676,
+    "hash": "9b5e9ec97c2439e1930d2acc3aead4b0"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\models\\__init__.py": {
+    "mtime": 1778908239.0912962,
+    "hash": "9d9d4ff2dda650fbb9fe38ef89f400d6"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\auth.py": {
+    "mtime": 1778910119.8623295,
+    "hash": "de717ee43ddf07a33f532e889ab0e0b2"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\__init__.py": {
+    "mtime": 1778908686.3738577,
+    "hash": "94e5be89b81fa6611f27f8719e412715"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\eslint.config.js": {
     "mtime": 1778663925.6461964,
@@ -20,12 +48,24 @@
     "hash": "316cc7b5cd94e223a97add017cd9116d"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\App.tsx": {
-    "mtime": 1778878913.5557537,
-    "hash": "1ecd3181ce6710bbb87fedf92dd8710c"
+    "mtime": 1778911352.210842,
+    "hash": "3e5fe842c3db3b637a5b6b82cdac0bfa"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\main.tsx": {
-    "mtime": 1778663926.0001955,
-    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+    "mtime": 1778911392.9486034,
+    "hash": "623f40aa1460cd9b437f18fc761e504d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\vite-env.d.ts": {
+    "mtime": 1778911862.3556013,
+    "hash": "bf4007a6535314503ac231f934e2b8ad"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\Header.tsx": {
+    "mtime": 1778911847.1617057,
+    "hash": "0c45189b9795044f55ef8280ac66c6a2"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\RequireAuth.tsx": {
+    "mtime": 1778911465.8806837,
+    "hash": "7f46bd4fcc30018073440fe188f223e7"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\badge.tsx": {
     "mtime": 1778878318.148747,
@@ -48,8 +88,8 @@
     "hash": "4c7dc596a9de746a26a3dd649c69349c"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\dropdown-menu.tsx": {
-    "mtime": 1778878474.5141137,
-    "hash": "9f29730edfc886936b6ff796a2921738"
+    "mtime": 1778911804.1392667,
+    "hash": "a96453f54380e699f99860216607b0eb"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\form.tsx": {
     "mtime": 1778878378.5199862,
@@ -58,6 +98,10 @@
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\input.tsx": {
     "mtime": 1778878310.5757873,
     "hash": "2dbce824a916746f9f48c1fa14bcaf3d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\label.tsx": {
+    "mtime": 1778907745.2805414,
+    "hash": "fa070f8a9de109b3e1721de4b77b6bb5"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\select.tsx": {
     "mtime": 1778878347.1313424,
@@ -83,9 +127,41 @@
     "mtime": 1778879043.2742622,
     "hash": "f9e54fac7af1008ece99dd8df61d268f"
   },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\features\\authSlice.ts": {
+    "mtime": 1778911303.9381576,
+    "hash": "5625c7a8be3c7641132ee7e17b6f58bb"
+  },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\lib\\utils.ts": {
     "mtime": 1778878248.8193986,
     "hash": "7ff08ad10c631633dc0de80aef5992d7"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ChangePasswordPage.tsx": {
+    "mtime": 1778910226.9419053,
+    "hash": "83c7fc590081491f81b40c2b0ee2fde5"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\DashboardPage.tsx": {
+    "mtime": 1778911493.8142629,
+    "hash": "47d1b651251ddad4377ba30d7ee3a500"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ForgotPasswordPage.tsx": {
+    "mtime": 1778909540.406625,
+    "hash": "815e4cda0eac7fb51c67beb7043260ae"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\LoginPage.tsx": {
+    "mtime": 1778911595.6011329,
+    "hash": "fed07d344cae1b198cd647d0e75e6005"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ResetPasswordPage.tsx": {
+    "mtime": 1778909569.0497897,
+    "hash": "5cff24ae7f0512734fc0116f639efc84"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\services\\api.ts": {
+    "mtime": 1778911651.4079335,
+    "hash": "3835ae296c29b1649b2c050b7826c41c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\store\\index.ts": {
+    "mtime": 1778911280.9767313,
+    "hash": "26470828c090869cbe2447f2b2fbc9e3"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\CLAUDE.md": {
     "mtime": 1778877308.1498551,
@@ -96,8 +172,8 @@
     "hash": "a276f3751b941085d23a487f27c6c21c"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\requirements.txt": {
-    "mtime": 1778877696.6830602,
-    "hash": "0352068705a605998b641317135eff49"
+    "mtime": 1778907944.4498816,
+    "hash": "e36600eb1652753dea46031323bc2a9c"
   },
   "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\index.html": {
     "mtime": 1778877908.334494,

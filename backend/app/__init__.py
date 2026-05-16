@@ -2,6 +2,7 @@ import os
 from flask import Flask
 from flask_jwt_extended import JWTManager
 from flask_pymongo import PyMongo
+from flask_cors import CORS
 
 mongo = PyMongo()
 jwt = JWTManager()
@@ -18,12 +19,16 @@ def create_app(config_name=None):
     app.config.from_object(config[config_name])
 
     # Initialize extensions
+    CORS(app)
     mongo.init_app(app)
     jwt.init_app(app)
 
-    # Register blueprints (will add routes later)
-    # from app.routes import api_bp
-    # app.register_blueprint(api_bp, url_prefix='/api')
+    # Make mongo.db accessible as app.db
+    app.db = mongo.db
+
+    # Register blueprints
+    from app.routes import auth_bp
+    app.register_blueprint(auth_bp, url_prefix='/api/auth')
 
     @app.route('/')
     def index():
@@ -32,6 +37,10 @@ def create_app(config_name=None):
     @app.route('/health')
     def health():
         return {'status': 'healthy'}
+
+    @app.route('/api/health')
+    def api_health():
+        return {'status': 'ok'}
 
     @app.route('/api/ping')
     def ping():

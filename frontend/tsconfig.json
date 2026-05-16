@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "ignoreDeprecations": "6.0",
 
     /* Paths */
     "baseUrl": ".",
@@ -35,23 +36,15 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
 
-    /* Next.js */
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-
     /* Performance */
     "allowSyntheticDefaultImports": true,
     "verbatimModuleSyntax": true
   },
 
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
   ],
 
   "exclude": [

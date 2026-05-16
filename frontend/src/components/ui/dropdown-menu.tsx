@@ -39,8 +39,8 @@ const DropdownMenuTrigger = React.forwardRef<
           />
           <div className="absolute z-50 mt-1 w-full rounded-md border border-slate-200 bg-white shadow-md">
             {React.Children.map(children, (child) =>
-              React.isValidElement(child) && child.props.__type === "trigger"
-                ? child.props.children
+              React.isValidElement(child) && (child.props as any).__type === "trigger"
+                ? (child.props as any).children
                 : null
             )}
           </div>
