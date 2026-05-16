@@ -19,6 +19,10 @@ const resetPasswordSchema = z.object({
 
 type ResetPasswordForm = z.infer<typeof resetPasswordSchema>
 
+interface ApiErrorResponse {
+  message?: string
+}
+
 export default function ResetPasswordPage() {
   const { token } = useParams<{ token: string }>()
   const navigate = useNavigate()
@@ -45,7 +49,7 @@ export default function ResetPasswordPage() {
     setMessage(null)
 
     try {
-      const response = await api.post('/api/auth/reset-password', {
+      const response = await api.post<{ message: string }>('/api/auth/reset-password', {
         token,
         password: data.password,
       })
@@ -55,8 +59,9 @@ export default function ResetPasswordPage() {
       setTimeout(() => {
         navigate('/login')
       }, 2000)
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to reset password')
+    } catch (err) {
+      const axiosError = err as { response?: { data?: ApiErrorResponse } }
+      setError(axiosError.response?.data?.message || 'Failed to reset password')
     } finally {
       setLoading(false)
     }

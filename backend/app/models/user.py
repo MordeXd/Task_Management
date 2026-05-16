@@ -21,6 +21,8 @@ class User:
         role: str = ROLE_EMPLOYEE,
         company_id: str = None,
         is_active: bool = True,
+        name: str = None,
+        created_by: str = None,
         reset_token_hash: str = None,
         reset_token_expiry: datetime = None,
         created_at: datetime = None,
@@ -33,6 +35,8 @@ class User:
         self.role = role
         self.company_id = company_id
         self.is_active = is_active
+        self.name = name
+        self.created_by = created_by
         self.reset_token_hash = reset_token_hash
         self.reset_token_expiry = reset_token_expiry
         self.created_at = created_at or datetime.utcnow()
@@ -76,6 +80,8 @@ class User:
             'role': self.role,
             'company_id': self.company_id,
             'is_active': self.is_active,
+            'name': self.name,
+            'created_by': self.created_by,
             'created_at': self.created_at.isoformat() if self.created_at else None,
             'updated_at': self.updated_at.isoformat() if self.updated_at else None,
         }
@@ -93,6 +99,8 @@ class User:
             role=data.get('role', cls.ROLE_EMPLOYEE),
             company_id=data.get('company_id'),
             is_active=data.get('is_active', True),
+            name=data.get('name'),
+            created_by=data.get('created_by'),
             reset_token_hash=data.get('reset_token_hash'),
             reset_token_expiry=data.get('reset_token_expiry'),
             created_at=data.get('created_at'),
@@ -110,6 +118,8 @@ class User:
             'role': self.role,
             'company_id': self.company_id,
             'is_active': self.is_active,
+            'name': self.name,
+            'created_by': self.created_by,
             'reset_token_hash': self.reset_token_hash,
             'reset_token_expiry': self.reset_token_expiry,
             'created_at': self.created_at,

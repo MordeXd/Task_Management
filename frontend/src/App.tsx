@@ -1,15 +1,16 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import type { RootState } from './store'
+import { useAppSelector } from './hooks/useRedux'
 import LoginPage from './pages/LoginPage'
 import DashboardPage from './pages/DashboardPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
 import ChangePasswordPage from './pages/ChangePasswordPage'
+import SuperAdminPage from './pages/SuperAdminPage'
+import AdminPage from './pages/AdminPage'
 import RequireAuth from './components/RequireAuth'
 
 function App() {
-  const { token } = useSelector((state: RootState) => state.auth)
+  const token = useAppSelector((state) => state.auth.token)
 
   return (
     <Routes>
@@ -30,6 +31,22 @@ function App() {
         element={
           <RequireAuth>
             <ChangePasswordPage />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/super-admin"
+        element={
+          <RequireAuth>
+            <SuperAdminPage />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/admin"
+        element={
+          <RequireAuth>
+            <AdminPage />
           </RequireAuth>
         }
       />

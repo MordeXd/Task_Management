@@ -1,20 +1,6 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit'
+import type { User, AuthState, LoginCredentials } from '../types/rootTypes'
 import api from '../services/api'
-
-interface User {
-  id: string
-  email: string
-  role: string
-  company_id: string | null
-}
-
-interface AuthState {
-  user: User | null
-  token: string | null
-  refreshToken: string | null
-  loading: boolean
-  error: string | null
-}
 
 const initialState: AuthState = {
   user: JSON.parse(localStorage.getItem('user') || 'null'),
@@ -24,11 +10,17 @@ const initialState: AuthState = {
   error: null,
 }
 
-export const login = createAsyncThunk(
+interface LoginResponse {
+  user: User
+  access_token: string
+  refresh_token: string
+}
+
+export const login = createAsyncThunk<LoginResponse, LoginCredentials, { rejectValue: string }>(
   'auth/login',
-  async (credentials: { email: string; password: string }, { rejectWithValue }) => {
+  async (credentials, { rejectWithValue }) => {
     try {
-      const response = await api.post('/api/auth/login', credentials)
+      const response = await api.post<LoginResponse>('/api/auth/login', credentials)
       const { access_token, refresh_token, user } = response.data
 
       // Store in localStorage
@@ -37,18 +29,21 @@ export const login = createAsyncThunk(
       localStorage.setItem('user', JSON.stringify(user))
 
       return { user, access_token, refresh_token }
-    } catch (error: any) {
-      return rejectWithValue(error.response?.data?.message || 'Login failed')
+    } catch (error) {
+      const err = error as { response?: { data?: { message?: string } } }
+      return rejectWithValue(err.response?.data?.message || 'Login failed')
     }
   }
 )
 
-export const logout = createAsyncThunk('auth/logout', async () => {
-  localStorage.removeItem('token')
-  localStorage.removeItem('refreshToken')
-  localStorage.removeItem('user')
-  return null
-})
+export const logout = createAsyncThunk<void, void, { rejectValue: never }>(
+  'auth/logout',
+  async () => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('refreshToken')
+    localStorage.removeItem('user')
+  }
+)
 
 const authSlice = createSlice({
   name: 'auth',

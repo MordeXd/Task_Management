@@ -20,6 +20,10 @@ const changePasswordSchema = z.object({
 
 type ChangePasswordForm = z.infer<typeof changePasswordSchema>
 
+interface ApiErrorResponse {
+  message?: string
+}
+
 export default function ChangePasswordPage() {
   const navigate = useNavigate()
   const [message, setMessage] = useState<string | null>(null)
@@ -40,14 +44,15 @@ export default function ChangePasswordPage() {
     setMessage(null)
 
     try {
-      const response = await api.post('/api/auth/change-password', {
+      const response = await api.post<{ message: string }>('/api/auth/change-password', {
         old_password: data.old_password,
         new_password: data.new_password,
       })
       setMessage(response.data.message)
       setTimeout(() => navigate('/dashboard'), 2000)
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to change password')
+    } catch (err) {
+      const axiosError = err as { response?: { data?: ApiErrorResponse } }
+      setError(axiosError.response?.data?.message || 'Failed to change password')
     } finally {
       setLoading(false)
     }

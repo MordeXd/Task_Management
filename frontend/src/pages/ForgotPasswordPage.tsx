@@ -15,6 +15,10 @@ const forgotPasswordSchema = z.object({
 
 type ForgotPasswordForm = z.infer<typeof forgotPasswordSchema>
 
+interface ApiErrorResponse {
+  message?: string
+}
+
 export default function ForgotPasswordPage() {
   const [message, setMessage] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -34,12 +38,13 @@ export default function ForgotPasswordPage() {
     setMessage(null)
 
     try {
-      const response = await api.post('/api/auth/forgot-password', {
+      const response = await api.post<{ message: string }>('/api/auth/forgot-password', {
         email: data.email,
       })
       setMessage(response.data.message)
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Something went wrong')
+    } catch (err) {
+      const axiosError = err as { response?: { data?: ApiErrorResponse } }
+      setError(axiosError.response?.data?.message || 'Something went wrong')
     } finally {
       setLoading(false)
     }
