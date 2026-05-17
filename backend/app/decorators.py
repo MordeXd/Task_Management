@@ -3,6 +3,7 @@ from functools import wraps
 from flask import jsonify
 from flask_jwt_extended import get_jwt_identity, verify_jwt_in_request
 
+from app.extensions import limiter
 from app.models.user import users_repo
 
 
@@ -17,6 +18,7 @@ def get_current_user():
 
 def jwt_required_active(fn):
   @wraps(fn)
+  @limiter.limit("100 per minute")
   def wrapper(*args, **kwargs):
     user = get_current_user()
     if not user:

@@ -1,11 +1,12 @@
 from flask import Blueprint, jsonify, request
 
 from app.decorators import jwt_required_active, require_roles
-from app.models.group_task import PRIORITIES, group_tasks_repo
+from app.models.group_task import group_tasks_repo
 from app.models.notification import notifications_repo
 from app.models.user import users_repo
-from app.permissions import user_belongs_to_company
+from app.permissions import ensure_company_access, user_belongs_to_company
 from app.utils import oid, utcnow
+from app.validators import validate_date, validate_priority, validate_string_length, validate_url
 
 group_tasks_bp = Blueprint("group_tasks", __name__, url_prefix="/api/group-tasks")
 
@@ -26,8 +27,8 @@ def list_group_tasks(user):
 def create_group_task(user):
   data = request.get_json(silent=True) or {}
   title = (data.get("title") or "").strip()
-  if not title:
-    return jsonify({"message": "Title is required"}), 400
+  if not title or not validate_string_length(title, max_len=200):
+    return jsonify({"message": "Title is required (max 200 chars)"}), 400
   assigned_to = data.get("assigned_to", [])
   if not isinstance(assigned_to, list) or len(assigned_to) < 2:
     return jsonify({"message": "At least 2 assignees required"}), 400
@@ -47,12 +48,15 @@ def create_group_task(user):
   if len(valid_ids) < 2:
     return jsonify({"message": "At least 2 valid assignees required"}), 400
   priority = data.get("priority")
-  if priority and priority not in PRIORITIES:
+  if priority and not validate_priority(priority):
     return jsonify({"message": "Invalid priority"}), 400
+  due_date = data.get("due_date")
+  if due_date and not validate_date(due_date):
+    return jsonify({"message": "Invalid due_date format"}), 400
   links = data.get("links", [])
   if not isinstance(links, list):
     links = []
-  links = [l for l in links if isinstance(l, dict) and l.get("url")]
+  links = [l for l in links if isinstance(l, dict) and l.get("url") and validate_url(l["url"])]
   task_data = {
     "title": title,
     "description": (data.get("description") or "").strip(),
@@ -96,22 +100,34 @@ def update_group_task(user, task_id):
   task = group_tasks_repo.find_by_id(task_id)
   if not task:
     return jsonify({"message": "Task not found"}), 404
+  err = ensure_company_access(user, task.get("company_id"))
+  if err:
+    return err
   data = request.get_json(silent=True) or {}
   updates = {}
   if data.get("title"):
-    updates["title"] = data["title"].strip()
+    title = data["title"].strip()
+    if not validate_string_length(title, max_len=200):
+      return jsonify({"message": "Title too long (max 200 chars)"}), 400
+    updates["title"] = title
   if "description" in data:
-    updates["description"] = (data.get("description") or "").strip()
+    desc = (data.get("description") or "").strip()
+    if desc and not validate_string_length(desc, max_len=5000):
+      return jsonify({"message": "Description too long (max 5000 chars)"}), 400
+    updates["description"] = desc
   if data.get("priority"):
-    if data["priority"] not in PRIORITIES:
+    if not validate_priority(data["priority"]):
       return jsonify({"message": "Invalid priority"}), 400
     updates["priority"] = data["priority"]
   if "due_date" in data:
-    updates["due_date"] = data.get("due_date")
+    due = data.get("due_date")
+    if due and not validate_date(due):
+      return jsonify({"message": "Invalid due_date format"}), 400
+    updates["due_date"] = due
   if "links" in data:
     links = data["links"]
     if isinstance(links, list):
-      updates["links"] = [l for l in links if isinstance(l, dict) and l.get("url")]
+      updates["links"] = [l for l in links if isinstance(l, dict) and l.get("url") and validate_url(l["url"])]
   if "assigned_to" in data:
     new_ids = data["assigned_to"]
     if isinstance(new_ids, list) and len(new_ids) >= 2:
@@ -140,6 +156,9 @@ def delete_group_task(user, task_id):
   task = group_tasks_repo.find_by_id(task_id)
   if not task:
     return jsonify({"message": "Task not found"}), 404
+  err = ensure_company_access(user, task.get("company_id"))
+  if err:
+    return err
   group_tasks_repo.delete(task_id)
   return jsonify({"message": "Task deleted"}), 200
 
@@ -150,6 +169,9 @@ def complete_group_task(user, task_id):
   task = group_tasks_repo.find_by_id(task_id)
   if not task:
     return jsonify({"message": "Task not found"}), 404
+  err = ensure_company_access(user, task.get("company_id"))
+  if err:
+    return err
   if task.get("status") == "completed":
     return jsonify({"task": group_tasks_repo.populate_users(task)})
   updated = group_tasks_repo.update(

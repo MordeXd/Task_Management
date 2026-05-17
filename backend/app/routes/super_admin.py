@@ -3,6 +3,7 @@ from flask import Blueprint, jsonify
 from app.decorators import require_roles
 from app.extensions import db
 from app.models.user import users_repo
+from app.permissions import ensure_company_access
 from app.utils import oid, serialize_doc
 
 super_admin_bp = Blueprint("super_admin", __name__, url_prefix="/api/super-admin")
@@ -28,6 +29,12 @@ def list_admins(user):
 @super_admin_bp.get("/admins/<admin_id>/employees")
 @require_roles("super_admin")
 def list_admin_employees(user, admin_id):
+  admin = users_repo.find_by_id(admin_id)
+  if not admin or admin["role"] != "admin":
+    return jsonify({"message": "Admin not found"}), 404
+  err = ensure_company_access(user, admin.get("company_id"))
+  if err:
+    return err
   employees = list(users_repo.collection.find({"created_by": oid(admin_id), "is_active": True, "role": "employee"}).sort("name", 1))
   tasks_col = db["tasks"]
   result = []
@@ -48,6 +55,9 @@ def get_employee_detail(user, employee_id):
   emp = users_repo.find_by_id(employee_id)
   if not emp or emp["role"] != "employee":
     return jsonify({"message": "Employee not found"}), 404
+  err = ensure_company_access(user, emp.get("company_id"))
+  if err:
+    return err
   tasks_col = db["tasks"]
   from app.models.task import tasks_repo
   pending_tasks = [tasks_repo.populate_users(t) for t in tasks_col.find({"assigned_to": emp["_id"], "status": "pending"}).sort("created_at", -1)]

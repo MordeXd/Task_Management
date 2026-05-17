@@ -1,0 +1,650 @@
+﻿ * Serving Flask app 'app'
+ * Debug mode: on
+python : INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a 
+production WSGI server instead.[0m
+At line:1 char:1
++ python run.py 2>&1 | Out-File -FilePath backend.log -Encoding utf8
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (INFO:werkzeug:...er instead.[0m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.34.65:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:03:55] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:04:25] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:04:55] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:05:26] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:05:56] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:06:27] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:06:57] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:07:28] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:07:58] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:08:29] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:08:59] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:09:29] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:10:00] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  return self._jws.encode(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:10:00] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:10:00] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:10:30] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:11:01] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:11:31] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:12:02] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:12:32] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:13:03] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:13:33] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:14:04] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:14:34] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:15:04] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:15:35] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:16:05] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:16:36] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:17:06] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:17:37] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:18:07] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:18:37] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:01] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:19:31] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:20:02] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:20:32] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:21:03] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:21:33] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:22:04] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:22:34] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:23:05] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:23:35] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:24:06] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:24:36] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:25:06] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:25:06] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:25:07] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:25:37] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:26:07] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:26:38] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:27:08] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:27:39] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:28:09] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:28:40] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:29:10] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:29:40] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:30:10] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:30:41] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:31:11] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:31:42] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:32:14] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:32:36] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:32:36] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:32:36] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:33:07] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:33:37] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:34:07] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:34:38] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:35:08] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:35:38] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:36:09] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:36:39] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:37:10] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:37:40] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:38:11] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:38:41] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:39:11] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:39:42] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:40:12] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:40:12] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:40:13] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:40:43] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:41:03] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:41:14] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:41:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:42:16] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:42:47] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:43:17] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:43:48] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:44:18] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:44:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:45:19] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:45:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:46:20] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:46:50] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\config.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\notifications.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug: * Detected change in 
+'C:\\Users\\hp\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\jwt\\api_jwt.py', reloading
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:47:21] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\permissions.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:47:52] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\utils.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:48:21] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\extensions.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\validators.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:48:52] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\company.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\extensions.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:49:23] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\decorators.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\decorators.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', 
+reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:49:53] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', 
+reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\group_tasks.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\group_tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\extensions.py', 
+reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\group_tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\app\\routes\\group_tasks.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:50:23] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\venv\\Lib\\site-packages\\flask_talisman\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:app:Flask-Talisman not installed ù skipping security headers
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:app:Flask-Talisman not installed ù skipping security headers
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:50:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management 
+System\\backend\\venv\\Lib\\site-packages\\pymongo\\synchronous\\settings.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in 
+serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:app:Flask-Talisman not installed ù skipping security headers
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: 
+The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 
+Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:51:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:51:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 21:52:25] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\extensions.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:app:Flask-Talisman not installed ù skipping security headers
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py', 
+reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:app:Flask-Talisman not installed ù skipping security headers
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Task Management System\backend\run.py", line 3, in <module>
+    app = create_app()
+  File "C:\Users\hp\Desktop\Task Management System\backend\app\__init__.py", line 75, in create_app
+    limiter.limit("100 per minute", key_func=_api_key_func, per_method=True, error_message="Too many requests. Please 
+try again later.")(bp)
+                                             ^^^^^^^^^^^^^
+NameError: name '_api_key_func' is not defined

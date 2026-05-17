@@ -8,7 +8,7 @@ from app.decorators import jwt_required_active, require_roles
 from app.models.group_task import group_tasks_repo
 from app.models.task import tasks_repo
 from app.models.user import users_repo
-from app.permissions import can_modify_task, user_belongs_to_company
+from app.permissions import can_modify_task, ensure_company_access, user_belongs_to_company
 
 UPLOAD_BASE = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "uploads")
 ALLOWED_EXTENSIONS = {
@@ -84,6 +84,9 @@ def upload_group_file(user, task_id, category):
     task = group_tasks_repo.find_by_id(task_id)
     if not task:
         return jsonify({"message": "Task not found"}), 404
+    err = ensure_company_access(user, task.get("company_id"))
+    if err:
+        return err
 
     if "file" not in request.files:
         return jsonify({"message": "No file provided"}), 400

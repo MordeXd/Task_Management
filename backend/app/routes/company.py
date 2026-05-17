@@ -6,6 +6,7 @@ from app.models.user import UserRepository, users_repo
 from app.permissions import user_belongs_to_company
 from app.services.email_service import send_welcome_credentials_email
 from app.utils import generate_temp_password, oid
+from app.validators import validate_email, validate_string_length
 
 company_bp = Blueprint("company", __name__, url_prefix="/api/company")
 
@@ -36,8 +37,10 @@ def create_admin(user):
   data = request.get_json(silent=True) or {}
   name = (data.get("name") or "").strip()
   email = (data.get("email") or "").lower().strip()
-  if not name or not email:
-    return jsonify({"message": "Name and email are required"}), 400
+  if not name or not validate_string_length(name, max_len=200):
+    return jsonify({"message": "Name is required (max 200 chars)"}), 400
+  if not email or not validate_email(email):
+    return jsonify({"message": "Valid email is required"}), 400
   if users_repo.find_by_email(email):
     return jsonify({"message": "Email already in use"}), 409
   company_id = _resolve_company_id(user)
@@ -78,8 +81,10 @@ def create_employee(user):
   data = request.get_json(silent=True) or {}
   name = (data.get("name") or "").strip()
   email = (data.get("email") or "").lower().strip()
-  if not name or not email:
-    return jsonify({"message": "Name and email are required"}), 400
+  if not name or not validate_string_length(name, max_len=200):
+    return jsonify({"message": "Name is required (max 200 chars)"}), 400
+  if not email or not validate_email(email):
+    return jsonify({"message": "Valid email is required"}), 400
   if users_repo.find_by_email(email):
     return jsonify({"message": "Email already in use"}), 409
   company_id = user.get("company_id")
@@ -114,9 +119,14 @@ def update_user(user, user_id):
   data = request.get_json(silent=True) or {}
   updates = {}
   if data.get("name"):
-    updates["name"] = data["name"].strip()
+    name = data["name"].strip()
+    if not validate_string_length(name, max_len=200):
+      return jsonify({"message": "Name too long (max 200 chars)"}), 400
+    updates["name"] = name
   if data.get("email"):
     email = data["email"].lower().strip()
+    if not validate_email(email):
+      return jsonify({"message": "Invalid email format"}), 400
     existing = users_repo.find_by_email(email)
     if existing and str(existing["_id"]) != str(target["_id"]):
       return jsonify({"message": "Email already in use"}), 409

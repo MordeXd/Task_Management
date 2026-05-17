@@ -7,6 +7,7 @@ from app.models.user import users_repo
 from app.permissions import can_complete_task, can_modify_task, can_view_task, same_company
 from app.services.email_service import send_task_assigned_email
 from app.utils import oid, utcnow
+from app.validators import validate_date, validate_priority, validate_string_length, validate_url
 
 tasks_bp = Blueprint("tasks", __name__, url_prefix="/api/tasks")
 
@@ -24,8 +25,10 @@ def create_task(user):
   data = request.get_json(silent=True) or {}
   title = (data.get("title") or "").strip()
   assigned_to = data.get("assigned_to")
-  if not title or not assigned_to:
-    return jsonify({"message": "Title and assigned_to are required"}), 400
+  if not title or not validate_string_length(title, max_len=200):
+    return jsonify({"message": "Title is required (max 200 chars)"}), 400
+  if not assigned_to:
+    return jsonify({"message": "Assignee is required"}), 400
   assignee = users_repo.find_by_id(assigned_to)
   if not assignee or assignee["role"] not in ("employee", "admin") or not assignee.get("is_active"):
     return jsonify({"message": "Invalid assignee"}), 400
@@ -37,13 +40,15 @@ def create_task(user):
   if not same_company(user, company_id) or str(assignee.get("company_id")) != str(company_id):
     return jsonify({"message": "Assignee must be in your company"}), 400
   priority = data.get("priority")
-  if priority and priority not in PRIORITIES:
-    return jsonify({"message": "Invalid priority"}), 400
+  if priority and not validate_priority(priority):
+    return jsonify({"message": "Invalid priority (low, medium, high)"}), 400
   due_date = data.get("due_date")
+  if due_date and not validate_date(due_date):
+    return jsonify({"message": "Invalid due_date format"}), 400
   links = data.get("links", [])
   if not isinstance(links, list):
     links = []
-  links = [l for l in links if isinstance(l, dict) and l.get("url")]
+  links = [l for l in links if isinstance(l, dict) and l.get("url") and validate_url(l["url"])]
   task_data = {
     "title": title,
     "description": (data.get("description") or "").strip(),
@@ -88,19 +93,28 @@ def update_task(user, task_id):
   data = request.get_json(silent=True) or {}
   updates = {}
   if data.get("title"):
-    updates["title"] = data["title"].strip()
+    title = data["title"].strip()
+    if not validate_string_length(title, max_len=200):
+      return jsonify({"message": "Title too long (max 200 chars)"}), 400
+    updates["title"] = title
   if "description" in data:
-    updates["description"] = (data.get("description") or "").strip()
+    desc = (data.get("description") or "").strip()
+    if desc and not validate_string_length(desc, max_len=5000):
+      return jsonify({"message": "Description too long (max 5000 chars)"}), 400
+    updates["description"] = desc
   if data.get("priority"):
-    if data["priority"] not in PRIORITIES:
-      return jsonify({"message": "Invalid priority"}), 400
+    if not validate_priority(data["priority"]):
+      return jsonify({"message": "Invalid priority (low, medium, high)"}), 400
     updates["priority"] = data["priority"]
   if "due_date" in data:
-    updates["due_date"] = data.get("due_date")
+    due = data.get("due_date")
+    if due and not validate_date(due):
+      return jsonify({"message": "Invalid due_date format"}), 400
+    updates["due_date"] = due
   if "links" in data:
     links = data["links"]
     if isinstance(links, list):
-      updates["links"] = [l for l in links if isinstance(l, dict) and l.get("url")]
+      updates["links"] = [l for l in links if isinstance(l, dict) and l.get("url") and validate_url(l["url"])]
   if data.get("assigned_to"):
     assignee = users_repo.find_by_id(data["assigned_to"])
     if not assignee or assignee["role"] not in ("employee", "admin") or not assignee.get("is_active"):

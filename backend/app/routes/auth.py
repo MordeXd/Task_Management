@@ -15,8 +15,10 @@ from flask_jwt_extended import jwt_required as jwt_required_decorator
 from app.decorators import get_current_user, jwt_required_active
 from app.extensions import limiter, token_blacklist
 from app.models.user import UserRepository, users_repo
+from app.permissions import ensure_company_access
 from app.services.email_service import send_password_reset_email
 from app.utils import utcnow
+from app.validators import validate_email, validate_password, validate_string_length
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api/auth")
 
@@ -38,6 +40,10 @@ def login():
   data = request.get_json(silent=True) or {}
   email = (data.get("email") or "").lower().strip()
   password = data.get("password") or ""
+  if not email or not validate_email(email):
+    return jsonify({"message": "Invalid email format"}), 400
+  if not password:
+    return jsonify({"message": "Password is required"}), 400
   user = users_repo.find_by_email(email)
   if not user or not user.get("is_active"):
     return jsonify({"message": "Invalid email or password"}), 401
@@ -78,6 +84,9 @@ def get_user(user, user_id):
   target = users_repo.find_by_id(user_id)
   if not target:
     return jsonify({"message": "User not found"}), 404
+  err = ensure_company_access(user, target.get("company_id"))
+  if err:
+    return err
   return jsonify({"user": users_repo.to_public(target)})
 
 
@@ -95,6 +104,8 @@ def logout():
 def forgot_password():
   data = request.get_json(silent=True) or {}
   email = (data.get("email") or "").lower().strip()
+  if email and not validate_email(email):
+    return jsonify({"message": "Invalid email format"}), 400
   user = users_repo.find_by_email(email)
   if user and user.get("is_active"):
     reset_token = create_access_token(
@@ -122,8 +133,9 @@ def reset_password():
   data = request.get_json(silent=True) or {}
   token = data.get("token") or ""
   password = data.get("password") or ""
-  if len(password) < 8:
-    return jsonify({"message": "Password must be at least 8 characters"}), 400
+  pw_error = validate_password(password)
+  if pw_error:
+    return jsonify({"message": pw_error}), 400
   try:
     decoded = decode_token(token)
   except Exception:
@@ -171,8 +183,9 @@ def change_password(user):
   data = request.get_json(silent=True) or {}
   old_password = data.get("old_password") or ""
   new_password = data.get("new_password") or ""
-  if len(new_password) < 8:
-    return jsonify({"message": "Password must be at least 8 characters"}), 400
+  pw_error = validate_password(new_password)
+  if pw_error:
+    return jsonify({"message": pw_error}), 400
   if not UserRepository.check_password(old_password, user["password_hash"]):
     return jsonify({"message": "Current password is incorrect"}), 400
   users_repo.update(user["_id"], {"password_hash": UserRepository.hash_password(new_password)})

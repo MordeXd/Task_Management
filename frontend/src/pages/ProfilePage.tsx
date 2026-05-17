@@ -37,6 +37,10 @@ export function ProfilePage() {
 
   const changePassword = async () => {
     if (newPassword.length < 8) { toast.error("Password must be at least 8 characters"); return; }
+    if (!/[A-Z]/.test(newPassword)) { toast.error("Password must include an uppercase letter"); return; }
+    if (!/[a-z]/.test(newPassword)) { toast.error("Password must include a lowercase letter"); return; }
+    if (!/\d/.test(newPassword)) { toast.error("Password must include a digit"); return; }
+    if (!/[!@#$%^&*()_\-+=<>?/{}[\]|~`]/.test(newPassword)) { toast.error("Password must include a special character"); return; }
     if (newPassword !== confirmPassword) { toast.error("Passwords do not match"); return; }
     setChanging(true);
     try {

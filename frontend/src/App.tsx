@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
 import { Provider } from "react-redux";
 import { store } from "@/store";
-import { setupApiInterceptors } from "@/services/api";
+import { api, setupApiInterceptors } from "@/services/api";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { RequireAuth } from "@/components/RequireAuth";
 import { RoleGuard } from "@/components/RoleGuard";
@@ -81,10 +81,41 @@ function AppRoutes() {
   );
 }
 
+function GlobalErrorLogger() {
+  useEffect(() => {
+    const handler = (event: ErrorEvent) => {
+      console.error("[GlobalError]", event.error || event.message);
+      api.post("/api/errors/client", {
+        message: event.message,
+        stack: event.error?.stack,
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+      }).catch(() => {});
+    };
+    const rejection = (event: PromiseRejectionEvent) => {
+      console.error("[UnhandledRejection]", event.reason);
+      api.post("/api/errors/client", {
+        message: String(event.reason),
+        stack: event.reason?.stack,
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+      }).catch(() => {});
+    };
+    window.addEventListener("error", handler);
+    window.addEventListener("unhandledrejection", rejection);
+    return () => {
+      window.removeEventListener("error", handler);
+      window.removeEventListener("unhandledrejection", rejection);
+    };
+  }, []);
+  return null;
+}
+
 export default function App() {
   return (
     <Provider store={store}>
       <ErrorBoundary>
+        <GlobalErrorLogger />
         <AppRoutes />
       </ErrorBoundary>
     </Provider>
