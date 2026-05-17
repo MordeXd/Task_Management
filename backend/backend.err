@@ -1,0 +1,440 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.34.65:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:54:49] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:54:49] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:54:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:55:19] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:55:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:56:19] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:56:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:15] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:15] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:15] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:16] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:33] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:33] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:33] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:33] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:35] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:35] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:57:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:58:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:58:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:59:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 17:59:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:00:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:00:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:26] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:26] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:28] "GET /api/tasks/6a09a2a34e753d850445c8b3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:28] "GET /api/tasks/6a09a2a34e753d850445c8b3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:29] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:29] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:33] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:33] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:34] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:34] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:34] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:34] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:36] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:36] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:37] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:37] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:37] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:37] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:40] "PATCH /api/tasks/6a099b58871fc63fddbe87eb/complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:43] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:43] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:44] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:44] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:44] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:44] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:01:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:02:15] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:02:45] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:24] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:03:53] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:04:23] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:04:53] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:05:23] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:05:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:06:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:06:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:07:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:07:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:08:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:08:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:09:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:09:54] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:09:54] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:09:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:10:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:10:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:11:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:11:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:12:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:12:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:13:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:13:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:14:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:14:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:15:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:15:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:16:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:16:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:17:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:17:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:18:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:18:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:19:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:19:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:20:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:20:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:21:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:21:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:22:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:22:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:23:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:23:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:24:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:24:54] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:24:54] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:24:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:25:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:25:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:26:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:26:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:27:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:27:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:28:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:28:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:29:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:29:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:30:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:30:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:31:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:31:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:32:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:32:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:33:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:33:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:34:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:34:54] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:24] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:35] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:35] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:38] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:38] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:39] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:39] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:39] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:39] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:35:55] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:36:25] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:36:25] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:36:26] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:36:59] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:37:29] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:38:05] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:38:35] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:39:08] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:39:38] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:40:11] "[31m[1mGET /api/notifications/unread-count HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:40:11] "POST /api/auth/refresh HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:40:11] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:40:41] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:41:17] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:41:47] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:42:17] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:42:47] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:15] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:15] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:17] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:18] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:18] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:18] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:18] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:19] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:19] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:27] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:27] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:27] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:27] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:28] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:28] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:29] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:29] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:29] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:29] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:44] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:44] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:45] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:45] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:45] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:45] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:46] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:46] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:47] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:48] "GET /api/tasks/6a09a2a34e753d850445c8b3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:48] "GET /api/tasks/6a09a2a34e753d850445c8b3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:51] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:43:51] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:44:22] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:44:53] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:23] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:53] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:55] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:55] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:56] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:45:56] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:18] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:19] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:20] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:20] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:20] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:20] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:20] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:55] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:55] "GET /api/company/employees HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:55] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:46:55] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:47:19] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:47:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:app.tasks.email_tasks:[EMAIL SIMULATION] To: edemo@gmail.com | Subject: New task assigned: NOTIFACTION
+Hi employee,
+
+You have been assigned: NOTIFACTION
+Due: 2027-02-05
+
+View: http://localhost:5173/tasks/6a09bffe2c8d8a2d7ca4563e
+INFO:celery.app.trace:Task app.tasks.email_tasks.send_email[08f30b2b-c86e-41e2-b27b-99a0ca2787c8] succeeded in 0.023018800013232976s: {'to': 'edemo@gmail.com', 'subject': 'New task assigned: NOTIFACTION', 'status': 'sent'}
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:47:52] "[35m[1mPOST /api/tasks HTTP/1.1[0m" 201 -
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:20] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "POST /api/auth/login HTTP/1.1" 200 -
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:48] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:54] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:56] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:56] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:365: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:59] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:48:59] "GET /api/tasks HTTP/1.1" 200 -
+C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 29 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "POST /api/auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:09] "GET /api/tasks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:11] "GET /api/notifications?limit=20 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:12] "PATCH /api/notifications/6a09c0002c8d8a2d7ca4563f/read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:12] "GET /api/tasks/6a09bffe2c8d8a2d7ca4563e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:12] "GET /api/tasks/6a09bffe2c8d8a2d7ca4563e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:49:39] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:50:10] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:50:40] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:51:10] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:51:41] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:52:11] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:52:42] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:53:12] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:53:42] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:54:12] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:54:44] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:55:14] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/May/2026 18:55:49] "GET /api/notifications/unread-count HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\uploads.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\task.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\task.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', reloading
+Exception in thread Thread-3 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\werkzeug\serving.py", line 820, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-154-200
+INFO:werkzeug: * Detected change in 'C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Task Management System\backend\run.py", line 3, in <module>
+    app = create_app()
+  File "C:\Users\hp\Desktop\Task Management System\backend\app\__init__.py", line 38, in create_app
+    from app.routes.tasks import tasks_bp
+  File "C:\Users\hp\Desktop\Task Management System\backend\app\routes\tasks.py", line 58
+    })
+     ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{' on line 47

@@ -1,63 +1,73 @@
+import logging
 import os
-from flask import Flask
-from flask_jwt_extended import JWTManager
-from flask_pymongo import PyMongo
+
+from dotenv import load_dotenv
+from flask import Flask, jsonify
 from flask_cors import CORS
 
-mongo = PyMongo()
-jwt = JWTManager()
+from app.config import Config
+from app.extensions import init_mongo, jwt, limiter
 
 
-def create_app(config_name=None):
-    app = Flask(__name__)
+def create_app(config_class=Config):
+  load_dotenv()
+  app = Flask(__name__)
+  app.config.from_object(config_class)
 
-    # Load config
-    if config_name is None:
-        config_name = os.getenv('FLASK_ENV', 'development')
+  logging.basicConfig(level=logging.INFO)
 
-    from config import config
-    app.config.from_object(config[config_name])
+  CORS(app, origins=app.config["CORS_ORIGINS"], supports_credentials=True)
 
-    # Initialize extensions
-    CORS(app)
-    mongo.init_app(app)
-    jwt.init_app(app)
+  init_mongo(app)
+  jwt.init_app(app)
 
-    # Make mongo.db accessible as app.db
-    app.db = mongo.db
+  limiter.init_app(app)
+  if app.config.get("TESTING"):
+    app.config["RATELIMIT_ENABLED"] = False
 
-    # Register blueprints
-    from app.routes import auth_bp
-    from app.routes.company import company_bp
-    app.register_blueprint(auth_bp, url_prefix='/api/auth')
-    app.register_blueprint(company_bp, url_prefix='/api/company')
+  @jwt.token_in_blocklist_loader
+  def check_if_token_revoked(jwt_header, jwt_payload):
+    from app.extensions import token_blacklist
 
-    @app.route('/')
-    def index():
-        return {'message': 'Task Management API', 'status': 'running'}
+    return jwt_payload.get("jti") in token_blacklist
 
-    @app.route('/health')
-    def health():
-        return {'status': 'healthy'}
+  from app.routes.auth import auth_bp
+  from app.routes.company import company_bp
+  from app.routes.health import health_bp
+  from app.routes.notifications import notifications_bp
+  from app.routes.tasks import tasks_bp
+  from app.routes.group_tasks import group_tasks_bp
+  from app.routes.super_admin import super_admin_bp
+  from app.routes.uploads import uploads_bp
 
-    @app.route('/api/health')
-    def api_health():
-        return {'status': 'ok'}
+  app.register_blueprint(health_bp)
+  app.register_blueprint(auth_bp)
+  app.register_blueprint(company_bp)
+  app.register_blueprint(notifications_bp)
+  app.register_blueprint(tasks_bp)
+  app.register_blueprint(group_tasks_bp)
+  app.register_blueprint(super_admin_bp)
+  app.register_blueprint(uploads_bp)
 
-    @app.route('/api/ping')
-    def ping():
-        try:
-            # Check MongoDB connection
-            mongo.db.command('ping')
-            return {
-                'status': 'ok',
-                'message': 'MongoDB connected',
-                'database': mongo.db.name
-            }
-        except Exception as e:
-            return {
-                'status': 'error',
-                'message': str(e)
-            }, 500
+  import os
+  upload_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "uploads")
+  os.makedirs(upload_path, exist_ok=True)
+  from flask import send_from_directory
+  @app.route("/uploads/<path:filename>")
+  def serve_upload(filename):
+    return send_from_directory(upload_path, filename)
 
-    return app
+  @app.errorhandler(429)
+  def ratelimit_handler(e):
+    return jsonify({"message": "Too many requests. Please try again later."}), 429
+
+  if app.config.get("SENTRY_DSN"):
+    try:
+      import sentry_sdk
+      from sentry_sdk.integrations.flask import FlaskIntegration
+
+      sentry_sdk.init(dsn=app.config["SENTRY_DSN"], integrations=[FlaskIntegration()])
+    except ImportError:
+      pass
+
+  return app

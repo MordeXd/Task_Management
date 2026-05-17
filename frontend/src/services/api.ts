@@ -1,118 +1,66 @@
-import axios, { type AxiosError, type InternalAxiosRequestConfig } from 'axios'
-import { store } from '../store'
-import { logout } from '../features/authSlice'
+import axios from "axios";
+import type { store } from "@/store";
 
-const API_BASE_URL = 'http://127.0.0.1:5000'
+const baseURL = import.meta.env.VITE_API_BASE_URL || "";
 
-interface QueueItem {
-  resolve: (value: string | null) => void
-  reject: (reason: unknown) => void
+export const api = axios.create({
+  baseURL,
+  headers: { "Content-Type": "application/json" },
+});
+
+let storeRef: typeof store | null = null;
+let refreshPromise: Promise<string | null> | null = null;
+
+async function refreshAccessToken(refreshToken: string) {
+  try {
+    const { data } = await axios.post(`${baseURL}/api/auth/refresh`, null, {
+      headers: { Authorization: `Bearer ${refreshToken}` },
+    });
+    const { setTokens } = await import("@/store/authSlice");
+    storeRef?.dispatch(
+      setTokens({ accessToken: data.access_token, refreshToken: data.refresh_token })
+    );
+    return data.access_token as string;
+  } catch {
+    return null;
+  }
 }
 
-const api = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-})
+export function setupApiInterceptors(appStore: typeof store) {
+  storeRef = appStore;
 
-let isRefreshing = false
-let failedQueue: QueueItem[] = []
-
-const processQueue = (error: AxiosError | null, token: string | null = null): void => {
-  failedQueue.forEach((prom) => {
-    if (error) {
-      prom.reject(error)
-    } else {
-      prom.resolve(token)
-    }
-  })
-  failedQueue = []
-}
-
-// Request interceptor to add token
-api.interceptors.request.use(
-  (config) => {
-    const token = localStorage.getItem('token')
+  api.interceptors.request.use((config) => {
+    const state = appStore.getState();
+    const token = state.auth.accessToken;
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`
+      config.headers.Authorization = `Bearer ${token}`;
     }
-    return config
-  },
-  (error) => {
-    return Promise.reject(error)
-  }
-)
+    return config;
+  });
 
-// Custom config interface to track retry state
-interface CustomAxiosConfig extends InternalAxiosRequestConfig {
-  _retry?: boolean
+  api.interceptors.response.use(
+    (response) => response,
+    async (error) => {
+      const original = error.config;
+      if (error.response?.status === 401 && !original._retry && storeRef) {
+        original._retry = true;
+        const refreshToken = storeRef.getState().auth.refreshToken;
+        if (refreshToken) {
+          if (!refreshPromise) {
+            refreshPromise = refreshAccessToken(refreshToken);
+          }
+          const newAccessToken = await refreshPromise;
+          refreshPromise = null;
+          if (newAccessToken) {
+            original.headers.Authorization = `Bearer ${newAccessToken}`;
+            return api(original);
+          }
+          const { logout } = await import("@/store/authSlice");
+          storeRef.dispatch(logout());
+        }
+      }
+      return Promise.reject(error);
+    }
+  );
 }
 
-// Response interceptor with token refresh
-api.interceptors.response.use(
-  (response) => response,
-  async (error: AxiosError) => {
-    const originalRequest = error.config as CustomAxiosConfig | undefined
-
-    // If 401 and haven't tried refreshing yet
-    if (error.response?.status === 401 && originalRequest && !originalRequest._retry) {
-      if (isRefreshing) {
-        // Wait for refresh to complete
-        return new Promise<string | null>((resolve, reject) => {
-          failedQueue.push({ resolve, reject })
-        })
-          .then((token) => {
-            if (token && originalRequest.headers) {
-              originalRequest.headers.Authorization = `Bearer ${token}`
-            }
-            return api(originalRequest)
-          })
-          .catch((err) => Promise.reject(err))
-      }
-
-      originalRequest._retry = true
-      isRefreshing = true
-
-      const refreshToken = localStorage.getItem('refreshToken')
-
-      if (!refreshToken) {
-        store.dispatch(logout())
-        window.location.href = '/login'
-        return Promise.reject(error)
-      }
-
-      try {
-        // Try to refresh token
-        const response = await axios.post(`${API_BASE_URL}/api/auth/refresh`, {}, {
-          headers: {
-            Authorization: `Bearer ${refreshToken}`,
-          },
-        })
-
-        const { access_token } = response.data as { access_token: string }
-        localStorage.setItem('token', access_token)
-
-        processQueue(null, access_token)
-        isRefreshing = false
-
-        if (originalRequest.headers) {
-          originalRequest.headers.Authorization = `Bearer ${access_token}`
-        }
-        return api(originalRequest)
-      } catch (refreshError) {
-        processQueue(refreshError as AxiosError, null)
-        isRefreshing = false
-
-        store.dispatch(logout())
-        window.location.href = '/login'
-        return Promise.reject(refreshError)
-      }
-    }
-
-    return Promise.reject(error)
-  }
-)
-
-export default api
-export type { API_BASE_URL }

@@ -1,15 +1,22 @@
-import { configureStore } from '@reduxjs/toolkit'
-import type { RootState, AppDispatch } from '../types/rootTypes'
-import authReducer from '../features/authSlice'
-import adminReducer from '../features/adminSlice'
-import employeeReducer from '../features/employeeSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import { authSlice } from "./authSlice";
+import { groupTasksSlice } from "./groupTasksSlice";
+import { notificationsSlice } from "./notificationsSlice";
+import { tasksSlice } from "./tasksSlice";
+import { uiSlice } from "./uiSlice";
+import { usersSlice } from "./usersSlice";
 
 export const store = configureStore({
   reducer: {
-    auth: authReducer,
-    admin: adminReducer,
-    employee: employeeReducer,
+    auth: authSlice.reducer,
+    users: usersSlice.reducer,
+    tasks: tasksSlice.reducer,
+    ui: uiSlice.reducer,
+    notifications: notificationsSlice.reducer,
+    groupTasks: groupTasksSlice.reducer,
   },
-})
+});
 
-export type { RootState, AppDispatch }
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+

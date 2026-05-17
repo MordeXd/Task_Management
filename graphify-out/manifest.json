@@ -1,253 +1,389 @@
 {
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\celery_app.py": {
-    "mtime": 1778909516.1548808,
-    "hash": "024bbba6179b45b0c133af9832c26711"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\run.py": {
+    "mtime": 1779012524.3428175,
+    "hash": "736725dbb42b7da1addab188f355ef82"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\config.py": {
-    "mtime": 1778877532.6052403,
-    "hash": "434a49f3d299573eb6ef8f8aa6a42d8d"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\seed.py": {
+    "mtime": 1779013746.294234,
+    "hash": "d7c306b3b71e400ee32f9ec7013c4613"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\run.py": {
-    "mtime": 1778877542.8398504,
-    "hash": "b59fbccb7a5f9881014db58e5330a8ab"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\config.py": {
+    "mtime": 1779012531.870179,
+    "hash": "e1148b437960907afcdaae2f2466f260"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\seed_superadmin.py": {
-    "mtime": 1778908252.5195603,
-    "hash": "daeb4d49e8170bb6a0ca2ee39c044ba7"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\decorators.py": {
+    "mtime": 1779012483.7458134,
+    "hash": "e11df5672df188a47bed6d7a18bceed0"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\test_auth.py": {
-    "mtime": 1778912385.7009568,
-    "hash": "56b107e73636891a6fa3ad6ca745e33c"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\extensions.py": {
+    "mtime": 1779012461.772976,
+    "hash": "dc72e8b2ac9021a3c035c00a0817fed6"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\test_user_management.py": {
-    "mtime": 1778941243.4223354,
-    "hash": "b2d149ea1da8c87c74c71344cda90b50"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\permissions.py": {
+    "mtime": 1779013296.7312443,
+    "hash": "d864991cb0705d1cb40244c4c463399e"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\__init__.py": {
-    "mtime": 1778912929.523736,
-    "hash": "dbe35b0773fddcc91c34b87e6602ff49"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\utils.py": {
+    "mtime": 1779012466.0053582,
+    "hash": "6045a5973eaf98b14e87851631c08c7f"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\models\\user.py": {
-    "mtime": 1778915331.0058055,
-    "hash": "7138c1934cfd29b464c42a9890902861"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\__init__.py": {
+    "mtime": 1779019734.149645,
+    "hash": "ecb88f514f1827717f3fe3aa58720f44"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\models\\__init__.py": {
-    "mtime": 1778908239.0912962,
-    "hash": "9d9d4ff2dda650fbb9fe38ef89f400d6"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\company.py": {
+    "mtime": 1779013742.0661464,
+    "hash": "dbfefb9053b2fe25b01642d42d4a16ef"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\auth.py": {
-    "mtime": 1778910119.8623295,
-    "hash": "de717ee43ddf07a33f532e889ab0e0b2"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\notification.py": {
+    "mtime": 1779019712.9192379,
+    "hash": "4d4eaf99a971b02058d7bdbbd88fc9bd"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\__init__.py": {
-    "mtime": 1778908686.3738577,
-    "hash": "94e5be89b81fa6611f27f8719e412715"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\task.py": {
+    "mtime": 1779015689.1603734,
+    "hash": "ab1a47be33699e1689be7897b2ee33af"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\company\\admins.py": {
-    "mtime": 1778926191.8823078,
-    "hash": "865314f0eaa3bbabc98e5ca570f288d9"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\user.py": {
+    "mtime": 1779013738.9322577,
+    "hash": "e380a13419531de1d4d353fc3a0c362b"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\app\\routes\\company\\__init__.py": {
-    "mtime": 1778912830.495865,
-    "hash": "9f506a246b57593901bcc34f1dd3cd8c"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\models\\__init__.py": {
+    "mtime": 1779012532.2081816,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\eslint.config.js": {
-    "mtime": 1778935796.606581,
-    "hash": "dfb20c591c4e5a90be4332a77538da0e"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\auth.py": {
+    "mtime": 1779012501.6746607,
+    "hash": "0ef84ad6ad2d6d2bd314208c5eb2c47f"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\vite.config.ts": {
-    "mtime": 1778878561.5426865,
-    "hash": "316cc7b5cd94e223a97add017cd9116d"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\company.py": {
+    "mtime": 1779012510.4051042,
+    "hash": "7c8b0335359ccaf620841ce6eeb2a436"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\App.tsx": {
-    "mtime": 1778940550.2183092,
-    "hash": "18ce5e1053561d97e0481fd59d5c4b4b"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\health.py": {
+    "mtime": 1779012520.396717,
+    "hash": "460454ba16fee8f20b4723b2cdd5dfdd"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\main.tsx": {
-    "mtime": 1778937778.735684,
-    "hash": "5b5f35f421f07fb8cc9c1c511f741c93"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\notifications.py": {
+    "mtime": 1779019717.060819,
+    "hash": "6f3b6da6acb52a35f86bcd0fb93eaa6e"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\vite-env.d.ts": {
-    "mtime": 1778911862.3556013,
-    "hash": "bf4007a6535314503ac231f934e2b8ad"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\routes\\tasks.py": {
+    "mtime": 1779019730.1544921,
+    "hash": "16de050d096a8962f8846e11a89f6752"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\Header.tsx": {
-    "mtime": 1778924364.588334,
-    "hash": "ebaddb4c3ff92363e53340dea254b263"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\services\\email_service.py": {
+    "mtime": 1779012486.051648,
+    "hash": "125880933aba89d04455e9fd22163685"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\RequireAuth.tsx": {
-    "mtime": 1778923474.7010353,
-    "hash": "167cc7c1bc536e8b08aaa93833769662"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\tasks\\celery_app.py": {
+    "mtime": 1779013540.953718,
+    "hash": "71c9dd35839e1fb0e0929e3077644bad"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\alert-dialog.tsx": {
-    "mtime": 1778936836.1349685,
-    "hash": "20dda5e4b17822babe2c1d96e7ed6641"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\tasks\\email_tasks.py": {
+    "mtime": 1779012488.991391,
+    "hash": "4d1d647511d19878730a4be9d2b8c264"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\badge.tsx": {
-    "mtime": 1778936867.3005288,
-    "hash": "633c33997e6137921ae433dd2dd0cb31"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\app\\tasks\\__init__.py": {
+    "mtime": 1779012489.442394,
+    "hash": "889aaf14879a339e0d34c86bff17ca8d"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\button.tsx": {
-    "mtime": 1778936151.5107346,
-    "hash": "c6662f9ca47e3fc0cbc6f002db90709d"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\tests\\conftest.py": {
+    "mtime": 1779012535.9350607,
+    "hash": "aa2ef611342dc95012399862e0f0f192"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\card.tsx": {
-    "mtime": 1778936294.8369565,
-    "hash": "4cd798fb1956834da7b96e7daf9b1b5f"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\tests\\test_auth.py": {
+    "mtime": 1779012538.6807833,
+    "hash": "b465a58bf7e157226d85d04bf106ac37"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\carousel.tsx": {
-    "mtime": 1778936858.8247404,
-    "hash": "0b7274573150b4f688ec302dd31ba2ce"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\eslint.config.js": {
+    "mtime": 1778663925.6461964,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\dialog.tsx": {
-    "mtime": 1778936829.3421035,
-    "hash": "698e0b4e24eb4b811902312f22838edd"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\vite.config.ts": {
+    "mtime": 1779012702.9733186,
+    "hash": "5ff8480f11aa00cfe92e4be666ae4ecf"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\dropdown-menu.tsx": {
-    "mtime": 1778936900.6090384,
-    "hash": "dd9840e717528d9a74ab7b32463233e0"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\App.tsx": {
+    "mtime": 1779017362.2727256,
+    "hash": "60d0957d9616568bd681db065d6bdb36"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\form.tsx": {
-    "mtime": 1778878378.5199862,
-    "hash": "832f29bf8ea6a7f5e21c37e28bde10b4"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\main.tsx": {
+    "mtime": 1779013325.866722,
+    "hash": "fa8b09a6dcb2fe525b341cf1dbccdc77"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\input.tsx": {
-    "mtime": 1778936816.1906223,
-    "hash": "47dea79b2056ea408da28d55b895ac95"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\vite-env.d.ts": {
+    "mtime": 1779013541.1877165,
+    "hash": "416c48ea30072b7f5770f36b57d94656"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\label.tsx": {
-    "mtime": 1778914262.4862628,
-    "hash": "d6cab62a16fe0955c49a064db71f54cd"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ErrorBoundary.tsx": {
+    "mtime": 1779013331.8153076,
+    "hash": "7004d03a1107c8b743555bba81126135"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\select.tsx": {
-    "mtime": 1778936907.8339748,
-    "hash": "d28412f70868c89fc7d899af512aa472"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\RequireAuth.tsx": {
+    "mtime": 1779013204.1725721,
+    "hash": "e2411fc06306d213707a5606e8a38a05"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\sheet.tsx": {
-    "mtime": 1778936822.9098568,
-    "hash": "38e01b2335d5b50fd68f6f9a106cd578"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\RoleGuard.tsx": {
+    "mtime": 1779013204.176573,
+    "hash": "59e62c35a9cecca8c435e08f4be81328"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\skeleton.tsx": {
-    "mtime": 1778936893.5258508,
-    "hash": "0e6e825c43d858d98c9903f4da975382"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\layout\\DashboardLayout.tsx": {
+    "mtime": 1779019773.55314,
+    "hash": "10838197cbe2d433bba6565dfd0ab220"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\sonner.tsx": {
-    "mtime": 1778936921.2287512,
-    "hash": "31b3cb497e9623cf2f268286b3b413ca"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\notifications\\NotificationBell.tsx": {
+    "mtime": 1779019777.9778702,
+    "hash": "d70a6fb1b21258c5209e2e8be5670180"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\table.tsx": {
-    "mtime": 1778936876.759189,
-    "hash": "f51aea8eb022e6017f928b02f2471e79"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\alert.tsx": {
+    "mtime": 1779013204.1825714,
+    "hash": "ebccefce166472cd6eb5cf404bc0cb5b"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\tabs.tsx": {
-    "mtime": 1778936842.798765,
-    "hash": "8f96e4d98c0e380ce375af955525b3ce"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1779013204.185572,
+    "hash": "b2216350f044b6886ff627281fc95c52"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\components\\ui\\toast.tsx": {
-    "mtime": 1778879043.2742622,
-    "hash": "f9e54fac7af1008ece99dd8df61d268f"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\button.tsx": {
+    "mtime": 1779013204.1885738,
+    "hash": "eb8aac5aa6ae4a228c751fe3e743aa6f"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\features\\adminSlice.ts": {
-    "mtime": 1778926417.2464108,
-    "hash": "46d634aec734dd4a24f294914bbae56f"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\card.tsx": {
+    "mtime": 1779013204.2055728,
+    "hash": "f59bd138f24890a048cd76f257551bfe"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\features\\authSlice.ts": {
-    "mtime": 1778923913.4966798,
-    "hash": "8609142ef3499ef0b9599f86ae8b5cc9"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1779013204.2095714,
+    "hash": "cba7362018fe4cc8c6d0c2de8ef72e78"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\features\\employeeSlice.ts": {
-    "mtime": 1778926517.481954,
-    "hash": "bb4831e158fb34df84ae863458345b17"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\input.tsx": {
+    "mtime": 1779013204.2125697,
+    "hash": "456e8cf3ac77384235dbd6afb1339e84"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\hooks\\useRedux.ts": {
-    "mtime": 1778922573.9221866,
-    "hash": "8547a977aca534e9f9d939dc76685eb4"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\label.tsx": {
+    "mtime": 1779013204.214574,
+    "hash": "17328f2194af248a89adf5c608c51571"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\lib\\utils.ts": {
-    "mtime": 1778878248.8193986,
-    "hash": "7ff08ad10c631633dc0de80aef5992d7"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\components\\ui\\skeleton.tsx": {
+    "mtime": 1779013204.2175736,
+    "hash": "90a1060e55f6ec9c13b22998811e9a78"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\AdminPage.tsx": {
-    "mtime": 1778939418.082866,
-    "hash": "2b11275b7216aacbfeff49929c7c7cbe"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\hooks\\redux.ts": {
+    "mtime": 1779013136.7897842,
+    "hash": "9f1d1a9c7ac49b55c1dbb1effcc38de9"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ChangePasswordPage.tsx": {
-    "mtime": 1778922246.660208,
-    "hash": "7dceb0a34bd3c51c163d50c1a912718f"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1779013136.7927854,
+    "hash": "2f7b0f4d04ae3068bd6c02dd5e9ae267"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\DashboardPage.tsx": {
-    "mtime": 1778923348.9546504,
-    "hash": "987b72855261d92ede73309caf344cc0"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\AdminPage.tsx": {
+    "mtime": 1779013600.265168,
+    "hash": "c59fad35b04ab21fda43f36403738e21"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ForgotPasswordPage.tsx": {
-    "mtime": 1778922019.7599242,
-    "hash": "e729fdf457f0f6936be2ffa5eb88fbc0"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\ChangePasswordPage.tsx": {
+    "mtime": 1779013204.2215712,
+    "hash": "54e69176ffe38156a9db7ec4768053cb"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\LoginPage.tsx": {
-    "mtime": 1778935276.6457376,
-    "hash": "b13d93ffc7c56c8c01a9e3f08b8d270a"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\CompletedTasksPage.tsx": {
+    "mtime": 1779020025.624506,
+    "hash": "a9330cc929fb64d3e2d6e3a22fc2d50c"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\ResetPasswordPage.tsx": {
-    "mtime": 1778922188.6739697,
-    "hash": "1d5ede11ef633de46f6a0a19e27a5714"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\DashboardPage.tsx": {
+    "mtime": 1779017362.2977276,
+    "hash": "f6dc83be6f2ae31e6e386d13876a960f"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\pages\\SuperAdminPage.tsx": {
-    "mtime": 1778939168.2254815,
-    "hash": "4bac6cac1272fb8ccc7ba8a67f0010bf"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\ForgotPasswordPage.tsx": {
+    "mtime": 1779013204.2265694,
+    "hash": "4f0a552ae52ec3342c390eb7807355d7"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\services\\api.ts": {
-    "mtime": 1778921920.267397,
-    "hash": "3db233b12510c957802206c67c1f7470"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\LoginPage.tsx": {
+    "mtime": 1779013204.2295735,
+    "hash": "3ad2e6ea7696f4877ad0e86f7f6db5b4"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\store\\index.ts": {
-    "mtime": 1778920959.7806654,
-    "hash": "559d08d6ced13f1a5019d9da03e80f18"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\MyTasksPage.tsx": {
+    "mtime": 1779016308.5044954,
+    "hash": "d2732bbe663e822d88417d0ec7c374ff"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\types\\rootTypes.ts": {
-    "mtime": 1778927963.0091012,
-    "hash": "5046636a1d0e862940e9d6a0e5d689e1"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\NotFoundPage.tsx": {
+    "mtime": 1779013317.5544982,
+    "hash": "8421352261c3bef3aaec1b75f63d8c55"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\CLAUDE.md": {
-    "mtime": 1778877308.1498551,
-    "hash": "747e73a5e1af4b72c0d65c9169c23199"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\ResetPasswordPage.tsx": {
+    "mtime": 1779013204.2315726,
+    "hash": "bab5156563fa69a691831a878abcd770"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\README.md": {
-    "mtime": 1778876901.0560894,
-    "hash": "a276f3751b941085d23a487f27c6c21c"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\SuperAdminPage.tsx": {
+    "mtime": 1779013240.3874962,
+    "hash": "f66e246b61eb73994a4659221465caa4"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\TEST_PLAN.md": {
-    "mtime": 1778912497.4248488,
-    "hash": "fff839baffd9aa6ddae7c3f337951d91"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\TaskDetailPage.tsx": {
+    "mtime": 1779015689.162373,
+    "hash": "1e22feb73dffb3c7b45a90de21101974"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\backend\\requirements.txt": {
-    "mtime": 1778907944.4498816,
-    "hash": "e36600eb1652753dea46031323bc2a9c"
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\pages\\TeamTasksPage.tsx": {
+    "mtime": 1779017213.5141516,
+    "hash": "6fafd235348682964fdf0b6ca77c1f2b"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\index.html": {
-    "mtime": 1778877908.334494,
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\services\\api.ts": {
+    "mtime": 1779016013.6970315,
+    "hash": "8c47d7281cad883e91eb26155010cdaf"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\authSlice.ts": {
+    "mtime": 1779013136.821785,
+    "hash": "96ff2b31768326b7605fddb86bdf7c58"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\index.ts": {
+    "mtime": 1779019753.3457522,
+    "hash": "b398cc1ee8ffee77e8a850f31213c809"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\notificationsSlice.ts": {
+    "mtime": 1779019749.5464199,
+    "hash": "2e16ee99ff9ed2077a2749dd4b72e29e"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\tasksSlice.ts": {
+    "mtime": 1779015689.1603734,
+    "hash": "eeff2d781bf4b3fb542fb180d5d2defb"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\uiSlice.ts": {
+    "mtime": 1779013136.8307867,
+    "hash": "ed73fc7b30b1047320af1ad96ebf05a9"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\store\\usersSlice.ts": {
+    "mtime": 1779013136.8357875,
+    "hash": "4ee9a115ba7f1a7cb94837820a363991"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\types\\index.ts": {
+    "mtime": 1779019743.069887,
+    "hash": "14654e7ed05f41e0d55bf30e9c752375"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\README.md": {
+    "mtime": 1779013756.5450604,
+    "hash": "bec25f7b7f1baf281d4883058844e266"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\backend\\requirements.txt": {
+    "mtime": 1779012456.7216084,
+    "hash": "e9a0e5866f545b88172b6ae4c8157e07"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\FRONTEND-STANDARDS.md": {
+    "mtime": 1779012290.891585,
+    "hash": "673d71470e4bb5fd79f8b8943384c58d"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\MEMORY-TEMPLATE.md": {
+    "mtime": 1779012293.6785831,
+    "hash": "76ad849acd9e1ef2f6db66a2f5b279d0"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\README.md": {
+    "mtime": 1779012286.7555819,
+    "hash": "916b4d2a53cacfcc1a55421a9eee4144"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-1.md": {
+    "mtime": 1779012395.9090257,
+    "hash": "9432de1ad2bf9d2106d72172b7c1ad7c"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-2.md": {
+    "mtime": 1779012398.0210733,
+    "hash": "4bb43d2c0233fd951fc16cb979821926"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-3.md": {
+    "mtime": 1779012399.7992163,
+    "hash": "6c063784b18e3567273e9e64a1b9b12b"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-4.md": {
+    "mtime": 1779012401.2795177,
+    "hash": "5f4e04912ea2128f07956aff5f0a3020"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-5.md": {
+    "mtime": 1779012402.986088,
+    "hash": "1a5f9282dcd9f5c49e40b7a22b2d65b7"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-6.md": {
+    "mtime": 1779012404.885087,
+    "hash": "ddc799f89c3d4e5f56e84f3955c8e61f"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\manual-testing\\phase-7.md": {
+    "mtime": 1779012406.480088,
+    "hash": "1eb3adeb33b8dbf57f508db177ff60ec"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-1-foundation-auth.md": {
+    "mtime": 1779012313.3982894,
+    "hash": "31f55ca6e1e63b597c5f5efa4efc1938"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-2-company-users.md": {
+    "mtime": 1779012324.6291037,
+    "hash": "1ba761ddfc2bfa47d8e1c0b2323f72a9"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-3-tasks.md": {
+    "mtime": 1779012337.8500164,
+    "hash": "ab809d44299c716e4c86609293bf6b58"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-4-email.md": {
+    "mtime": 1779012343.5552583,
+    "hash": "58a8c93d3ae75912c33d4db909eeef38"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-5-ui-polish.md": {
+    "mtime": 1779012353.0338955,
+    "hash": "c645814149a64531e2654337a1b2fb3f"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-6-security-testing.md": {
+    "mtime": 1779012364.7341053,
+    "hash": "4bb21df6abf9522bdd90be98a6b8a0e4"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\prompts\\phase-7-deployment.md": {
+    "mtime": 1779012376.0696673,
+    "hash": "3a14a001bc7edffd047767d7cc03d34f"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-1-testing.md": {
+    "mtime": 1779012382.0622706,
+    "hash": "1857c8ae6b56567e241b3be1d09c0a07"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-2-testing.md": {
+    "mtime": 1779012383.7312696,
+    "hash": "06ef06b23121bb2024724555aedc2600"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-3-testing.md": {
+    "mtime": 1779012385.276271,
+    "hash": "7b9551428aef64ea4b2b822b3fe6f6c9"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-4-testing.md": {
+    "mtime": 1779012386.7833622,
+    "hash": "b390a1a411d55609eca7f6a979f28171"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-5-testing.md": {
+    "mtime": 1779012388.7248836,
+    "hash": "f905db4377409cd283e2bade8ec0958b"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-6-testing.md": {
+    "mtime": 1779012389.9978805,
+    "hash": "8acae91df05e330da71d5657debc9e79"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\docs\\testing\\phase-7-production-readiness.md": {
+    "mtime": 1779012391.0755045,
+    "hash": "47e01fd6813e51ee1ea35b6a6bb74fae"
+  },
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\index.html": {
+    "mtime": 1779012566.4768627,
     "hash": "33bd262affcefea92f1509cda449a19c"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\README.md": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\README.md": {
     "mtime": 1778663925.7671938,
     "hash": "f6e3faf55d738cf2affe1b44195f27cf"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\public\\favicon.svg": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\public\\favicon.svg": {
     "mtime": 1778663925.843196,
     "hash": "7e840862161341271697daa99a40d76b"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\public\\icons.svg": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\public\\icons.svg": {
     "mtime": 1778663925.878197,
     "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\hero.png": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\assets\\hero.png": {
     "mtime": 1778663925.798208,
     "hash": "aead493361b27e7510691c5d7072dfc1"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\react.svg": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\assets\\react.svg": {
     "mtime": 1778663925.9121978,
     "hash": "f0402b67b6ce880f65666bb49e841696"
   },
-  "C:\\Users\\hp\\Desktop\\Task_Management\\frontend\\src\\assets\\vite.svg": {
+  "C:\\Users\\hp\\Desktop\\Task Management System\\frontend\\src\\assets\\vite.svg": {
     "mtime": 1778663925.943197,
     "hash": "9960a24288958394ac50e57ff638b036"
   }

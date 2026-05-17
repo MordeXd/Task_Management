@@ -1,21 +1,14 @@
-import { Navigate, useLocation, type Location } from 'react-router-dom'
-import { useAppSelector } from '../hooks/useRedux'
+import { Navigate, Outlet, useLocation } from "react-router-dom";
+import { useAppSelector } from "@/hooks/redux";
 
-interface RequireAuthProps {
-  children: React.ReactNode
-}
-
-interface LocationState {
-  from: Location
-}
-
-export default function RequireAuth({ children }: RequireAuthProps) {
-  const token = useAppSelector((state) => state.auth.token)
-  const location = useLocation()
-
+export function RequireAuth() {
+  const token = useAppSelector((s) => s.auth.accessToken);
+  const location = useLocation();
   if (!token) {
-    return <Navigate to="/login" state={{ from: location } as LocationState} replace />
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
-
-  return <>{children}</>
+  return <Outlet />;
 }
+
+
+
