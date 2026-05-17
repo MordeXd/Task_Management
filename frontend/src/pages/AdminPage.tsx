@@ -43,10 +43,12 @@ export function AdminPage() {
     if (!editId) return;
     const payload: Record<string, unknown> = { id: editId, name: data.name, email: data.email };
     if (data.department) payload.department = data.department;
-    await dispatch(updateUser(payload as Parameters<typeof updateUser>[0]));
-    toast.success("Updated");
-    setEditId(null);
-    reset();
+    const result = await dispatch(updateUser(payload as Parameters<typeof updateUser>[0]));
+    if (updateUser.fulfilled.match(result)) {
+      toast.success("Employee updated");
+      setEditId(null);
+      reset();
+    } else toast.error("Failed to update employee");
   };
 
   return (
@@ -92,7 +94,7 @@ export function AdminPage() {
                     <td className="p-2 text-muted-foreground">{e.department || "—"}</td>
                     <td className="p-2 flex gap-2">
                       <Button size="sm" variant="outline" onClick={() => { setEditId(e.id); reset({ name: e.name, email: e.email, department: e.department || "" }); }}>Edit</Button>
-                      <Button size="sm" variant="destructive" onClick={() => { if (confirm("Deactivate?")) { dispatch(deactivateUser(e.id)); toast.success("Deactivated"); } }}>Deactivate</Button>
+                      <Button size="sm" variant="destructive" onClick={async () => { if (confirm("Deactivate?")) { const r = await dispatch(deactivateUser(e.id)); if (deactivateUser.fulfilled.match(r)) toast.success("Deactivated"); else toast.error("Failed to deactivate"); } }}>Deactivate</Button>
                     </td>
                   </tr>
                 ))}

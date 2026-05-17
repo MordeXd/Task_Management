@@ -1,13 +1,15 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchGroupTasks } from "@/store/groupTasksSlice";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
+import { EmptyState } from "@/components/ui/empty-state";
 
 export function CompletedGroupTasksPage() {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const { items, loading } = useAppSelector((s) => s.groupTasks);
 
   useEffect(() => {
@@ -29,7 +31,12 @@ export function CompletedGroupTasksPage() {
           {loading ? (
             <Skeleton className="h-32 w-full" />
           ) : completed.length === 0 ? (
-            <p className="text-muted-foreground py-8 text-center">No completed group tasks yet</p>
+            <EmptyState
+              title="No completed group tasks"
+              description="Group tasks your team completes will appear here"
+              actionLabel="View Group Tasks"
+              onAction={() => navigate("/group-tasks")}
+            />
           ) : (
             <div className="space-y-3">
               {completed.map((t) => (

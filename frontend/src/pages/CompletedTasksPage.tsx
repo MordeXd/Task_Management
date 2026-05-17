@@ -1,13 +1,15 @@
 import { useEffect, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
+import { EmptyState } from "@/components/ui/empty-state";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchTasks } from "@/store/tasksSlice";
 
 export function CompletedTasksPage() {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const { items, loading } = useAppSelector((s) => s.tasks);
   const user = useAppSelector((s) => s.auth.user);
 
@@ -31,7 +33,12 @@ export function CompletedTasksPage() {
           {[1, 2, 3].map((i) => <Skeleton key={i} className="h-32" />)}
         </section>
       ) : completed.length === 0 ? (
-        <Card><CardContent className="py-12 text-center text-muted-foreground">No completed tasks found</CardContent></Card>
+        <EmptyState
+          title="No completed tasks"
+          description="Tasks you complete will appear here"
+          actionLabel="View Pending Tasks"
+          onAction={() => navigate(user?.role === "admin" || user?.role === "super_admin" ? "/team-tasks" : "/my-tasks")}
+        />
       ) : (
         <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {completed.map((task) => (

@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchTasks } from "@/store/tasksSlice";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const COLORS = {
   pending: "#f59e0b",
@@ -16,7 +17,7 @@ const COLORS = {
 
 export function DashboardPage() {
   const dispatch = useAppDispatch();
-  const { items } = useAppSelector((s) => s.tasks);
+  const { items, loading } = useAppSelector((s) => s.tasks);
   const user = useAppSelector((s) => s.auth.user);
 
   useEffect(() => {
@@ -77,41 +78,61 @@ export function DashboardPage() {
       <p className="text-muted-foreground -mt-4">Welcome back, {user?.name}</p>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Total Tasks</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold">{stats.total}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Completed</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-green-600">{stats.completed}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Pending</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-amber-500">{stats.pending}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Completion Rate</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold">{stats.pct}%</p></CardContent>
-        </Card>
+        {loading ? (
+          <>
+            {[1, 2, 3, 4].map((i) => (
+              <Card key={i}><CardHeader className="pb-2"><Skeleton className="h-4 w-24" /></CardHeader><CardContent><Skeleton className="h-8 w-12" /></CardContent></Card>
+            ))}
+          </>
+        ) : (
+          <>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Total Tasks</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold">{stats.total}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Completed</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-green-600">{stats.completed}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Pending</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-amber-500">{stats.pending}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Completion Rate</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold">{stats.pct}%</p></CardContent>
+            </Card>
+          </>
+        )}
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Due This Week</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-blue-600">{stats.dueThisWeek}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Overdue</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-red-600">{stats.overdue}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">High Priority</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-red-500">{stats.byPriority.high}</p></CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Medium Priority</CardTitle></CardHeader>
-          <CardContent><p className="text-3xl font-bold text-amber-500">{stats.byPriority.medium}</p></CardContent>
-        </Card>
+        {loading ? (
+          <>
+            {[1, 2, 3, 4].map((i) => (
+              <Card key={i}><CardHeader className="pb-2"><Skeleton className="h-4 w-24" /></CardHeader><CardContent><Skeleton className="h-8 w-12" /></CardContent></Card>
+            ))}
+          </>
+        ) : (
+          <>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Due This Week</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-blue-600">{stats.dueThisWeek}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Overdue</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-red-600">{stats.overdue}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">High Priority</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-red-500">{stats.byPriority.high}</p></CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-2"><CardTitle className="text-sm font-medium text-muted-foreground">Medium Priority</CardTitle></CardHeader>
+              <CardContent><p className="text-3xl font-bold text-amber-500">{stats.byPriority.medium}</p></CardContent>
+            </Card>
+          </>
+        )}
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">

@@ -58,7 +58,7 @@ def create_admin(user):
     "department": (data.get("department") or "").strip(),
   })
   public = users_repo.to_public(new_user)
-  send_welcome_credentials_email(new_user, final_password)
+  send_welcome_credentials_email(new_user, final_password, creator=user)
   return jsonify({"user": public, "temporary_password": final_password}), 201
 
 
@@ -101,7 +101,7 @@ def create_employee(user):
     "department": (data.get("department") or "").strip(),
   })
   public = users_repo.to_public(new_user)
-  send_welcome_credentials_email(new_user, final_password)
+  send_welcome_credentials_email(new_user, final_password, creator=user)
   return jsonify({"user": public, "temporary_password": final_password}), 201
 
 

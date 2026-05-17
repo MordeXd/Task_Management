@@ -147,8 +147,9 @@ export function GroupTaskDetailPage() {
 
       {task.status === "pending" && canComplete && (
         <Button className="w-full" onClick={async () => {
-          await dispatch(completeGroupTask(task.id));
-          toast.success("Group task completed");
+          const result = await dispatch(completeGroupTask(task.id));
+          if (completeGroupTask.fulfilled.match(result)) toast.success("Group task completed");
+          else toast.error("Failed to complete group task");
         }}>
           Mark as Completed
         </Button>

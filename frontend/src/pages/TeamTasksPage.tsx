@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
+import { EmptyState } from "@/components/ui/empty-state";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { completeTask, createTask, deleteTask, fetchTasks, updateTask } from "@/store/tasksSlice";
 import { fetchAdmins, fetchEmployees } from "@/store/usersSlice";
@@ -86,18 +87,22 @@ export function TeamTasksPage() {
 
   const onCreate = async (data: z.infer<typeof schema>) => {
     const payload = { ...data, links: links.filter((l) => l.url) };
-    await dispatch(createTask(payload));
-    toast.success("Task created");
-    setOpen(false);
-    resetForm();
+    const result = await dispatch(createTask(payload));
+    if (createTask.fulfilled.match(result)) {
+      toast.success("Task created");
+      setOpen(false);
+      resetForm();
+    } else toast.error("Failed to create task");
   };
 
   const onEdit = async (data: z.infer<typeof schema>) => {
     if (!editTask) return;
     const payload = { id: editTask.id, ...data, links: links.filter((l) => l.url) };
-    await dispatch(updateTask(payload));
-    toast.success("Task updated");
-    resetForm();
+    const result = await dispatch(updateTask(payload));
+    if (updateTask.fulfilled.match(result)) {
+      toast.success("Task updated");
+      resetForm();
+    } else toast.error("Failed to update task");
   };
 
   const openEdit = (task: Task) => {
@@ -206,7 +211,14 @@ export function TeamTasksPage() {
       </section>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {loading ? <Skeleton className="h-32 w-full col-span-full" /> : filtered.length === 0 ? (
-          <p className="text-muted-foreground text-center py-12 col-span-full">No tasks found</p>
+          <div className="col-span-full">
+            <EmptyState
+              title="No tasks found"
+              description="Try adjusting your filters or create a new task"
+              actionLabel="Create Task"
+              onAction={() => setOpen(true)}
+            />
+          </div>
         ) : filtered.map((t) => (
           <div key={t.id} className="rounded-lg border bg-card hover:shadow-md transition-shadow cursor-pointer p-4 space-y-3" onClick={() => navigate(`/tasks/${t.id}`)}>
             <div className="flex items-start justify-between gap-2">
@@ -220,8 +232,8 @@ export function TeamTasksPage() {
             {t.due_date && <p className="text-xs text-muted-foreground">Due: {new Date(t.due_date).toLocaleDateString()}</p>}
             <div className="flex gap-1 flex-wrap pt-1" onClick={(e) => e.stopPropagation()}>
               <Button size="sm" variant="outline" onClick={() => openEdit(t)}>Edit</Button>
-              {t.status === "pending" && <Button size="sm" onClick={() => { dispatch(completeTask(t.id)); toast.success("Completed"); }}>Complete</Button>}
-              <Button size="sm" variant="ghost" onClick={async () => { await dispatch(deleteTask(t.id)); toast.success("Task deleted"); }}>Delete</Button>
+              {t.status === "pending" && <Button size="sm" onClick={async () => { const r = await dispatch(completeTask(t.id)); if (completeTask.fulfilled.match(r)) toast.success("Completed"); else toast.error("Failed"); }}>Complete</Button>}
+              <Button size="sm" variant="ghost" onClick={async () => { const r = await dispatch(deleteTask(t.id)); if (deleteTask.fulfilled.match(r)) toast.success("Task deleted"); else toast.error("Failed to delete"); }}>Delete</Button>
             </div>
           </div>
         ))}

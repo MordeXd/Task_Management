@@ -59,7 +59,7 @@ def create_task(user):
   }
   task = tasks_repo.create(task_data)
   populated = tasks_repo.populate_users(task)
-  send_task_assigned_email(assignee, populated)
+  send_task_assigned_email(assignee, populated, assigned_by=user)
   notifications_repo.create({
     "user_id": assignee["_id"],
     "type": "task_assigned",

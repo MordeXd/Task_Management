@@ -39,8 +39,9 @@ export function MyTasksPage() {
   }, [myTasks, filter]);
 
   const handleComplete = async (id: string) => {
-    await dispatch(completeTask(id));
-    toast.success("Task completed");
+    const result = await dispatch(completeTask(id));
+    if (completeTask.fulfilled.match(result)) toast.success("Task completed");
+    else toast.error("Failed to complete task");
   };
 
   return (

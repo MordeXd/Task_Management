@@ -33,16 +33,20 @@ export function TaskDetailPage() {
 
   const handleComplete = async () => {
     if (!id) return;
-    await dispatch(completeTask(id));
-    toast.success("Task completed");
-    navigate(-1);
+    const result = await dispatch(completeTask(id));
+    if (completeTask.fulfilled.match(result)) {
+      toast.success("Task completed");
+      navigate(-1);
+    } else toast.error("Failed to complete task");
   };
 
   const handleDelete = async () => {
     if (!id) return;
-    await dispatch(deleteTask(id));
-    toast.success("Task deleted");
-    navigate(-1);
+    const result = await dispatch(deleteTask(id));
+    if (deleteTask.fulfilled.match(result)) {
+      toast.success("Task deleted");
+      navigate(-1);
+    } else toast.error("Failed to delete task");
   };
 
   const uploadFile = async (category: "pdf" | "image", file: File) => {

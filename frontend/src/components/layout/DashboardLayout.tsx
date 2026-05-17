@@ -5,17 +5,27 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
-  Moon,
-  Sun,
   UserCircle,
   UserCog,
   Users,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Separator } from "@/components/ui/separator";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { NotificationBell } from "@/components/notifications/NotificationBell";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { logout } from "@/store/authSlice";
-import { setSidebarOpen, toggleTheme } from "@/store/uiSlice";
+import { setSidebarOpen } from "@/store/uiSlice";
 import { cn } from "@/lib/utils";
 import type { UserRole } from "@/types";
 
@@ -38,6 +48,8 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
 
   return (
     <nav className="flex flex-col gap-1 p-4">
+      <Link to="/dashboard" className="flex h-14 items-center px-2 font-bold text-lg">TaskFlow</Link>
+      <Separator className="my-2" />
       {items.map(({ to, label, icon: Icon }) => (
         <NavLink
           key={to}
@@ -45,7 +57,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
           onClick={onNavigate}
           className={({ isActive }) =>
             cn(
-              "flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium transition-colors min-h-11",
+              "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
               isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent"
             )
           }
@@ -63,7 +75,6 @@ export function DashboardLayout() {
   const navigate = useNavigate();
   const user = useAppSelector((s) => s.auth.user);
   const sidebarOpen = useAppSelector((s) => s.ui.sidebarOpen);
-  const theme = useAppSelector((s) => s.ui.theme);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -73,48 +84,52 @@ export function DashboardLayout() {
   return (
     <div className="flex min-h-screen bg-background">
       <aside className="hidden w-64 shrink-0 border-r md:block">
-        <div className="flex h-16 items-center border-b px-6 font-bold text-lg">TaskFlow</div>
         <SidebarContent />
       </aside>
 
-      {sidebarOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
-          <div className="absolute inset-0 bg-black/50" onClick={() => dispatch(setSidebarOpen(false))} />
-          <aside className="relative z-10 h-full w-72 max-w-[85vw] border-r bg-background shadow-xl">
-            <div className="flex h-16 items-center border-b px-4 font-bold">TaskFlow</div>
-            <SidebarContent onNavigate={() => dispatch(setSidebarOpen(false))} />
-          </aside>
-        </div>
-      )}
+      <Sheet open={sidebarOpen} onOpenChange={(v) => dispatch(setSidebarOpen(v))}>
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon" className="fixed left-4 top-3 z-50 md:hidden">
+            <Menu className="h-5 w-5" />
+          </Button>
+        </SheetTrigger>
+        <SheetContent side="left" className="w-72 p-0">
+          <SheetTitle className="sr-only">Navigation</SheetTitle>
+          <SidebarContent onNavigate={() => dispatch(setSidebarOpen(false))} />
+        </SheetContent>
+      </Sheet>
 
       <div className="flex flex-1 flex-col min-w-0">
         <header className="sticky top-0 z-40 flex h-16 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur">
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => dispatch(setSidebarOpen(true))}>
-            <Menu className="h-5 w-5" />
-          </Button>
-          <div className="flex-1 font-semibold truncate">TaskFlow</div>
+          <div className="flex-1 font-semibold truncate ml-8 md:ml-0">TaskFlow</div>
           <NotificationBell />
-          <Button variant="ghost" size="icon" onClick={() => dispatch(toggleTheme())}>
-            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </Button>
-          <div className="relative group flex items-center gap-2 text-sm">
-            <div className="flex items-center gap-2 cursor-pointer">
-              <div className="h-8 w-8 rounded-full overflow-hidden border bg-muted flex items-center justify-center">
-                {user?.profile_picture ? (
-                  <img src={`/uploads/${user.profile_picture}`} alt={user.name} className="h-full w-full object-cover" />
-                ) : (
-                  <span className="text-xs font-bold text-muted-foreground">{user?.name?.charAt(0)?.toUpperCase()}</span>
-                )}
-              </div>
-              <span className="hidden sm:inline text-muted-foreground">{user?.name}</span>
-            </div>
-            <div className="absolute right-0 top-full mt-1 z-50 w-40 rounded-lg border bg-popover shadow-md p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <Link to="/profile" className="block px-2 py-1.5 text-sm rounded hover:bg-accent">Profile</Link>
-              <button className="w-full text-left px-2 py-1.5 text-sm rounded hover:bg-accent text-destructive" onClick={handleLogout}>
-                <LogOut className="h-3.5 w-3.5 inline mr-1" />Logout
-              </button>
-            </div>
-          </div>
+          <ThemeToggle />
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="flex items-center gap-2 px-2">
+                <Avatar className="h-8 w-8">
+                  {user?.profile_picture ? (
+                    <AvatarImage src={`/uploads/${user.profile_picture}`} alt={user.name} />
+                  ) : null}
+                  <AvatarFallback className="text-xs font-bold">
+                    {user?.name?.charAt(0)?.toUpperCase()}
+                  </AvatarFallback>
+                </Avatar>
+                <span className="hidden sm:inline text-sm text-muted-foreground">{user?.name}</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              <DropdownMenuLabel>{user?.name}</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={() => navigate("/profile")}>
+                <UserCircle className="h-4 w-4 mr-2" />Profile
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={handleLogout} className="text-destructive">
+                <LogOut className="h-4 w-4 mr-2" />Logout
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </header>
         <main className="flex-1 p-4 md:p-6 overflow-auto">
           <Outlet />
@@ -123,4 +138,3 @@ export function DashboardLayout() {
     </div>
   );
 }
-

@@ -9,7 +9,7 @@
       "source_file": "backend/run.py",
       "source_location": "L1",
       "id": "backend_run_py",
-      "community": 55,
+      "community": 64,
       "norm_label": "run.py"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "backend/app/config.py",
       "source_location": "L1",
       "id": "backend_app_config_py",
-      "community": 39,
+      "community": 46,
       "norm_label": "config.py"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "backend/app/config.py",
       "source_location": "L5",
       "id": "app_config_config",
-      "community": 39,
+      "community": 46,
       "norm_label": "config"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "backend/app/decorators.py",
       "source_location": "L1",
       "id": "backend_app_decorators_py",
-      "community": 22,
+      "community": 27,
       "norm_label": "decorators.py"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "backend/app/decorators.py",
       "source_location": "L9",
       "id": "app_decorators_get_current_user",
-      "community": 22,
+      "community": 27,
       "norm_label": "get_current_user()"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "backend/app/decorators.py",
       "source_location": "L18",
       "id": "app_decorators_jwt_required_active",
-      "community": 22,
+      "community": 27,
       "norm_label": "jwt_required_active()"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "backend/app/decorators.py",
       "source_location": "L29",
       "id": "app_decorators_require_roles",
-      "community": 22,
+      "community": 27,
       "norm_label": "require_roles()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L1",
       "id": "backend_app_permissions_py",
-      "community": 9,
+      "community": 3,
       "norm_label": "permissions.py"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L6",
       "id": "app_permissions_same_company",
-      "community": 9,
+      "community": 3,
       "norm_label": "same_company()"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L16",
       "id": "app_permissions_can_view_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "can_view_task()"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L24",
       "id": "app_permissions_can_modify_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "can_modify_task()"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L30",
       "id": "app_permissions_can_complete_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "can_complete_task()"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L38",
       "id": "app_permissions_require_roles",
-      "community": 9,
+      "community": 3,
       "norm_label": "require_roles()"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "backend/app/permissions.py",
       "source_location": "L42",
       "id": "app_permissions_user_belongs_to_company",
-      "community": 11,
+      "community": 4,
       "norm_label": "user_belongs_to_company()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "backend/app/utils.py",
       "source_location": "L1",
       "id": "backend_app_utils_py",
-      "community": 11,
+      "community": 0,
       "norm_label": "utils.py"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "backend/app/utils.py",
       "source_location": "L9",
       "id": "app_utils_utcnow",
-      "community": 1,
+      "community": 0,
       "norm_label": "utcnow()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "backend/app/utils.py",
       "source_location": "L13",
       "id": "app_utils_oid",
-      "community": 1,
+      "community": 0,
       "norm_label": "oid()"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "backend/app/utils.py",
       "source_location": "L21",
       "id": "app_utils_serialize_doc",
-      "community": 1,
+      "community": 0,
       "norm_label": "serialize_doc()"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "backend/app/utils.py",
       "source_location": "L37",
       "id": "app_utils_generate_temp_password",
-      "community": 11,
+      "community": 4,
       "norm_label": "generate_temp_password()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L1",
       "id": "backend_app_models_company_py",
-      "community": 1,
+      "community": 0,
       "norm_label": "company.py"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L5",
       "id": "models_company_companyrepository",
-      "community": 1,
+      "community": 0,
       "norm_label": "companyrepository"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L9",
       "id": "models_company_collection",
-      "community": 1,
+      "community": 0,
       "norm_label": "collection()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L12",
       "id": "models_company_companyrepository_find_by_id",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_id()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L15",
       "id": "models_company_companyrepository_find_first",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_first()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L18",
       "id": "models_company_companyrepository_create",
-      "community": 1,
+      "community": 0,
       "norm_label": ".create()"
     },
     {
@@ -297,8 +297,98 @@
       "source_file": "backend/app/models/company.py",
       "source_location": "L25",
       "id": "models_company_to_public",
-      "community": 1,
+      "community": 0,
       "norm_label": "to_public()"
+    },
+    {
+      "label": "group_task.py",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L1",
+      "id": "backend_app_models_group_task_py",
+      "community": 0,
+      "norm_label": "group_task.py"
+    },
+    {
+      "label": "GroupTaskRepository",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L10",
+      "id": "models_group_task_grouptaskrepository",
+      "community": 0,
+      "norm_label": "grouptaskrepository"
+    },
+    {
+      "label": "collection()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L14",
+      "id": "models_group_task_collection",
+      "community": 0,
+      "norm_label": "collection()"
+    },
+    {
+      "label": ".find_by_id()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L17",
+      "id": "models_group_task_grouptaskrepository_find_by_id",
+      "community": 0,
+      "norm_label": ".find_by_id()"
+    },
+    {
+      "label": ".create()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L20",
+      "id": "models_group_task_grouptaskrepository_create",
+      "community": 0,
+      "norm_label": ".create()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L34",
+      "id": "models_group_task_grouptaskrepository_update",
+      "community": 0,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".delete()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L39",
+      "id": "models_group_task_grouptaskrepository_delete",
+      "community": 0,
+      "norm_label": ".delete()"
+    },
+    {
+      "label": ".push_attachment()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L42",
+      "id": "models_group_task_grouptaskrepository_push_attachment",
+      "community": 0,
+      "norm_label": ".push_attachment()"
+    },
+    {
+      "label": ".list_for_user()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L49",
+      "id": "models_group_task_grouptaskrepository_list_for_user",
+      "community": 0,
+      "norm_label": ".list_for_user()"
+    },
+    {
+      "label": ".populate_users()",
+      "file_type": "code",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L60",
+      "id": "models_group_task_grouptaskrepository_populate_users",
+      "community": 0,
+      "norm_label": ".populate_users()"
     },
     {
       "label": "notification.py",
@@ -306,7 +396,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L1",
       "id": "backend_app_models_notification_py",
-      "community": 1,
+      "community": 0,
       "norm_label": "notification.py"
     },
     {
@@ -315,7 +405,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L8",
       "id": "models_notification_notificationrepository",
-      "community": 1,
+      "community": 0,
       "norm_label": "notificationrepository"
     },
     {
@@ -324,7 +414,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L12",
       "id": "models_notification_collection",
-      "community": 1,
+      "community": 0,
       "norm_label": "collection()"
     },
     {
@@ -333,7 +423,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L15",
       "id": "models_notification_notificationrepository_create",
-      "community": 1,
+      "community": 0,
       "norm_label": ".create()"
     },
     {
@@ -342,7 +432,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L21",
       "id": "models_notification_notificationrepository_find_by_id",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_id()"
     },
     {
@@ -351,7 +441,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L24",
       "id": "models_notification_notificationrepository_find_by_user",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_user()"
     },
     {
@@ -360,7 +450,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L32",
       "id": "models_notification_notificationrepository_count_unread",
-      "community": 1,
+      "community": 0,
       "norm_label": ".count_unread()"
     },
     {
@@ -369,7 +459,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L35",
       "id": "models_notification_notificationrepository_mark_as_read",
-      "community": 1,
+      "community": 0,
       "norm_label": ".mark_as_read()"
     },
     {
@@ -378,7 +468,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L38",
       "id": "models_notification_notificationrepository_mark_all_as_read",
-      "community": 1,
+      "community": 0,
       "norm_label": ".mark_all_as_read()"
     },
     {
@@ -387,7 +477,7 @@
       "source_file": "backend/app/models/notification.py",
       "source_location": "L43",
       "id": "models_notification_notificationrepository_serialize",
-      "community": 1,
+      "community": 0,
       "norm_label": ".serialize()"
     },
     {
@@ -396,7 +486,7 @@
       "source_file": "backend/app/models/task.py",
       "source_location": "L1",
       "id": "backend_app_models_task_py",
-      "community": 1,
+      "community": 0,
       "norm_label": "task.py"
     },
     {
@@ -405,7 +495,7 @@
       "source_file": "backend/app/models/task.py",
       "source_location": "L10",
       "id": "models_task_taskrepository",
-      "community": 1,
+      "community": 0,
       "norm_label": "taskrepository"
     },
     {
@@ -414,7 +504,7 @@
       "source_file": "backend/app/models/task.py",
       "source_location": "L14",
       "id": "models_task_collection",
-      "community": 1,
+      "community": 0,
       "norm_label": "collection()"
     },
     {
@@ -423,7 +513,7 @@
       "source_file": "backend/app/models/task.py",
       "source_location": "L17",
       "id": "models_task_taskrepository_find_by_id",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_id()"
     },
     {
@@ -432,43 +522,61 @@
       "source_file": "backend/app/models/task.py",
       "source_location": "L20",
       "id": "models_task_taskrepository_create",
-      "community": 1,
+      "community": 0,
       "norm_label": ".create()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "backend/app/models/task.py",
-      "source_location": "L31",
+      "source_location": "L34",
       "id": "models_task_taskrepository_update",
-      "community": 1,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
       "label": ".delete()",
       "file_type": "code",
       "source_file": "backend/app/models/task.py",
-      "source_location": "L36",
+      "source_location": "L39",
       "id": "models_task_taskrepository_delete",
-      "community": 1,
+      "community": 0,
       "norm_label": ".delete()"
+    },
+    {
+      "label": ".push_attachment()",
+      "file_type": "code",
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L42",
+      "id": "models_task_taskrepository_push_attachment",
+      "community": 0,
+      "norm_label": ".push_attachment()"
+    },
+    {
+      "label": ".remove_attachment()",
+      "file_type": "code",
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L49",
+      "id": "models_task_taskrepository_remove_attachment",
+      "community": 0,
+      "norm_label": ".remove_attachment()"
     },
     {
       "label": ".list_for_user()",
       "file_type": "code",
       "source_file": "backend/app/models/task.py",
-      "source_location": "L39",
+      "source_location": "L55",
       "id": "models_task_taskrepository_list_for_user",
-      "community": 1,
+      "community": 0,
       "norm_label": ".list_for_user()"
     },
     {
       "label": ".populate_users()",
       "file_type": "code",
       "source_file": "backend/app/models/task.py",
-      "source_location": "L50",
+      "source_location": "L66",
       "id": "models_task_taskrepository_populate_users",
-      "community": 1,
+      "community": 0,
       "norm_label": ".populate_users()"
     },
     {
@@ -477,7 +585,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L1",
       "id": "backend_app_models_user_py",
-      "community": 1,
+      "community": 0,
       "norm_label": "user.py"
     },
     {
@@ -486,7 +594,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L10",
       "id": "models_user_userrepository",
-      "community": 1,
+      "community": 0,
       "norm_label": "userrepository"
     },
     {
@@ -495,7 +603,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L14",
       "id": "models_user_collection",
-      "community": 1,
+      "community": 0,
       "norm_label": "collection()"
     },
     {
@@ -504,7 +612,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L17",
       "id": "models_user_userrepository_find_by_id",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_id()"
     },
     {
@@ -513,7 +621,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L20",
       "id": "models_user_userrepository_find_by_email",
-      "community": 1,
+      "community": 0,
       "norm_label": ".find_by_email()"
     },
     {
@@ -522,7 +630,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L23",
       "id": "models_user_userrepository_create",
-      "community": 1,
+      "community": 0,
       "norm_label": ".create()"
     },
     {
@@ -531,7 +639,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L29",
       "id": "models_user_userrepository_update",
-      "community": 1,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -540,7 +648,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L34",
       "id": "models_user_userrepository_list_by_role_and_company",
-      "community": 1,
+      "community": 0,
       "norm_label": ".list_by_role_and_company()"
     },
     {
@@ -549,7 +657,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L41",
       "id": "models_user_hash_password",
-      "community": 1,
+      "community": 0,
       "norm_label": "hash_password()"
     },
     {
@@ -558,7 +666,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L45",
       "id": "models_user_check_password",
-      "community": 1,
+      "community": 0,
       "norm_label": "check_password()"
     },
     {
@@ -567,7 +675,7 @@
       "source_file": "backend/app/models/user.py",
       "source_location": "L49",
       "id": "models_user_to_public",
-      "community": 1,
+      "community": 0,
       "norm_label": "to_public()"
     },
     {
@@ -576,7 +684,7 @@
       "source_file": "backend/app/models/__init__.py",
       "source_location": "L1",
       "id": "backend_app_models_init_py",
-      "community": 56,
+      "community": 65,
       "norm_label": "__init__.py"
     },
     {
@@ -585,7 +693,7 @@
       "source_file": "backend/app/routes/auth.py",
       "source_location": "L1",
       "id": "backend_app_routes_auth_py",
-      "community": 13,
+      "community": 10,
       "norm_label": "auth.py"
     },
     {
@@ -594,7 +702,7 @@
       "source_file": "backend/app/routes/auth.py",
       "source_location": "L24",
       "id": "routes_auth_tokens_for_user",
-      "community": 13,
+      "community": 10,
       "norm_label": "_tokens_for_user()"
     },
     {
@@ -603,7 +711,7 @@
       "source_file": "backend/app/routes/auth.py",
       "source_location": "L37",
       "id": "routes_auth_login",
-      "community": 13,
+      "community": 10,
       "norm_label": "login()"
     },
     {
@@ -612,7 +720,7 @@
       "source_file": "backend/app/routes/auth.py",
       "source_location": "L56",
       "id": "routes_auth_refresh",
-      "community": 13,
+      "community": 10,
       "norm_label": "refresh()"
     },
     {
@@ -621,43 +729,61 @@
       "source_file": "backend/app/routes/auth.py",
       "source_location": "L71",
       "id": "routes_auth_me",
-      "community": 13,
+      "community": 10,
       "norm_label": "me()"
+    },
+    {
+      "label": "get_user()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/auth.py",
+      "source_location": "L77",
+      "id": "routes_auth_get_user",
+      "community": 10,
+      "norm_label": "get_user()"
     },
     {
       "label": "logout()",
       "file_type": "code",
       "source_file": "backend/app/routes/auth.py",
-      "source_location": "L77",
+      "source_location": "L86",
       "id": "routes_auth_logout",
-      "community": 13,
+      "community": 10,
       "norm_label": "logout()"
     },
     {
       "label": "forgot_password()",
       "file_type": "code",
       "source_file": "backend/app/routes/auth.py",
-      "source_location": "L86",
+      "source_location": "L95",
       "id": "routes_auth_forgot_password",
-      "community": 13,
+      "community": 10,
       "norm_label": "forgot_password()"
     },
     {
       "label": "reset_password()",
       "file_type": "code",
       "source_file": "backend/app/routes/auth.py",
-      "source_location": "L112",
+      "source_location": "L121",
       "id": "routes_auth_reset_password",
-      "community": 13,
+      "community": 10,
       "norm_label": "reset_password()"
+    },
+    {
+      "label": "update_profile()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/auth.py",
+      "source_location": "L153",
+      "id": "routes_auth_update_profile",
+      "community": 10,
+      "norm_label": "update_profile()"
     },
     {
       "label": "change_password()",
       "file_type": "code",
       "source_file": "backend/app/routes/auth.py",
-      "source_location": "L144",
+      "source_location": "L170",
       "id": "routes_auth_change_password",
-      "community": 13,
+      "community": 10,
       "norm_label": "change_password()"
     },
     {
@@ -666,7 +792,7 @@
       "source_file": "backend/app/routes/company.py",
       "source_location": "L1",
       "id": "backend_app_routes_company_py",
-      "community": 11,
+      "community": 4,
       "norm_label": "company.py"
     },
     {
@@ -675,7 +801,7 @@
       "source_file": "backend/app/routes/company.py",
       "source_location": "L13",
       "id": "routes_company_resolve_company_id",
-      "community": 11,
+      "community": 4,
       "norm_label": "_resolve_company_id()"
     },
     {
@@ -684,7 +810,7 @@
       "source_file": "backend/app/routes/company.py",
       "source_location": "L25",
       "id": "routes_company_list_admins",
-      "community": 11,
+      "community": 4,
       "norm_label": "list_admins()"
     },
     {
@@ -693,44 +819,116 @@
       "source_file": "backend/app/routes/company.py",
       "source_location": "L35",
       "id": "routes_company_create_admin",
-      "community": 11,
+      "community": 4,
       "norm_label": "create_admin()"
     },
     {
       "label": "list_employees()",
       "file_type": "code",
       "source_file": "backend/app/routes/company.py",
-      "source_location": "L64",
+      "source_location": "L67",
       "id": "routes_company_list_employees",
-      "community": 11,
+      "community": 4,
       "norm_label": "list_employees()"
     },
     {
       "label": "create_employee()",
       "file_type": "code",
       "source_file": "backend/app/routes/company.py",
-      "source_location": "L74",
+      "source_location": "L77",
       "id": "routes_company_create_employee",
-      "community": 11,
+      "community": 4,
       "norm_label": "create_employee()"
     },
     {
       "label": "update_user()",
       "file_type": "code",
       "source_file": "backend/app/routes/company.py",
-      "source_location": "L103",
+      "source_location": "L110",
       "id": "routes_company_update_user",
-      "community": 11,
+      "community": 4,
       "norm_label": "update_user()"
     },
     {
       "label": "deactivate_user()",
       "file_type": "code",
       "source_file": "backend/app/routes/company.py",
-      "source_location": "L125",
+      "source_location": "L136",
       "id": "routes_company_deactivate_user",
-      "community": 11,
+      "community": 4,
       "norm_label": "deactivate_user()"
+    },
+    {
+      "label": "group_tasks.py",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L1",
+      "id": "backend_app_routes_group_tasks_py",
+      "community": 4,
+      "norm_label": "group_tasks.py"
+    },
+    {
+      "label": "_get_company()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L13",
+      "id": "routes_group_tasks_get_company",
+      "community": 4,
+      "norm_label": "_get_company()"
+    },
+    {
+      "label": "list_group_tasks()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L19",
+      "id": "routes_group_tasks_list_group_tasks",
+      "community": 4,
+      "norm_label": "list_group_tasks()"
+    },
+    {
+      "label": "create_group_task()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L26",
+      "id": "routes_group_tasks_create_group_task",
+      "community": 4,
+      "norm_label": "create_group_task()"
+    },
+    {
+      "label": "get_group_task()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L84",
+      "id": "routes_group_tasks_get_group_task",
+      "community": 4,
+      "norm_label": "get_group_task()"
+    },
+    {
+      "label": "update_group_task()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L95",
+      "id": "routes_group_tasks_update_group_task",
+      "community": 4,
+      "norm_label": "update_group_task()"
+    },
+    {
+      "label": "delete_group_task()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L139",
+      "id": "routes_group_tasks_delete_group_task",
+      "community": 4,
+      "norm_label": "delete_group_task()"
+    },
+    {
+      "label": "complete_group_task()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L149",
+      "id": "routes_group_tasks_complete_group_task",
+      "community": 4,
+      "norm_label": "complete_group_task()"
     },
     {
       "label": "health.py",
@@ -738,7 +936,7 @@
       "source_file": "backend/app/routes/health.py",
       "source_location": "L1",
       "id": "backend_app_routes_health_py",
-      "community": 40,
+      "community": 47,
       "norm_label": "health.py"
     },
     {
@@ -747,7 +945,7 @@
       "source_file": "backend/app/routes/health.py",
       "source_location": "L7",
       "id": "routes_health_health",
-      "community": 40,
+      "community": 47,
       "norm_label": "health()"
     },
     {
@@ -756,7 +954,7 @@
       "source_file": "backend/app/routes/notifications.py",
       "source_location": "L1",
       "id": "backend_app_routes_notifications_py",
-      "community": 21,
+      "community": 26,
       "norm_label": "notifications.py"
     },
     {
@@ -765,7 +963,7 @@
       "source_file": "backend/app/routes/notifications.py",
       "source_location": "L11",
       "id": "routes_notifications_list_notifications",
-      "community": 21,
+      "community": 26,
       "norm_label": "list_notifications()"
     },
     {
@@ -774,7 +972,7 @@
       "source_file": "backend/app/routes/notifications.py",
       "source_location": "L20",
       "id": "routes_notifications_unread_count",
-      "community": 21,
+      "community": 26,
       "norm_label": "unread_count()"
     },
     {
@@ -783,7 +981,7 @@
       "source_file": "backend/app/routes/notifications.py",
       "source_location": "L27",
       "id": "routes_notifications_mark_read",
-      "community": 21,
+      "community": 26,
       "norm_label": "mark_read()"
     },
     {
@@ -792,8 +990,44 @@
       "source_file": "backend/app/routes/notifications.py",
       "source_location": "L37",
       "id": "routes_notifications_mark_all_read",
-      "community": 21,
+      "community": 26,
       "norm_label": "mark_all_read()"
+    },
+    {
+      "label": "super_admin.py",
+      "file_type": "code",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L1",
+      "id": "backend_app_routes_super_admin_py",
+      "community": 0,
+      "norm_label": "super_admin.py"
+    },
+    {
+      "label": "list_admins()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L13",
+      "id": "routes_super_admin_list_admins",
+      "community": 0,
+      "norm_label": "list_admins()"
+    },
+    {
+      "label": "list_admin_employees()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L30",
+      "id": "routes_super_admin_list_admin_employees",
+      "community": 0,
+      "norm_label": "list_admin_employees()"
+    },
+    {
+      "label": "get_employee_detail()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L47",
+      "id": "routes_super_admin_get_employee_detail",
+      "community": 0,
+      "norm_label": "get_employee_detail()"
     },
     {
       "label": "tasks.py",
@@ -801,7 +1035,7 @@
       "source_file": "backend/app/routes/tasks.py",
       "source_location": "L1",
       "id": "backend_app_routes_tasks_py",
-      "community": 9,
+      "community": 3,
       "norm_label": "tasks.py"
     },
     {
@@ -810,7 +1044,7 @@
       "source_file": "backend/app/routes/tasks.py",
       "source_location": "L16",
       "id": "routes_tasks_list_tasks",
-      "community": 9,
+      "community": 3,
       "norm_label": "list_tasks()"
     },
     {
@@ -819,44 +1053,107 @@
       "source_file": "backend/app/routes/tasks.py",
       "source_location": "L23",
       "id": "routes_tasks_create_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "create_task()"
     },
     {
       "label": "get_task()",
       "file_type": "code",
       "source_file": "backend/app/routes/tasks.py",
-      "source_location": "L67",
+      "source_location": "L75",
       "id": "routes_tasks_get_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "get_task()"
     },
     {
       "label": "update_task()",
       "file_type": "code",
       "source_file": "backend/app/routes/tasks.py",
-      "source_location": "L76",
+      "source_location": "L84",
       "id": "routes_tasks_update_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "update_task()"
     },
     {
       "label": "delete_task()",
       "file_type": "code",
       "source_file": "backend/app/routes/tasks.py",
-      "source_location": "L117",
+      "source_location": "L131",
       "id": "routes_tasks_delete_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "delete_task()"
     },
     {
       "label": "complete_task()",
       "file_type": "code",
       "source_file": "backend/app/routes/tasks.py",
-      "source_location": "L127",
+      "source_location": "L141",
       "id": "routes_tasks_complete_task",
-      "community": 9,
+      "community": 3,
       "norm_label": "complete_task()"
+    },
+    {
+      "label": "uploads.py",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L1",
+      "id": "backend_app_routes_uploads_py",
+      "community": 3,
+      "norm_label": "uploads.py"
+    },
+    {
+      "label": "_ext()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L22",
+      "id": "routes_uploads_ext",
+      "community": 3,
+      "norm_label": "_ext()"
+    },
+    {
+      "label": "_allowed()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L26",
+      "id": "routes_uploads_allowed",
+      "community": 3,
+      "norm_label": "_allowed()"
+    },
+    {
+      "label": "upload_file()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L32",
+      "id": "routes_uploads_upload_file",
+      "community": 3,
+      "norm_label": "upload_file()"
+    },
+    {
+      "label": "serve_file()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L68",
+      "id": "routes_uploads_serve_file",
+      "community": 3,
+      "norm_label": "serve_file()"
+    },
+    {
+      "label": "upload_group_file()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L80",
+      "id": "routes_uploads_upload_group_file",
+      "community": 3,
+      "norm_label": "upload_group_file()"
+    },
+    {
+      "label": "upload_profile()",
+      "file_type": "code",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L117",
+      "id": "routes_uploads_upload_profile",
+      "community": 3,
+      "norm_label": "upload_profile()"
     },
     {
       "label": "email_service.py",
@@ -864,7 +1161,7 @@
       "source_file": "backend/app/services/email_service.py",
       "source_location": "L1",
       "id": "backend_app_services_email_service_py",
-      "community": 13,
+      "community": 10,
       "norm_label": "email_service.py"
     },
     {
@@ -873,25 +1170,25 @@
       "source_file": "backend/app/services/email_service.py",
       "source_location": "L4",
       "id": "services_email_service_send_password_reset_email",
-      "community": 13,
+      "community": 10,
       "norm_label": "send_password_reset_email()"
     },
     {
       "label": "send_welcome_credentials_email()",
       "file_type": "code",
       "source_file": "backend/app/services/email_service.py",
-      "source_location": "L14",
+      "source_location": "L23",
       "id": "services_email_service_send_welcome_credentials_email",
-      "community": 11,
+      "community": 4,
       "norm_label": "send_welcome_credentials_email()"
     },
     {
       "label": "send_task_assigned_email()",
       "file_type": "code",
       "source_file": "backend/app/services/email_service.py",
-      "source_location": "L24",
+      "source_location": "L47",
       "id": "services_email_service_send_task_assigned_email",
-      "community": 9,
+      "community": 3,
       "norm_label": "send_task_assigned_email()"
     },
     {
@@ -900,7 +1197,7 @@
       "source_file": "backend/app/tasks/celery_app.py",
       "source_location": "L1",
       "id": "backend_app_tasks_celery_app_py",
-      "community": 57,
+      "community": 66,
       "norm_label": "celery_app.py"
     },
     {
@@ -909,7 +1206,7 @@
       "source_file": "backend/app/tasks/email_tasks.py",
       "source_location": "L1",
       "id": "backend_app_tasks_email_tasks_py",
-      "community": 41,
+      "community": 48,
       "norm_label": "email_tasks.py"
     },
     {
@@ -918,7 +1215,7 @@
       "source_file": "backend/app/tasks/email_tasks.py",
       "source_location": "L12",
       "id": "tasks_email_tasks_send_email",
-      "community": 41,
+      "community": 48,
       "norm_label": "send_email()"
     },
     {
@@ -927,7 +1224,7 @@
       "source_file": "backend/app/tasks/__init__.py",
       "source_location": "L1",
       "id": "backend_app_tasks_init_py",
-      "community": 58,
+      "community": 67,
       "norm_label": "__init__.py"
     },
     {
@@ -972,7 +1269,7 @@
       "source_file": "backend/tests/test_auth.py",
       "source_location": "L1",
       "id": "backend_tests_test_auth_py",
-      "community": 23,
+      "community": 28,
       "norm_label": "test_auth.py"
     },
     {
@@ -981,7 +1278,7 @@
       "source_file": "backend/tests/test_auth.py",
       "source_location": "L1",
       "id": "tests_test_auth_test_health",
-      "community": 23,
+      "community": 28,
       "norm_label": "test_health()"
     },
     {
@@ -990,7 +1287,7 @@
       "source_file": "backend/tests/test_auth.py",
       "source_location": "L7",
       "id": "tests_test_auth_test_login_success",
-      "community": 23,
+      "community": 28,
       "norm_label": "test_login_success()"
     },
     {
@@ -999,7 +1296,7 @@
       "source_file": "backend/tests/test_auth.py",
       "source_location": "L16",
       "id": "tests_test_auth_test_login_failure",
-      "community": 23,
+      "community": 28,
       "norm_label": "test_login_failure()"
     },
     {
@@ -1008,7 +1305,7 @@
       "source_file": "frontend/eslint.config.js",
       "source_location": "L1",
       "id": "frontend_eslint_config_js",
-      "community": 59,
+      "community": 68,
       "norm_label": "eslint.config.js"
     },
     {
@@ -1017,7 +1314,7 @@
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
       "id": "frontend_vite_config_ts",
-      "community": 60,
+      "community": 69,
       "norm_label": "vite.config.ts"
     },
     {
@@ -1026,25 +1323,25 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L1",
       "id": "frontend_src_app_tsx",
-      "community": 24,
+      "community": 29,
       "norm_label": "app.tsx"
     },
     {
       "label": "AppRoutes()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L26",
+      "source_location": "L34",
       "id": "src_app_approutes",
-      "community": 24,
+      "community": 29,
       "norm_label": "approutes()"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L66",
+      "source_location": "L84",
       "id": "src_app_app",
-      "community": 24,
+      "community": 29,
       "norm_label": "app()"
     },
     {
@@ -1053,7 +1350,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
       "id": "frontend_src_main_tsx",
-      "community": 24,
+      "community": 29,
       "norm_label": "main.tsx"
     },
     {
@@ -1062,7 +1359,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "frontend_src_vite_env_d_ts",
-      "community": 27,
+      "community": 32,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -1071,7 +1368,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L3",
       "id": "src_vite_env_d_importmetaenv",
-      "community": 27,
+      "community": 32,
       "norm_label": "importmetaenv"
     },
     {
@@ -1080,7 +1377,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L7",
       "id": "src_vite_env_d_importmeta",
-      "community": 27,
+      "community": 32,
       "norm_label": "importmeta"
     },
     {
@@ -1089,7 +1386,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_errorboundary_tsx",
-      "community": 17,
+      "community": 23,
       "norm_label": "errorboundary.tsx"
     },
     {
@@ -1098,7 +1395,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L4",
       "id": "components_errorboundary_props",
-      "community": 17,
+      "community": 23,
       "norm_label": "props"
     },
     {
@@ -1107,7 +1404,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L8",
       "id": "components_errorboundary_state",
-      "community": 17,
+      "community": 23,
       "norm_label": "state"
     },
     {
@@ -1116,7 +1413,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L12",
       "id": "components_errorboundary_errorboundary",
-      "community": 17,
+      "community": 23,
       "norm_label": "errorboundary"
     },
     {
@@ -1125,7 +1422,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L15",
       "id": "components_errorboundary_errorboundary_getderivedstatefromerror",
-      "community": 17,
+      "community": 23,
       "norm_label": ".getderivedstatefromerror()"
     },
     {
@@ -1134,7 +1431,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L19",
       "id": "components_errorboundary_errorboundary_componentdidcatch",
-      "community": 17,
+      "community": 23,
       "norm_label": ".componentdidcatch()"
     },
     {
@@ -1143,7 +1440,7 @@
       "source_file": "frontend/src/components/ErrorBoundary.tsx",
       "source_location": "L23",
       "id": "components_errorboundary_errorboundary_render",
-      "community": 17,
+      "community": 23,
       "norm_label": ".render()"
     },
     {
@@ -1152,7 +1449,7 @@
       "source_file": "frontend/src/components/RequireAuth.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_requireauth_tsx",
-      "community": 42,
+      "community": 49,
       "norm_label": "requireauth.tsx"
     },
     {
@@ -1161,7 +1458,7 @@
       "source_file": "frontend/src/components/RequireAuth.tsx",
       "source_location": "L4",
       "id": "components_requireauth_requireauth",
-      "community": 42,
+      "community": 49,
       "norm_label": "requireauth()"
     },
     {
@@ -1170,7 +1467,7 @@
       "source_file": "frontend/src/components/RoleGuard.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_roleguard_tsx",
-      "community": 43,
+      "community": 50,
       "norm_label": "roleguard.tsx"
     },
     {
@@ -1179,7 +1476,7 @@
       "source_file": "frontend/src/components/RoleGuard.tsx",
       "source_location": "L5",
       "id": "components_roleguard_roleguard",
-      "community": 43,
+      "community": 50,
       "norm_label": "roleguard()"
     },
     {
@@ -1188,34 +1485,34 @@
       "source_file": "frontend/src/components/layout/DashboardLayout.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_layout_dashboardlayout_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "dashboardlayout.tsx"
     },
     {
       "label": "navItems",
       "file_type": "code",
       "source_file": "frontend/src/components/layout/DashboardLayout.tsx",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "layout_dashboardlayout_navitems",
-      "community": 2,
+      "community": 1,
       "norm_label": "navitems"
     },
     {
       "label": "SidebarContent()",
       "file_type": "code",
       "source_file": "frontend/src/components/layout/DashboardLayout.tsx",
-      "source_location": "L29",
+      "source_location": "L35",
       "id": "layout_dashboardlayout_sidebarcontent",
-      "community": 2,
+      "community": 1,
       "norm_label": "sidebarcontent()"
     },
     {
       "label": "DashboardLayout()",
       "file_type": "code",
       "source_file": "frontend/src/components/layout/DashboardLayout.tsx",
-      "source_location": "L55",
+      "source_location": "L61",
       "id": "layout_dashboardlayout_dashboardlayout",
-      "community": 2,
+      "community": 1,
       "norm_label": "dashboardlayout()"
     },
     {
@@ -1224,7 +1521,7 @@
       "source_file": "frontend/src/components/notifications/NotificationBell.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_notifications_notificationbell_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "notificationbell.tsx"
     },
     {
@@ -1233,7 +1530,7 @@
       "source_file": "frontend/src/components/notifications/NotificationBell.tsx",
       "source_location": "L14",
       "id": "notifications_notificationbell_notificationbell",
-      "community": 2,
+      "community": 1,
       "norm_label": "notificationbell()"
     },
     {
@@ -1242,7 +1539,7 @@
       "source_file": "frontend/src/components/notifications/NotificationBell.tsx",
       "source_location": "L123",
       "id": "notifications_notificationbell_notificationitem",
-      "community": 2,
+      "community": 1,
       "norm_label": "notificationitem"
     },
     {
@@ -1251,7 +1548,7 @@
       "source_file": "frontend/src/components/notifications/NotificationBell.tsx",
       "source_location": "L132",
       "id": "notifications_notificationbell_formattime",
-      "community": 2,
+      "community": 1,
       "norm_label": "formattime()"
     },
     {
@@ -1260,7 +1557,7 @@
       "source_file": "frontend/src/components/ui/alert.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_alert_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "alert.tsx"
     },
     {
@@ -1269,7 +1566,7 @@
       "source_file": "frontend/src/components/ui/alert.tsx",
       "source_location": "L3",
       "id": "ui_alert_alert",
-      "community": 3,
+      "community": 2,
       "norm_label": "alert()"
     },
     {
@@ -1278,7 +1575,7 @@
       "source_file": "frontend/src/components/ui/alert.tsx",
       "source_location": "L18",
       "id": "ui_alert_alertdescription",
-      "community": 3,
+      "community": 2,
       "norm_label": "alertdescription()"
     },
     {
@@ -1287,7 +1584,7 @@
       "source_file": "frontend/src/components/ui/badge.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_badge_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "badge.tsx"
     },
     {
@@ -1296,7 +1593,7 @@
       "source_file": "frontend/src/components/ui/badge.tsx",
       "source_location": "L4",
       "id": "ui_badge_badgevariants",
-      "community": 3,
+      "community": 2,
       "norm_label": "badgevariants"
     },
     {
@@ -1305,7 +1602,7 @@
       "source_file": "frontend/src/components/ui/badge.tsx",
       "source_location": "L20",
       "id": "ui_badge_badge",
-      "community": 3,
+      "community": 2,
       "norm_label": "badge()"
     },
     {
@@ -1314,7 +1611,7 @@
       "source_file": "frontend/src/components/ui/button.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_button_tsx",
-      "community": 25,
+      "community": 30,
       "norm_label": "button.tsx"
     },
     {
@@ -1323,7 +1620,7 @@
       "source_file": "frontend/src/components/ui/button.tsx",
       "source_location": "L6",
       "id": "ui_button_buttonvariants",
-      "community": 25,
+      "community": 30,
       "norm_label": "buttonvariants"
     },
     {
@@ -1332,7 +1629,7 @@
       "source_file": "frontend/src/components/ui/button.tsx",
       "source_location": "L29",
       "id": "ui_button_buttonprops",
-      "community": 25,
+      "community": 30,
       "norm_label": "buttonprops"
     },
     {
@@ -1341,7 +1638,7 @@
       "source_file": "frontend/src/components/ui/button.tsx",
       "source_location": "L35",
       "id": "ui_button_button",
-      "community": 25,
+      "community": 30,
       "norm_label": "button"
     },
     {
@@ -1350,7 +1647,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_card_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "card.tsx"
     },
     {
@@ -1359,7 +1656,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L4",
       "id": "ui_card_card",
-      "community": 3,
+      "community": 2,
       "norm_label": "card"
     },
     {
@@ -1368,7 +1665,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L11",
       "id": "ui_card_cardheader",
-      "community": 3,
+      "community": 2,
       "norm_label": "cardheader()"
     },
     {
@@ -1377,7 +1674,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L15",
       "id": "ui_card_cardtitle",
-      "community": 3,
+      "community": 2,
       "norm_label": "cardtitle()"
     },
     {
@@ -1386,7 +1683,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L19",
       "id": "ui_card_carddescription",
-      "community": 3,
+      "community": 2,
       "norm_label": "carddescription()"
     },
     {
@@ -1395,7 +1692,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L23",
       "id": "ui_card_cardcontent",
-      "community": 3,
+      "community": 2,
       "norm_label": "cardcontent()"
     },
     {
@@ -1404,7 +1701,7 @@
       "source_file": "frontend/src/components/ui/card.tsx",
       "source_location": "L27",
       "id": "ui_card_cardfooter",
-      "community": 3,
+      "community": 2,
       "norm_label": "cardfooter()"
     },
     {
@@ -1413,7 +1710,7 @@
       "source_file": "frontend/src/components/ui/dialog.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_dialog_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "dialog.tsx"
     },
     {
@@ -1422,7 +1719,7 @@
       "source_file": "frontend/src/components/ui/dialog.tsx",
       "source_location": "L9",
       "id": "ui_dialog_dialogcontent",
-      "community": 3,
+      "community": 2,
       "norm_label": "dialogcontent()"
     },
     {
@@ -1431,7 +1728,7 @@
       "source_file": "frontend/src/components/ui/dialog.tsx",
       "source_location": "L29",
       "id": "ui_dialog_dialogheader",
-      "community": 3,
+      "community": 2,
       "norm_label": "dialogheader()"
     },
     {
@@ -1440,7 +1737,7 @@
       "source_file": "frontend/src/components/ui/dialog.tsx",
       "source_location": "L33",
       "id": "ui_dialog_dialogtitle",
-      "community": 3,
+      "community": 2,
       "norm_label": "dialogtitle()"
     },
     {
@@ -1449,7 +1746,7 @@
       "source_file": "frontend/src/components/ui/dialog.tsx",
       "source_location": "L37",
       "id": "ui_dialog_dialogfooter",
-      "community": 3,
+      "community": 2,
       "norm_label": "dialogfooter()"
     },
     {
@@ -1458,7 +1755,7 @@
       "source_file": "frontend/src/components/ui/input.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_input_tsx",
-      "community": 44,
+      "community": 51,
       "norm_label": "input.tsx"
     },
     {
@@ -1467,7 +1764,7 @@
       "source_file": "frontend/src/components/ui/input.tsx",
       "source_location": "L4",
       "id": "ui_input_input",
-      "community": 44,
+      "community": 51,
       "norm_label": "input"
     },
     {
@@ -1476,7 +1773,7 @@
       "source_file": "frontend/src/components/ui/label.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_label_tsx",
-      "community": 45,
+      "community": 52,
       "norm_label": "label.tsx"
     },
     {
@@ -1485,8 +1782,80 @@
       "source_file": "frontend/src/components/ui/label.tsx",
       "source_location": "L5",
       "id": "ui_label_label",
-      "community": 45,
+      "community": 52,
       "norm_label": "label"
+    },
+    {
+      "label": "select.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_select_tsx",
+      "community": 2,
+      "norm_label": "select.tsx"
+    },
+    {
+      "label": "SelectContextType",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L5",
+      "id": "ui_select_selectcontexttype",
+      "community": 2,
+      "norm_label": "selectcontexttype"
+    },
+    {
+      "label": "SelectContext",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L12",
+      "id": "ui_select_selectcontext",
+      "community": 2,
+      "norm_label": "selectcontext"
+    },
+    {
+      "label": "Select()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L14",
+      "id": "ui_select_select",
+      "community": 2,
+      "norm_label": "select()"
+    },
+    {
+      "label": "SelectTrigger",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L24",
+      "id": "ui_select_selecttrigger",
+      "community": 2,
+      "norm_label": "selecttrigger"
+    },
+    {
+      "label": "SelectValue()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L39",
+      "id": "ui_select_selectvalue",
+      "community": 2,
+      "norm_label": "selectvalue()"
+    },
+    {
+      "label": "SelectContent()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L45",
+      "id": "ui_select_selectcontent",
+      "community": 2,
+      "norm_label": "selectcontent()"
+    },
+    {
+      "label": "SelectItem()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L58",
+      "id": "ui_select_selectitem",
+      "community": 2,
+      "norm_label": "selectitem()"
     },
     {
       "label": "skeleton.tsx",
@@ -1494,7 +1863,7 @@
       "source_file": "frontend/src/components/ui/skeleton.tsx",
       "source_location": "L1",
       "id": "frontend_src_components_ui_skeleton_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "skeleton.tsx"
     },
     {
@@ -1503,8 +1872,26 @@
       "source_file": "frontend/src/components/ui/skeleton.tsx",
       "source_location": "L3",
       "id": "ui_skeleton_skeleton",
-      "community": 3,
+      "community": 2,
       "norm_label": "skeleton()"
+    },
+    {
+      "label": "textarea.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/textarea.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_ui_textarea_tsx",
+      "community": 53,
+      "norm_label": "textarea.tsx"
+    },
+    {
+      "label": "Textarea",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "id": "ui_textarea_textarea",
+      "community": 53,
+      "norm_label": "textarea"
     },
     {
       "label": "redux.ts",
@@ -1512,7 +1899,7 @@
       "source_file": "frontend/src/hooks/redux.ts",
       "source_location": "L1",
       "id": "frontend_src_hooks_redux_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "redux.ts"
     },
     {
@@ -1521,7 +1908,7 @@
       "source_file": "frontend/src/hooks/redux.ts",
       "source_location": "L4",
       "id": "hooks_redux_useappdispatch",
-      "community": 2,
+      "community": 1,
       "norm_label": "useappdispatch()"
     },
     {
@@ -1530,7 +1917,7 @@
       "source_file": "frontend/src/lib/utils.ts",
       "source_location": "L1",
       "id": "frontend_src_lib_utils_ts",
-      "community": 3,
+      "community": 2,
       "norm_label": "utils.ts"
     },
     {
@@ -1539,8 +1926,35 @@
       "source_file": "frontend/src/lib/utils.ts",
       "source_location": "L4",
       "id": "lib_utils_cn",
-      "community": 3,
+      "community": 2,
       "norm_label": "cn()"
+    },
+    {
+      "label": "AdminEmployeesPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/AdminEmployeesPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_adminemployeespage_tsx",
+      "community": 33,
+      "norm_label": "adminemployeespage.tsx"
+    },
+    {
+      "label": "EmployeeInfo",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/AdminEmployeesPage.tsx",
+      "source_location": "L9",
+      "id": "pages_adminemployeespage_employeeinfo",
+      "community": 33,
+      "norm_label": "employeeinfo"
+    },
+    {
+      "label": "AdminEmployeesPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/AdminEmployeesPage.tsx",
+      "source_location": "L18",
+      "id": "pages_adminemployeespage_adminemployeespage",
+      "community": 33,
+      "norm_label": "adminemployeespage()"
     },
     {
       "label": "AdminPage.tsx",
@@ -1548,25 +1962,25 @@
       "source_file": "frontend/src/pages/AdminPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_adminpage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "adminpage.tsx"
     },
     {
       "label": "schema",
       "file_type": "code",
       "source_file": "frontend/src/pages/AdminPage.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "pages_adminpage_schema",
-      "community": 2,
+      "community": 1,
       "norm_label": "schema"
     },
     {
       "label": "AdminPage()",
       "file_type": "code",
       "source_file": "frontend/src/pages/AdminPage.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "pages_adminpage_adminpage",
-      "community": 2,
+      "community": 1,
       "norm_label": "adminpage()"
     },
     {
@@ -1575,7 +1989,7 @@
       "source_file": "frontend/src/pages/ChangePasswordPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_changepasswordpage_tsx",
-      "community": 28,
+      "community": 34,
       "norm_label": "changepasswordpage.tsx"
     },
     {
@@ -1584,7 +1998,7 @@
       "source_file": "frontend/src/pages/ChangePasswordPage.tsx",
       "source_location": "L12",
       "id": "pages_changepasswordpage_schema",
-      "community": 28,
+      "community": 34,
       "norm_label": "schema"
     },
     {
@@ -1593,8 +2007,26 @@
       "source_file": "frontend/src/pages/ChangePasswordPage.tsx",
       "source_location": "L20",
       "id": "pages_changepasswordpage_changepasswordpage",
-      "community": 28,
+      "community": 34,
       "norm_label": "changepasswordpage()"
+    },
+    {
+      "label": "CompletedGroupTasksPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/CompletedGroupTasksPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_completedgrouptaskspage_tsx",
+      "community": 1,
+      "norm_label": "completedgrouptaskspage.tsx"
+    },
+    {
+      "label": "CompletedGroupTasksPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/CompletedGroupTasksPage.tsx",
+      "source_location": "L9",
+      "id": "pages_completedgrouptaskspage_completedgrouptaskspage",
+      "community": 1,
+      "norm_label": "completedgrouptaskspage()"
     },
     {
       "label": "CompletedTasksPage.tsx",
@@ -1602,7 +2034,7 @@
       "source_file": "frontend/src/pages/CompletedTasksPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_completedtaskspage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "completedtaskspage.tsx"
     },
     {
@@ -1611,7 +2043,7 @@
       "source_file": "frontend/src/pages/CompletedTasksPage.tsx",
       "source_location": "L9",
       "id": "pages_completedtaskspage_completedtaskspage",
-      "community": 2,
+      "community": 1,
       "norm_label": "completedtaskspage()"
     },
     {
@@ -1620,16 +2052,25 @@
       "source_file": "frontend/src/pages/DashboardPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_dashboardpage_tsx",
-      "community": 46,
+      "community": 1,
       "norm_label": "dashboardpage.tsx"
+    },
+    {
+      "label": "COLORS",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/DashboardPage.tsx",
+      "source_location": "L9",
+      "id": "pages_dashboardpage_colors",
+      "community": 1,
+      "norm_label": "colors"
     },
     {
       "label": "DashboardPage()",
       "file_type": "code",
       "source_file": "frontend/src/pages/DashboardPage.tsx",
-      "source_location": "L6",
+      "source_location": "L17",
       "id": "pages_dashboardpage_dashboardpage",
-      "community": 46,
+      "community": 1,
       "norm_label": "dashboardpage()"
     },
     {
@@ -1638,7 +2079,7 @@
       "source_file": "frontend/src/pages/ForgotPasswordPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_forgotpasswordpage_tsx",
-      "community": 29,
+      "community": 35,
       "norm_label": "forgotpasswordpage.tsx"
     },
     {
@@ -1647,7 +2088,7 @@
       "source_file": "frontend/src/pages/ForgotPasswordPage.tsx",
       "source_location": "L13",
       "id": "pages_forgotpasswordpage_schema",
-      "community": 29,
+      "community": 35,
       "norm_label": "schema"
     },
     {
@@ -1656,8 +2097,53 @@
       "source_file": "frontend/src/pages/ForgotPasswordPage.tsx",
       "source_location": "L15",
       "id": "pages_forgotpasswordpage_forgotpasswordpage",
-      "community": 29,
+      "community": 35,
       "norm_label": "forgotpasswordpage()"
+    },
+    {
+      "label": "GroupTaskDetailPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GroupTaskDetailPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_grouptaskdetailpage_tsx",
+      "community": 1,
+      "norm_label": "grouptaskdetailpage.tsx"
+    },
+    {
+      "label": "GroupTaskDetailPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GroupTaskDetailPage.tsx",
+      "source_location": "L14",
+      "id": "pages_grouptaskdetailpage_grouptaskdetailpage",
+      "community": 1,
+      "norm_label": "grouptaskdetailpage()"
+    },
+    {
+      "label": "GroupTasksPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_grouptaskspage_tsx",
+      "community": 1,
+      "norm_label": "grouptaskspage.tsx"
+    },
+    {
+      "label": "schema",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L27",
+      "id": "pages_grouptaskspage_schema",
+      "community": 1,
+      "norm_label": "schema"
+    },
+    {
+      "label": "GroupTasksPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L34",
+      "id": "pages_grouptaskspage_grouptaskspage",
+      "community": 1,
+      "norm_label": "grouptaskspage()"
     },
     {
       "label": "LoginPage.tsx",
@@ -1665,7 +2151,7 @@
       "source_file": "frontend/src/pages/LoginPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_loginpage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "loginpage.tsx"
     },
     {
@@ -1674,7 +2160,7 @@
       "source_file": "frontend/src/pages/LoginPage.tsx",
       "source_location": "L14",
       "id": "pages_loginpage_schema",
-      "community": 2,
+      "community": 1,
       "norm_label": "schema"
     },
     {
@@ -1683,7 +2169,7 @@
       "source_file": "frontend/src/pages/LoginPage.tsx",
       "source_location": "L19",
       "id": "pages_loginpage_formdata",
-      "community": 2,
+      "community": 1,
       "norm_label": "formdata"
     },
     {
@@ -1692,7 +2178,7 @@
       "source_file": "frontend/src/pages/LoginPage.tsx",
       "source_location": "L21",
       "id": "pages_loginpage_loginpage",
-      "community": 2,
+      "community": 1,
       "norm_label": "loginpage()"
     },
     {
@@ -1701,7 +2187,7 @@
       "source_file": "frontend/src/pages/MyTasksPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_mytaskspage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "mytaskspage.tsx"
     },
     {
@@ -1710,7 +2196,7 @@
       "source_file": "frontend/src/pages/MyTasksPage.tsx",
       "source_location": "L11",
       "id": "pages_mytaskspage_mytaskspage",
-      "community": 2,
+      "community": 1,
       "norm_label": "mytaskspage()"
     },
     {
@@ -1719,7 +2205,7 @@
       "source_file": "frontend/src/pages/NotFoundPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_notfoundpage_tsx",
-      "community": 47,
+      "community": 54,
       "norm_label": "notfoundpage.tsx"
     },
     {
@@ -1728,8 +2214,26 @@
       "source_file": "frontend/src/pages/NotFoundPage.tsx",
       "source_location": "L4",
       "id": "pages_notfoundpage_notfoundpage",
-      "community": 47,
+      "community": 54,
       "norm_label": "notfoundpage()"
+    },
+    {
+      "label": "ProfilePage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/ProfilePage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_profilepage_tsx",
+      "community": 1,
+      "norm_label": "profilepage.tsx"
+    },
+    {
+      "label": "ProfilePage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/ProfilePage.tsx",
+      "source_location": "L11",
+      "id": "pages_profilepage_profilepage",
+      "community": 1,
+      "norm_label": "profilepage()"
     },
     {
       "label": "ResetPasswordPage.tsx",
@@ -1737,7 +2241,7 @@
       "source_file": "frontend/src/pages/ResetPasswordPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_resetpasswordpage_tsx",
-      "community": 30,
+      "community": 36,
       "norm_label": "resetpasswordpage.tsx"
     },
     {
@@ -1746,7 +2250,7 @@
       "source_file": "frontend/src/pages/ResetPasswordPage.tsx",
       "source_location": "L13",
       "id": "pages_resetpasswordpage_schema",
-      "community": 30,
+      "community": 36,
       "norm_label": "schema"
     },
     {
@@ -1755,8 +2259,71 @@
       "source_file": "frontend/src/pages/ResetPasswordPage.tsx",
       "source_location": "L20",
       "id": "pages_resetpasswordpage_resetpasswordpage",
-      "community": 30,
+      "community": 36,
       "norm_label": "resetpasswordpage()"
+    },
+    {
+      "label": "SuperAdminDashboardPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminDashboardPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_superadmindashboardpage_tsx",
+      "community": 37,
+      "norm_label": "superadmindashboardpage.tsx"
+    },
+    {
+      "label": "AdminInfo",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminDashboardPage.tsx",
+      "source_location": "L8",
+      "id": "pages_superadmindashboardpage_admininfo",
+      "community": 37,
+      "norm_label": "admininfo"
+    },
+    {
+      "label": "SuperAdminDashboardPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminDashboardPage.tsx",
+      "source_location": "L16",
+      "id": "pages_superadmindashboardpage_superadmindashboardpage",
+      "community": 37,
+      "norm_label": "superadmindashboardpage()"
+    },
+    {
+      "label": "SuperAdminEmployeeDetailPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeDetailPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_superadminemployeedetailpage_tsx",
+      "community": 55,
+      "norm_label": "superadminemployeedetailpage.tsx"
+    },
+    {
+      "label": "SuperAdminEmployeeDetailPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeDetailPage.tsx",
+      "source_location": "L11",
+      "id": "pages_superadminemployeedetailpage_superadminemployeedetailpage",
+      "community": 55,
+      "norm_label": "superadminemployeedetailpage()"
+    },
+    {
+      "label": "SuperAdminEmployeeProfilePage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeProfilePage.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_pages_superadminemployeeprofilepage_tsx",
+      "community": 56,
+      "norm_label": "superadminemployeeprofilepage.tsx"
+    },
+    {
+      "label": "SuperAdminEmployeeProfilePage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeProfilePage.tsx",
+      "source_location": "L8",
+      "id": "pages_superadminemployeeprofilepage_superadminemployeeprofilepage",
+      "community": 56,
+      "norm_label": "superadminemployeeprofilepage()"
     },
     {
       "label": "SuperAdminPage.tsx",
@@ -1764,25 +2331,25 @@
       "source_file": "frontend/src/pages/SuperAdminPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_superadminpage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "superadminpage.tsx"
     },
     {
       "label": "schema",
       "file_type": "code",
       "source_file": "frontend/src/pages/SuperAdminPage.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "pages_superadminpage_schema",
-      "community": 2,
+      "community": 1,
       "norm_label": "schema"
     },
     {
       "label": "SuperAdminPage()",
       "file_type": "code",
       "source_file": "frontend/src/pages/SuperAdminPage.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "pages_superadminpage_superadminpage",
-      "community": 2,
+      "community": 1,
       "norm_label": "superadminpage()"
     },
     {
@@ -1791,16 +2358,16 @@
       "source_file": "frontend/src/pages/TaskDetailPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_taskdetailpage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "taskdetailpage.tsx"
     },
     {
       "label": "TaskDetailPage()",
       "file_type": "code",
       "source_file": "frontend/src/pages/TaskDetailPage.tsx",
-      "source_location": "L11",
+      "source_location": "L13",
       "id": "pages_taskdetailpage_taskdetailpage",
-      "community": 2,
+      "community": 1,
       "norm_label": "taskdetailpage()"
     },
     {
@@ -1809,25 +2376,25 @@
       "source_file": "frontend/src/pages/TeamTasksPage.tsx",
       "source_location": "L1",
       "id": "frontend_src_pages_teamtaskspage_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "teamtaskspage.tsx"
     },
     {
       "label": "schema",
       "file_type": "code",
       "source_file": "frontend/src/pages/TeamTasksPage.tsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "pages_teamtaskspage_schema",
-      "community": 2,
+      "community": 1,
       "norm_label": "schema"
     },
     {
       "label": "TeamTasksPage()",
       "file_type": "code",
       "source_file": "frontend/src/pages/TeamTasksPage.tsx",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "pages_teamtaskspage_teamtaskspage",
-      "community": 2,
+      "community": 1,
       "norm_label": "teamtaskspage()"
     },
     {
@@ -1836,7 +2403,7 @@
       "source_file": "frontend/src/services/api.ts",
       "source_location": "L1",
       "id": "frontend_src_services_api_ts",
-      "community": 26,
+      "community": 31,
       "norm_label": "api.ts"
     },
     {
@@ -1845,7 +2412,7 @@
       "source_file": "frontend/src/services/api.ts",
       "source_location": "L6",
       "id": "services_api_api",
-      "community": 26,
+      "community": 31,
       "norm_label": "api"
     },
     {
@@ -1854,7 +2421,7 @@
       "source_file": "frontend/src/services/api.ts",
       "source_location": "L14",
       "id": "services_api_refreshaccesstoken",
-      "community": 26,
+      "community": 31,
       "norm_label": "refreshaccesstoken()"
     },
     {
@@ -1863,7 +2430,7 @@
       "source_file": "frontend/src/services/api.ts",
       "source_location": "L29",
       "id": "services_api_setupapiinterceptors",
-      "community": 26,
+      "community": 31,
       "norm_label": "setupapiinterceptors()"
     },
     {
@@ -1872,7 +2439,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L1",
       "id": "frontend_src_store_authslice_ts",
-      "community": 0,
+      "community": 21,
       "norm_label": "authslice.ts"
     },
     {
@@ -1881,7 +2448,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L5",
       "id": "store_authslice_authstate",
-      "community": 0,
+      "community": 21,
       "norm_label": "authstate"
     },
     {
@@ -1890,7 +2457,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L13",
       "id": "store_authslice_loadstored",
-      "community": 0,
+      "community": 21,
       "norm_label": "loadstored()"
     },
     {
@@ -1899,7 +2466,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L22",
       "id": "store_authslice_stored",
-      "community": 0,
+      "community": 21,
       "norm_label": "stored"
     },
     {
@@ -1908,7 +2475,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L24",
       "id": "store_authslice_initialstate",
-      "community": 0,
+      "community": 21,
       "norm_label": "initialstate"
     },
     {
@@ -1917,7 +2484,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L32",
       "id": "store_authslice_persist",
-      "community": 0,
+      "community": 21,
       "norm_label": "persist()"
     },
     {
@@ -1926,7 +2493,7 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L43",
       "id": "store_authslice_login",
-      "community": 0,
+      "community": 21,
       "norm_label": "login"
     },
     {
@@ -1935,8 +2502,98 @@
       "source_file": "frontend/src/store/authSlice.ts",
       "source_location": "L58",
       "id": "store_authslice_authslice",
-      "community": 0,
+      "community": 21,
       "norm_label": "authslice"
+    },
+    {
+      "label": "groupTasksSlice.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L1",
+      "id": "frontend_src_store_grouptasksslice_ts",
+      "community": 17,
+      "norm_label": "grouptasksslice.ts"
+    },
+    {
+      "label": "GroupTasksState",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L5",
+      "id": "store_grouptasksslice_grouptasksstate",
+      "community": 17,
+      "norm_label": "grouptasksstate"
+    },
+    {
+      "label": "initialState",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L12",
+      "id": "store_grouptasksslice_initialstate",
+      "community": 17,
+      "norm_label": "initialstate"
+    },
+    {
+      "label": "fetchGroupTasks",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L19",
+      "id": "store_grouptasksslice_fetchgrouptasks",
+      "community": 17,
+      "norm_label": "fetchgrouptasks"
+    },
+    {
+      "label": "fetchGroupTaskById",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L24",
+      "id": "store_grouptasksslice_fetchgrouptaskbyid",
+      "community": 17,
+      "norm_label": "fetchgrouptaskbyid"
+    },
+    {
+      "label": "createGroupTask",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L29",
+      "id": "store_grouptasksslice_creategrouptask",
+      "community": 17,
+      "norm_label": "creategrouptask"
+    },
+    {
+      "label": "updateGroupTask",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L44",
+      "id": "store_grouptasksslice_updategrouptask",
+      "community": 17,
+      "norm_label": "updategrouptask"
+    },
+    {
+      "label": "completeGroupTask",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L52",
+      "id": "store_grouptasksslice_completegrouptask",
+      "community": 17,
+      "norm_label": "completegrouptask"
+    },
+    {
+      "label": "deleteGroupTask",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L57",
+      "id": "store_grouptasksslice_deletegrouptask",
+      "community": 17,
+      "norm_label": "deletegrouptask"
+    },
+    {
+      "label": "groupTasksSlice",
+      "file_type": "code",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L62",
+      "id": "store_grouptasksslice_grouptasksslice",
+      "community": 17,
+      "norm_label": "grouptasksslice"
     },
     {
       "label": "index.ts",
@@ -1944,34 +2601,34 @@
       "source_file": "frontend/src/store/index.ts",
       "source_location": "L1",
       "id": "frontend_src_store_index_ts",
-      "community": 0,
+      "community": 20,
       "norm_label": "index.ts"
     },
     {
       "label": "store",
       "file_type": "code",
       "source_file": "frontend/src/store/index.ts",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "store_index_store",
-      "community": 0,
+      "community": 20,
       "norm_label": "store"
     },
     {
       "label": "RootState",
       "file_type": "code",
       "source_file": "frontend/src/store/index.ts",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "store_index_rootstate",
-      "community": 0,
+      "community": 20,
       "norm_label": "rootstate"
     },
     {
       "label": "AppDispatch",
       "file_type": "code",
       "source_file": "frontend/src/store/index.ts",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "store_index_appdispatch",
-      "community": 0,
+      "community": 20,
       "norm_label": "appdispatch"
     },
     {
@@ -1980,7 +2637,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L1",
       "id": "frontend_src_store_notificationsslice_ts",
-      "community": 0,
+      "community": 19,
       "norm_label": "notificationsslice.ts"
     },
     {
@@ -1989,7 +2646,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L5",
       "id": "store_notificationsslice_notificationsstate",
-      "community": 0,
+      "community": 19,
       "norm_label": "notificationsstate"
     },
     {
@@ -1998,7 +2655,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L11",
       "id": "store_notificationsslice_initialstate",
-      "community": 0,
+      "community": 19,
       "norm_label": "initialstate"
     },
     {
@@ -2007,7 +2664,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L17",
       "id": "store_notificationsslice_fetchnotifications",
-      "community": 0,
+      "community": 19,
       "norm_label": "fetchnotifications"
     },
     {
@@ -2016,7 +2673,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L28",
       "id": "store_notificationsslice_fetchunreadcount",
-      "community": 0,
+      "community": 19,
       "norm_label": "fetchunreadcount"
     },
     {
@@ -2025,7 +2682,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L36",
       "id": "store_notificationsslice_markasread",
-      "community": 0,
+      "community": 19,
       "norm_label": "markasread"
     },
     {
@@ -2034,7 +2691,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L44",
       "id": "store_notificationsslice_markallasread",
-      "community": 0,
+      "community": 19,
       "norm_label": "markallasread"
     },
     {
@@ -2043,7 +2700,7 @@
       "source_file": "frontend/src/store/notificationsSlice.ts",
       "source_location": "L52",
       "id": "store_notificationsslice_notificationsslice",
-      "community": 0,
+      "community": 19,
       "norm_label": "notificationsslice"
     },
     {
@@ -2052,7 +2709,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L1",
       "id": "frontend_src_store_tasksslice_ts",
-      "community": 0,
+      "community": 15,
       "norm_label": "tasksslice.ts"
     },
     {
@@ -2061,7 +2718,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L5",
       "id": "store_tasksslice_tasksstate",
-      "community": 0,
+      "community": 15,
       "norm_label": "tasksstate"
     },
     {
@@ -2070,7 +2727,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L12",
       "id": "store_tasksslice_initialstate",
-      "community": 0,
+      "community": 15,
       "norm_label": "initialstate"
     },
     {
@@ -2079,7 +2736,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L19",
       "id": "store_tasksslice_fetchtasks",
-      "community": 0,
+      "community": 15,
       "norm_label": "fetchtasks"
     },
     {
@@ -2088,7 +2745,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L24",
       "id": "store_tasksslice_fetchtaskbyid",
-      "community": 0,
+      "community": 15,
       "norm_label": "fetchtaskbyid"
     },
     {
@@ -2097,7 +2754,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L29",
       "id": "store_tasksslice_createtask",
-      "community": 0,
+      "community": 15,
       "norm_label": "createtask"
     },
     {
@@ -2106,7 +2763,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L43",
       "id": "store_tasksslice_updatetask",
-      "community": 0,
+      "community": 15,
       "norm_label": "updatetask"
     },
     {
@@ -2115,7 +2772,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L51",
       "id": "store_tasksslice_completetask",
-      "community": 0,
+      "community": 15,
       "norm_label": "completetask"
     },
     {
@@ -2124,7 +2781,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L56",
       "id": "store_tasksslice_deletetask",
-      "community": 0,
+      "community": 15,
       "norm_label": "deletetask"
     },
     {
@@ -2133,7 +2790,7 @@
       "source_file": "frontend/src/store/tasksSlice.ts",
       "source_location": "L61",
       "id": "store_tasksslice_tasksslice",
-      "community": 0,
+      "community": 15,
       "norm_label": "tasksslice"
     },
     {
@@ -2142,7 +2799,7 @@
       "source_file": "frontend/src/store/uiSlice.ts",
       "source_location": "L1",
       "id": "frontend_src_store_uislice_ts",
-      "community": 0,
+      "community": 20,
       "norm_label": "uislice.ts"
     },
     {
@@ -2151,7 +2808,7 @@
       "source_file": "frontend/src/store/uiSlice.ts",
       "source_location": "L3",
       "id": "store_uislice_uistate",
-      "community": 0,
+      "community": 20,
       "norm_label": "uistate"
     },
     {
@@ -2160,7 +2817,7 @@
       "source_file": "frontend/src/store/uiSlice.ts",
       "source_location": "L8",
       "id": "store_uislice_initialstate",
-      "community": 0,
+      "community": 20,
       "norm_label": "initialstate"
     },
     {
@@ -2169,7 +2826,7 @@
       "source_file": "frontend/src/store/uiSlice.ts",
       "source_location": "L13",
       "id": "store_uislice_uislice",
-      "community": 0,
+      "community": 20,
       "norm_label": "uislice"
     },
     {
@@ -2178,7 +2835,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L1",
       "id": "frontend_src_store_usersslice_ts",
-      "community": 0,
+      "community": 16,
       "norm_label": "usersslice.ts"
     },
     {
@@ -2187,7 +2844,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L5",
       "id": "store_usersslice_usersstate",
-      "community": 0,
+      "community": 16,
       "norm_label": "usersstate"
     },
     {
@@ -2196,7 +2853,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L12",
       "id": "store_usersslice_initialstate",
-      "community": 0,
+      "community": 16,
       "norm_label": "initialstate"
     },
     {
@@ -2205,7 +2862,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L19",
       "id": "store_usersslice_fetchadmins",
-      "community": 0,
+      "community": 16,
       "norm_label": "fetchadmins"
     },
     {
@@ -2214,7 +2871,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L24",
       "id": "store_usersslice_fetchemployees",
-      "community": 0,
+      "community": 16,
       "norm_label": "fetchemployees"
     },
     {
@@ -2223,7 +2880,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L29",
       "id": "store_usersslice_createadmin",
-      "community": 0,
+      "community": 16,
       "norm_label": "createadmin"
     },
     {
@@ -2232,7 +2889,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L37",
       "id": "store_usersslice_createemployee",
-      "community": 0,
+      "community": 16,
       "norm_label": "createemployee"
     },
     {
@@ -2241,7 +2898,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L45",
       "id": "store_usersslice_updateuser",
-      "community": 0,
+      "community": 16,
       "norm_label": "updateuser"
     },
     {
@@ -2250,7 +2907,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L53",
       "id": "store_usersslice_deactivateuser",
-      "community": 0,
+      "community": 16,
       "norm_label": "deactivateuser"
     },
     {
@@ -2259,7 +2916,7 @@
       "source_file": "frontend/src/store/usersSlice.ts",
       "source_location": "L58",
       "id": "store_usersslice_usersslice",
-      "community": 0,
+      "community": 16,
       "norm_label": "usersslice"
     },
     {
@@ -2293,25 +2950,52 @@
       "label": "Task",
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
-      "source_location": "L12",
+      "source_location": "L15",
       "id": "types_index_task",
       "community": 18,
       "norm_label": "task"
     },
     {
+      "label": "Attachment",
+      "file_type": "code",
+      "source_file": "frontend/src/types/index.ts",
+      "source_location": "L37",
+      "id": "types_index_attachment",
+      "community": 18,
+      "norm_label": "attachment"
+    },
+    {
+      "label": "TaskLink",
+      "file_type": "code",
+      "source_file": "frontend/src/types/index.ts",
+      "source_location": "L42",
+      "id": "types_index_tasklink",
+      "community": 18,
+      "norm_label": "tasklink"
+    },
+    {
       "label": "NotificationType",
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
-      "source_location": "L31",
+      "source_location": "L47",
       "id": "types_index_notificationtype",
       "community": 18,
       "norm_label": "notificationtype"
     },
     {
+      "label": "GroupTask",
+      "file_type": "code",
+      "source_file": "frontend/src/types/index.ts",
+      "source_location": "L49",
+      "id": "types_index_grouptask",
+      "community": 18,
+      "norm_label": "grouptask"
+    },
+    {
       "label": "Notification",
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
-      "source_location": "L33",
+      "source_location": "L71",
       "id": "types_index_notification",
       "community": 18,
       "norm_label": "notification"
@@ -2322,7 +3006,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "readme.md"
     },
     {
@@ -2331,7 +3015,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "task_management_system_readme_taskflow_multi_tenant_task_management_system",
-      "community": 5,
+      "community": 6,
       "norm_label": "taskflow \u2014 multi-tenant task management system"
     },
     {
@@ -2340,7 +3024,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "task_management_system_readme_stack",
-      "community": 5,
+      "community": 6,
       "norm_label": "stack"
     },
     {
@@ -2349,7 +3033,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "task_management_system_readme_quick_start_local",
-      "community": 5,
+      "community": 6,
       "norm_label": "quick start (local)"
     },
     {
@@ -2358,7 +3042,7 @@
       "source_file": "README.md",
       "source_location": "L15",
       "id": "task_management_system_readme_prerequisites",
-      "community": 5,
+      "community": 6,
       "norm_label": "prerequisites"
     },
     {
@@ -2367,7 +3051,7 @@
       "source_file": "README.md",
       "source_location": "L21",
       "id": "task_management_system_readme_1_backend",
-      "community": 5,
+      "community": 6,
       "norm_label": "1. backend"
     },
     {
@@ -2376,7 +3060,7 @@
       "source_file": "README.md",
       "source_location": "L23",
       "id": "task_management_system_readme_codeblock_1",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:powershell (cd backend)"
     },
     {
@@ -2385,7 +3069,7 @@
       "source_file": "README.md",
       "source_location": "L34",
       "id": "task_management_system_readme_2_frontend",
-      "community": 5,
+      "community": 6,
       "norm_label": "2. frontend"
     },
     {
@@ -2394,7 +3078,7 @@
       "source_file": "README.md",
       "source_location": "L36",
       "id": "task_management_system_readme_codeblock_2",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:powershell (cd frontend)"
     },
     {
@@ -2403,7 +3087,7 @@
       "source_file": "README.md",
       "source_location": "L44",
       "id": "task_management_system_readme_3_login",
-      "community": 5,
+      "community": 6,
       "norm_label": "3. login"
     },
     {
@@ -2412,7 +3096,7 @@
       "source_file": "README.md",
       "source_location": "L50",
       "id": "task_management_system_readme_optional_celery_worker",
-      "community": 5,
+      "community": 6,
       "norm_label": "optional: celery worker"
     },
     {
@@ -2421,7 +3105,7 @@
       "source_file": "README.md",
       "source_location": "L54",
       "id": "task_management_system_readme_codeblock_3",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:powershell (# terminal: redis running, then)"
     },
     {
@@ -2430,7 +3114,7 @@
       "source_file": "README.md",
       "source_location": "L62",
       "id": "task_management_system_readme_scripts",
-      "community": 5,
+      "community": 6,
       "norm_label": "scripts"
     },
     {
@@ -2439,7 +3123,7 @@
       "source_file": "README.md",
       "source_location": "L68",
       "id": "task_management_system_readme_features",
-      "community": 5,
+      "community": 6,
       "norm_label": "features"
     },
     {
@@ -2448,7 +3132,7 @@
       "source_file": "README.md",
       "source_location": "L77",
       "id": "task_management_system_readme_project_structure",
-      "community": 5,
+      "community": 6,
       "norm_label": "project structure"
     },
     {
@@ -2457,7 +3141,7 @@
       "source_file": "README.md",
       "source_location": "L79",
       "id": "task_management_system_readme_codeblock_4",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:block4 (backend/          flask api)"
     },
     {
@@ -2466,7 +3150,7 @@
       "source_file": "README.md",
       "source_location": "L86",
       "id": "task_management_system_readme_build_prompts",
-      "community": 5,
+      "community": 6,
       "norm_label": "build prompts"
     },
     {
@@ -2475,7 +3159,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L1",
       "id": "docs_frontend_standards_md",
-      "community": 19,
+      "community": 24,
       "norm_label": "frontend-standards.md"
     },
     {
@@ -2484,7 +3168,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L1",
       "id": "docs_frontend_standards_frontend_standards_include_in_every_ui_step",
-      "community": 19,
+      "community": 24,
       "norm_label": "frontend standards (include in every ui step)"
     },
     {
@@ -2493,7 +3177,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L5",
       "id": "docs_frontend_standards_codeblock_1",
-      "community": 19,
+      "community": 24,
       "norm_label": "code:block1 (frontend rules (non-negotiable):)"
     },
     {
@@ -2502,7 +3186,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L17",
       "id": "docs_frontend_standards_folder_conventions",
-      "community": 19,
+      "community": 24,
       "norm_label": "folder conventions"
     },
     {
@@ -2511,7 +3195,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L19",
       "id": "docs_frontend_standards_codeblock_2",
-      "community": 19,
+      "community": 24,
       "norm_label": "code:block2 (frontend/src/)"
     },
     {
@@ -2520,7 +3204,7 @@
       "source_file": "docs/FRONTEND-STANDARDS.md",
       "source_location": "L29",
       "id": "docs_frontend_standards_routing_conventions",
-      "community": 19,
+      "community": 24,
       "norm_label": "routing conventions"
     },
     {
@@ -2529,7 +3213,7 @@
       "source_file": "docs/MEMORY-TEMPLATE.md",
       "source_location": "L1",
       "id": "docs_memory_template_md",
-      "community": 31,
+      "community": 38,
       "norm_label": "memory-template.md"
     },
     {
@@ -2538,7 +3222,7 @@
       "source_file": "docs/MEMORY-TEMPLATE.md",
       "source_location": "L1",
       "id": "docs_memory_template_memory_template_paste_into_previous_context",
-      "community": 31,
+      "community": 38,
       "norm_label": "memory template (paste into \u201cprevious context\u201d)"
     },
     {
@@ -2547,7 +3231,7 @@
       "source_file": "docs/MEMORY-TEMPLATE.md",
       "source_location": "L5",
       "id": "docs_memory_template_codeblock_1",
-      "community": 31,
+      "community": 38,
       "norm_label": "code:markdown (## previous context (step x.y))"
     },
     {
@@ -2556,7 +3240,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_md",
-      "community": 16,
+      "community": 22,
       "norm_label": "readme.md"
     },
     {
@@ -2565,7 +3249,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_taskflow_claude_step_by_step_build_guide",
-      "community": 16,
+      "community": 22,
       "norm_label": "taskflow \u2014 claude step-by-step build guide"
     },
     {
@@ -2574,7 +3258,7 @@
       "source_file": "docs/README.md",
       "source_location": "L5",
       "id": "docs_readme_stack_enforced_in_every_frontend_step",
-      "community": 16,
+      "community": 22,
       "norm_label": "stack (enforced in every frontend step)"
     },
     {
@@ -2583,7 +3267,7 @@
       "source_file": "docs/README.md",
       "source_location": "L15",
       "id": "docs_readme_how_to_use",
-      "community": 16,
+      "community": 22,
       "norm_label": "how to use"
     },
     {
@@ -2592,7 +3276,7 @@
       "source_file": "docs/README.md",
       "source_location": "L23",
       "id": "docs_readme_prompt_index",
-      "community": 16,
+      "community": 22,
       "norm_label": "prompt index"
     },
     {
@@ -2601,7 +3285,7 @@
       "source_file": "docs/README.md",
       "source_location": "L35",
       "id": "docs_readme_local_urls_defaults",
-      "community": 16,
+      "community": 22,
       "norm_label": "local urls (defaults)"
     },
     {
@@ -2610,7 +3294,7 @@
       "source_file": "docs/README.md",
       "source_location": "L43",
       "id": "docs_readme_seeded_super_admin_after_step_1_2",
-      "community": 16,
+      "community": 22,
       "norm_label": "seeded super admin (after step 1.2)"
     },
     {
@@ -2619,7 +3303,7 @@
       "source_file": "docs/README.md",
       "source_location": "L48",
       "id": "docs_readme_notes_for_claude_sessions",
-      "community": 16,
+      "community": 22,
       "norm_label": "notes for claude sessions"
     },
     {
@@ -2628,7 +3312,7 @@
       "source_file": "docs/manual-testing/phase-1.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_1_md",
-      "community": 48,
+      "community": 57,
       "norm_label": "phase-1.md"
     },
     {
@@ -2637,7 +3321,7 @@
       "source_file": "docs/manual-testing/phase-1.md",
       "source_location": "L1",
       "id": "manual_testing_phase_1_phase_1_manual_testing_checklist",
-      "community": 48,
+      "community": 57,
       "norm_label": "phase 1 \u2014 manual testing checklist"
     },
     {
@@ -2646,7 +3330,7 @@
       "source_file": "docs/manual-testing/phase-2.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_2_md",
-      "community": 49,
+      "community": 58,
       "norm_label": "phase-2.md"
     },
     {
@@ -2655,7 +3339,7 @@
       "source_file": "docs/manual-testing/phase-2.md",
       "source_location": "L1",
       "id": "manual_testing_phase_2_phase_2_manual_testing_checklist",
-      "community": 49,
+      "community": 58,
       "norm_label": "phase 2 \u2014 manual testing checklist"
     },
     {
@@ -2664,7 +3348,7 @@
       "source_file": "docs/manual-testing/phase-3.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_3_md",
-      "community": 50,
+      "community": 59,
       "norm_label": "phase-3.md"
     },
     {
@@ -2673,7 +3357,7 @@
       "source_file": "docs/manual-testing/phase-3.md",
       "source_location": "L1",
       "id": "manual_testing_phase_3_phase_3_manual_testing_checklist",
-      "community": 50,
+      "community": 59,
       "norm_label": "phase 3 \u2014 manual testing checklist"
     },
     {
@@ -2682,7 +3366,7 @@
       "source_file": "docs/manual-testing/phase-4.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_4_md",
-      "community": 51,
+      "community": 60,
       "norm_label": "phase-4.md"
     },
     {
@@ -2691,7 +3375,7 @@
       "source_file": "docs/manual-testing/phase-4.md",
       "source_location": "L1",
       "id": "manual_testing_phase_4_phase_4_manual_testing_checklist",
-      "community": 51,
+      "community": 60,
       "norm_label": "phase 4 \u2014 manual testing checklist"
     },
     {
@@ -2700,7 +3384,7 @@
       "source_file": "docs/manual-testing/phase-5.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_5_md",
-      "community": 52,
+      "community": 61,
       "norm_label": "phase-5.md"
     },
     {
@@ -2709,7 +3393,7 @@
       "source_file": "docs/manual-testing/phase-5.md",
       "source_location": "L1",
       "id": "manual_testing_phase_5_phase_5_manual_testing_checklist",
-      "community": 52,
+      "community": 61,
       "norm_label": "phase 5 \u2014 manual testing checklist"
     },
     {
@@ -2718,7 +3402,7 @@
       "source_file": "docs/manual-testing/phase-6.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_6_md",
-      "community": 53,
+      "community": 62,
       "norm_label": "phase-6.md"
     },
     {
@@ -2727,7 +3411,7 @@
       "source_file": "docs/manual-testing/phase-6.md",
       "source_location": "L1",
       "id": "manual_testing_phase_6_phase_6_manual_testing_checklist",
-      "community": 53,
+      "community": 62,
       "norm_label": "phase 6 \u2014 manual testing checklist"
     },
     {
@@ -2736,7 +3420,7 @@
       "source_file": "docs/manual-testing/phase-7.md",
       "source_location": "L1",
       "id": "docs_manual_testing_phase_7_md",
-      "community": 54,
+      "community": 63,
       "norm_label": "phase-7.md"
     },
     {
@@ -2745,7 +3429,7 @@
       "source_file": "docs/manual-testing/phase-7.md",
       "source_location": "L1",
       "id": "manual_testing_phase_7_phase_7_final_deployment_checklist",
-      "community": 54,
+      "community": 63,
       "norm_label": "phase 7 \u2014 final deployment checklist"
     },
     {
@@ -2754,7 +3438,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_1_foundation_auth_md",
-      "community": 8,
+      "community": 9,
       "norm_label": "phase-1-foundation-auth.md"
     },
     {
@@ -2763,7 +3447,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L1",
       "id": "prompts_phase_1_foundation_auth_phase_1_foundation_authentication",
-      "community": 8,
+      "community": 9,
       "norm_label": "phase 1: foundation & authentication"
     },
     {
@@ -2772,7 +3456,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L7",
       "id": "prompts_phase_1_foundation_auth_step_1_1_scaffold_configure_projects",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.1 \u2013 scaffold & configure projects"
     },
     {
@@ -2781,7 +3465,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L11",
       "id": "prompts_phase_1_foundation_auth_codeblock_1",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block1 (we are building a multi-tenant task management saas (taskflo)"
     },
     {
@@ -2790,7 +3474,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L46",
       "id": "prompts_phase_1_foundation_auth_step_1_2_user_model_db_connection",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.2 \u2013 user model & db connection"
     },
     {
@@ -2799,7 +3483,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L50",
       "id": "prompts_phase_1_foundation_auth_codeblock_2",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block2 (phase 1, step 1.2.)"
     },
     {
@@ -2808,7 +3492,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L85",
       "id": "prompts_phase_1_foundation_auth_step_1_3_redux_auth_slice_login_page",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.3 \u2013 redux auth slice & login page"
     },
     {
@@ -2817,7 +3501,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L89",
       "id": "prompts_phase_1_foundation_auth_codeblock_3",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block3 (phase 1, step 1.3.)"
     },
     {
@@ -2826,7 +3510,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L120",
       "id": "prompts_phase_1_foundation_auth_step_1_4_protected_routes_jwt_refresh",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.4 \u2013 protected routes & jwt refresh"
     },
     {
@@ -2835,7 +3519,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L124",
       "id": "prompts_phase_1_foundation_auth_codeblock_4",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block4 (phase 1, step 1.4.)"
     },
     {
@@ -2844,7 +3528,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L147",
       "id": "prompts_phase_1_foundation_auth_step_1_5_forgot_password_reset_flow",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.5 \u2013 forgot password & reset flow"
     },
     {
@@ -2853,7 +3537,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L151",
       "id": "prompts_phase_1_foundation_auth_codeblock_5",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block5 (phase 1, step 1.5.)"
     },
     {
@@ -2862,7 +3546,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L181",
       "id": "prompts_phase_1_foundation_auth_step_1_6_change_password_base_user_menu",
-      "community": 8,
+      "community": 9,
       "norm_label": "step 1.6 \u2013 change password & base user menu"
     },
     {
@@ -2871,7 +3555,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L185",
       "id": "prompts_phase_1_foundation_auth_codeblock_6",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:block6 (phase 1, step 1.6.)"
     },
     {
@@ -2880,7 +3564,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L208",
       "id": "prompts_phase_1_foundation_auth_phase_1_testing_prompt_for_claude",
-      "community": 8,
+      "community": 9,
       "norm_label": "phase 1 \u2014 testing prompt (for claude)"
     },
     {
@@ -2889,7 +3573,7 @@
       "source_file": "docs/prompts/phase-1-foundation-auth.md",
       "source_location": "L212",
       "id": "prompts_phase_1_foundation_auth_phase_1_manual_checklist_for_you",
-      "community": 8,
+      "community": 9,
       "norm_label": "phase 1 \u2014 manual checklist (for you)"
     },
     {
@@ -2898,7 +3582,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_2_company_users_md",
-      "community": 14,
+      "community": 13,
       "norm_label": "phase-2-company-users.md"
     },
     {
@@ -2907,7 +3591,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L1",
       "id": "prompts_phase_2_company_users_phase_2_company_user_management_role_hierarchy",
-      "community": 14,
+      "community": 13,
       "norm_label": "phase 2: company & user management (role hierarchy)"
     },
     {
@@ -2916,7 +3600,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L7",
       "id": "prompts_phase_2_company_users_step_2_0_company_model_prerequisite",
-      "community": 14,
+      "community": 13,
       "norm_label": "step 2.0 \u2013 company model (prerequisite)"
     },
     {
@@ -2925,7 +3609,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L11",
       "id": "prompts_phase_2_company_users_codeblock_1",
-      "community": 14,
+      "community": 13,
       "norm_label": "code:block1 (phase 2, step 2.0.)"
     },
     {
@@ -2934,7 +3618,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L32",
       "id": "prompts_phase_2_company_users_step_2_1_super_admin_create_list_admins",
-      "community": 14,
+      "community": 13,
       "norm_label": "step 2.1 \u2013 super-admin: create & list admins"
     },
     {
@@ -2943,7 +3627,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L36",
       "id": "prompts_phase_2_company_users_codeblock_2",
-      "community": 14,
+      "community": 13,
       "norm_label": "code:block2 (phase 2, step 2.1.)"
     },
     {
@@ -2952,7 +3636,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L65",
       "id": "prompts_phase_2_company_users_step_2_2_admin_manage_employees",
-      "community": 14,
+      "community": 13,
       "norm_label": "step 2.2 \u2013 admin: manage employees"
     },
     {
@@ -2961,7 +3645,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L69",
       "id": "prompts_phase_2_company_users_codeblock_3",
-      "community": 14,
+      "community": 13,
       "norm_label": "code:block3 (phase 2, step 2.2.)"
     },
     {
@@ -2970,7 +3654,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L94",
       "id": "prompts_phase_2_company_users_step_2_3_edit_deactivate_users",
-      "community": 14,
+      "community": 13,
       "norm_label": "step 2.3 \u2013 edit & deactivate users"
     },
     {
@@ -2979,7 +3663,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L98",
       "id": "prompts_phase_2_company_users_codeblock_4",
-      "community": 14,
+      "community": 13,
       "norm_label": "code:block4 (phase 2, step 2.3.)"
     },
     {
@@ -2988,7 +3672,7 @@
       "source_file": "docs/prompts/phase-2-company-users.md",
       "source_location": "L120",
       "id": "prompts_phase_2_company_users_phase_2_testing_manual_checklist",
-      "community": 14,
+      "community": 13,
       "norm_label": "phase 2 \u2014 testing & manual checklist"
     },
     {
@@ -2997,7 +3681,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_3_tasks_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "phase-3-tasks.md"
     },
     {
@@ -3006,7 +3690,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L1",
       "id": "prompts_phase_3_tasks_phase_3_task_management_core",
-      "community": 10,
+      "community": 11,
       "norm_label": "phase 3: task management core"
     },
     {
@@ -3015,7 +3699,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L9",
       "id": "prompts_phase_3_tasks_step_3_1_task_model_backend_crud_skeleton",
-      "community": 10,
+      "community": 11,
       "norm_label": "step 3.1 \u2013 task model & backend crud skeleton"
     },
     {
@@ -3024,7 +3708,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L13",
       "id": "prompts_phase_3_tasks_codeblock_1",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:block1 (phase 3, step 3.1.)"
     },
     {
@@ -3033,7 +3717,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L49",
       "id": "prompts_phase_3_tasks_step_3_2_employee_task_view",
-      "community": 10,
+      "community": 11,
       "norm_label": "step 3.2 \u2013 employee task view"
     },
     {
@@ -3042,7 +3726,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L53",
       "id": "prompts_phase_3_tasks_codeblock_2",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:block2 (phase 3, step 3.2.)"
     },
     {
@@ -3051,7 +3735,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L78",
       "id": "prompts_phase_3_tasks_step_3_3_admin_task_creation_team_view",
-      "community": 10,
+      "community": 11,
       "norm_label": "step 3.3 \u2013 admin task creation & team view"
     },
     {
@@ -3060,7 +3744,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L82",
       "id": "prompts_phase_3_tasks_codeblock_3",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:block3 (phase 3, step 3.3.)"
     },
     {
@@ -3069,7 +3753,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L109",
       "id": "prompts_phase_3_tasks_step_3_4_task_detail_completion_flow",
-      "community": 10,
+      "community": 11,
       "norm_label": "step 3.4 \u2013 task detail & completion flow"
     },
     {
@@ -3078,7 +3762,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L113",
       "id": "prompts_phase_3_tasks_codeblock_4",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:block4 (phase 3, step 3.4.)"
     },
     {
@@ -3087,7 +3771,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L138",
       "id": "prompts_phase_3_tasks_step_3_5_super_admin_full_visibility",
-      "community": 10,
+      "community": 11,
       "norm_label": "step 3.5 \u2013 super-admin full visibility"
     },
     {
@@ -3096,7 +3780,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L142",
       "id": "prompts_phase_3_tasks_codeblock_5",
-      "community": 10,
+      "community": 11,
       "norm_label": "code:block5 (phase 3, step 3.5.)"
     },
     {
@@ -3105,7 +3789,7 @@
       "source_file": "docs/prompts/phase-3-tasks.md",
       "source_location": "L162",
       "id": "prompts_phase_3_tasks_phase_3_testing_manual_checklist",
-      "community": 10,
+      "community": 11,
       "norm_label": "phase 3 \u2014 testing & manual checklist"
     },
     {
@@ -3114,7 +3798,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_4_email_md",
-      "community": 15,
+      "community": 14,
       "norm_label": "phase-4-email.md"
     },
     {
@@ -3123,7 +3807,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L1",
       "id": "prompts_phase_4_email_phase_4_asynchronous_email_notifications",
-      "community": 15,
+      "community": 14,
       "norm_label": "phase 4: asynchronous email notifications"
     },
     {
@@ -3132,7 +3816,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L9",
       "id": "prompts_phase_4_email_step_4_1_setup_celery_redis",
-      "community": 15,
+      "community": 14,
       "norm_label": "step 4.1 \u2013 setup celery & redis"
     },
     {
@@ -3141,7 +3825,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L13",
       "id": "prompts_phase_4_email_codeblock_1",
-      "community": 15,
+      "community": 14,
       "norm_label": "code:block1 (phase 4, step 4.1.)"
     },
     {
@@ -3150,7 +3834,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L35",
       "id": "prompts_phase_4_email_step_4_2_wire_up_existing_email_triggers",
-      "community": 15,
+      "community": 14,
       "norm_label": "step 4.2 \u2013 wire up existing email triggers"
     },
     {
@@ -3159,7 +3843,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L39",
       "id": "prompts_phase_4_email_codeblock_2",
-      "community": 15,
+      "community": 14,
       "norm_label": "code:block2 (phase 4, step 4.2.)"
     },
     {
@@ -3168,7 +3852,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L63",
       "id": "prompts_phase_4_email_step_4_3_real_email_integration_brevo",
-      "community": 15,
+      "community": 14,
       "norm_label": "step 4.3 \u2013 real email integration (brevo)"
     },
     {
@@ -3177,7 +3861,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L67",
       "id": "prompts_phase_4_email_codeblock_3",
-      "community": 15,
+      "community": 14,
       "norm_label": "code:block3 (phase 4, step 4.3.)"
     },
     {
@@ -3186,7 +3870,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L88",
       "id": "prompts_phase_4_email_step_4_4_email_status_verification",
-      "community": 15,
+      "community": 14,
       "norm_label": "step 4.4 \u2013 email status & verification"
     },
     {
@@ -3195,7 +3879,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L92",
       "id": "prompts_phase_4_email_codeblock_4",
-      "community": 15,
+      "community": 14,
       "norm_label": "code:block4 (phase 4, step 4.4.)"
     },
     {
@@ -3204,7 +3888,7 @@
       "source_file": "docs/prompts/phase-4-email.md",
       "source_location": "L110",
       "id": "prompts_phase_4_email_phase_4_testing_manual_checklist",
-      "community": 15,
+      "community": 14,
       "norm_label": "phase 4 \u2014 testing & manual checklist"
     },
     {
@@ -3213,7 +3897,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_5_ui_polish_md",
-      "community": 6,
+      "community": 7,
       "norm_label": "phase-5-ui-polish.md"
     },
     {
@@ -3222,7 +3906,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L1",
       "id": "prompts_phase_5_ui_polish_phase_5_modern_ui_ux_state_management_polish",
-      "community": 6,
+      "community": 7,
       "norm_label": "phase 5: modern ui/ux & state management polish"
     },
     {
@@ -3231,7 +3915,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L7",
       "id": "prompts_phase_5_ui_polish_step_5_1_application_shell_layout",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.1 \u2013 application shell layout"
     },
     {
@@ -3240,7 +3924,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L11",
       "id": "prompts_phase_5_ui_polish_codeblock_1",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block1 (phase 5, step 5.1.)"
     },
     {
@@ -3249,7 +3933,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L36",
       "id": "prompts_phase_5_ui_polish_step_5_2_design_system_dark_mode_optional",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.2 \u2013 design system & dark mode (optional)"
     },
     {
@@ -3258,7 +3942,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L40",
       "id": "prompts_phase_5_ui_polish_codeblock_2",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block2 (phase 5, step 5.2.)"
     },
     {
@@ -3267,7 +3951,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L59",
       "id": "prompts_phase_5_ui_polish_step_5_3_form_validation_ux",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.3 \u2013 form validation & ux"
     },
     {
@@ -3276,7 +3960,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L63",
       "id": "prompts_phase_5_ui_polish_codeblock_3",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block3 (phase 5, step 5.3.)"
     },
     {
@@ -3285,7 +3969,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L83",
       "id": "prompts_phase_5_ui_polish_step_5_4_loading_skeletons_empty_states",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.4 \u2013 loading skeletons & empty states"
     },
     {
@@ -3294,7 +3978,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L87",
       "id": "prompts_phase_5_ui_polish_codeblock_4",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block4 (phase 5, step 5.4.)"
     },
     {
@@ -3303,7 +3987,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L106",
       "id": "prompts_phase_5_ui_polish_step_5_5_redux_persist_for_auth_state",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.5 \u2013 redux-persist for auth state"
     },
     {
@@ -3312,7 +3996,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L110",
       "id": "prompts_phase_5_ui_polish_codeblock_5",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block5 (phase 5, step 5.5.)"
     },
     {
@@ -3321,7 +4005,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L131",
       "id": "prompts_phase_5_ui_polish_step_5_6_toasts_for_all_actions",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.6 \u2013 toasts for all actions"
     },
     {
@@ -3330,7 +4014,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L135",
       "id": "prompts_phase_5_ui_polish_codeblock_6",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block6 (phase 5, step 5.6.)"
     },
     {
@@ -3339,7 +4023,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L151",
       "id": "prompts_phase_5_ui_polish_step_5_7_error_boundaries_404_page",
-      "community": 6,
+      "community": 7,
       "norm_label": "step 5.7 \u2013 error boundaries & 404 page"
     },
     {
@@ -3348,7 +4032,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L155",
       "id": "prompts_phase_5_ui_polish_codeblock_7",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block7 (phase 5, step 5.7.)"
     },
     {
@@ -3357,7 +4041,7 @@
       "source_file": "docs/prompts/phase-5-ui-polish.md",
       "source_location": "L174",
       "id": "prompts_phase_5_ui_polish_phase_5_testing_manual_checklist",
-      "community": 6,
+      "community": 7,
       "norm_label": "phase 5 \u2014 testing & manual checklist"
     },
     {
@@ -3366,7 +4050,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_6_security_testing_md",
-      "community": 7,
+      "community": 8,
       "norm_label": "phase-6-security-testing.md"
     },
     {
@@ -3375,7 +4059,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L1",
       "id": "prompts_phase_6_security_testing_phase_6_security_testing_hardening",
-      "community": 7,
+      "community": 8,
       "norm_label": "phase 6: security, testing & hardening"
     },
     {
@@ -3384,7 +4068,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L7",
       "id": "prompts_phase_6_security_testing_step_6_1_rate_limiting",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.1 \u2013 rate limiting"
     },
     {
@@ -3393,7 +4077,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L11",
       "id": "prompts_phase_6_security_testing_codeblock_1",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block1 (phase 6, step 6.1.)"
     },
     {
@@ -3402,7 +4086,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L32",
       "id": "prompts_phase_6_security_testing_step_6_2_input_sanitization_cors",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.2 \u2013 input sanitization & cors"
     },
     {
@@ -3411,7 +4095,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L36",
       "id": "prompts_phase_6_security_testing_codeblock_2",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block2 (phase 6, step 6.2.)"
     },
     {
@@ -3420,7 +4104,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L55",
       "id": "prompts_phase_6_security_testing_step_6_3_permission_middleware_consolidation",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.3 \u2013 permission middleware consolidation"
     },
     {
@@ -3429,7 +4113,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L59",
       "id": "prompts_phase_6_security_testing_codeblock_3",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block3 (phase 6, step 6.3.)"
     },
     {
@@ -3438,7 +4122,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L77",
       "id": "prompts_phase_6_security_testing_step_6_4_backend_unit_integration_tests",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.4 \u2013 backend unit & integration tests"
     },
     {
@@ -3447,7 +4131,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L81",
       "id": "prompts_phase_6_security_testing_codeblock_4",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block4 (phase 6, step 6.4.)"
     },
     {
@@ -3456,7 +4140,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L99",
       "id": "prompts_phase_6_security_testing_step_6_5_frontend_unit_tests_redux_components",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.5 \u2013 frontend unit tests (redux & components)"
     },
     {
@@ -3465,7 +4149,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L103",
       "id": "prompts_phase_6_security_testing_codeblock_5",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block5 (phase 6, step 6.5.)"
     },
     {
@@ -3474,7 +4158,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L122",
       "id": "prompts_phase_6_security_testing_step_6_6_pen_test_checklist_jwt_hardening",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.6 \u2013 pen-test checklist & jwt hardening"
     },
     {
@@ -3483,7 +4167,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L126",
       "id": "prompts_phase_6_security_testing_codeblock_6",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block6 (phase 6, step 6.6.)"
     },
     {
@@ -3492,7 +4176,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L148",
       "id": "prompts_phase_6_security_testing_step_6_7_logging_monitoring",
-      "community": 7,
+      "community": 8,
       "norm_label": "step 6.7 \u2013 logging & monitoring"
     },
     {
@@ -3501,7 +4185,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L152",
       "id": "prompts_phase_6_security_testing_codeblock_7",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:block7 (phase 6, step 6.7.)"
     },
     {
@@ -3510,7 +4194,7 @@
       "source_file": "docs/prompts/phase-6-security-testing.md",
       "source_location": "L173",
       "id": "prompts_phase_6_security_testing_phase_6_testing_manual_checklist",
-      "community": 7,
+      "community": 8,
       "norm_label": "phase 6 \u2014 testing & manual checklist"
     },
     {
@@ -3519,7 +4203,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L1",
       "id": "docs_prompts_phase_7_deployment_md",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase-7-deployment.md"
     },
     {
@@ -3528,7 +4212,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L1",
       "id": "prompts_phase_7_deployment_phase_7_aws_ec2_deployment",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 7: aws ec2 deployment"
     },
     {
@@ -3537,7 +4221,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L7",
       "id": "prompts_phase_7_deployment_step_7_1_provision_ec2_install_dependencies",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.1 \u2013 provision ec2 & install dependencies"
     },
     {
@@ -3546,7 +4230,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L11",
       "id": "prompts_phase_7_deployment_codeblock_1",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block1 (phase 7, step 7.1.)"
     },
     {
@@ -3555,7 +4239,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L33",
       "id": "prompts_phase_7_deployment_step_7_2_configure_environment_mongodb",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.2 \u2013 configure environment & mongodb"
     },
     {
@@ -3564,7 +4248,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L37",
       "id": "prompts_phase_7_deployment_codeblock_2",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block2 (phase 7, step 7.2.)"
     },
     {
@@ -3573,7 +4257,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L56",
       "id": "prompts_phase_7_deployment_step_7_3_gunicorn_systemd_for_flask",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.3 \u2013 gunicorn & systemd for flask"
     },
     {
@@ -3582,7 +4266,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L60",
       "id": "prompts_phase_7_deployment_codeblock_3",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block3 (phase 7, step 7.3.)"
     },
     {
@@ -3591,7 +4275,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L79",
       "id": "prompts_phase_7_deployment_step_7_4_celery_worker_systemd",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.4 \u2013 celery worker systemd"
     },
     {
@@ -3600,7 +4284,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L83",
       "id": "prompts_phase_7_deployment_codeblock_4",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block4 (phase 7, step 7.4.)"
     },
     {
@@ -3609,7 +4293,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L102",
       "id": "prompts_phase_7_deployment_step_7_5_nginx_reverse_proxy_static_files",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.5 \u2013 nginx reverse proxy & static files"
     },
     {
@@ -3618,7 +4302,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L106",
       "id": "prompts_phase_7_deployment_codeblock_5",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block5 (phase 7, step 7.5.)"
     },
     {
@@ -3627,7 +4311,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L123",
       "id": "prompts_phase_7_deployment_step_7_6_ssl_with_let_s_encrypt_if_domain",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.6 \u2013 ssl with let's encrypt (if domain)"
     },
     {
@@ -3636,7 +4320,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L127",
       "id": "prompts_phase_7_deployment_codeblock_6",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block6 (phase 7, step 7.6.)"
     },
     {
@@ -3645,7 +4329,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L145",
       "id": "prompts_phase_7_deployment_step_7_7_deployment_script",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.7 \u2013 deployment script"
     },
     {
@@ -3654,7 +4338,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L149",
       "id": "prompts_phase_7_deployment_codeblock_7",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block7 (phase 7, step 7.7.)"
     },
     {
@@ -3663,7 +4347,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L172",
       "id": "prompts_phase_7_deployment_step_7_8_final_smoke_test_go_live",
-      "community": 4,
+      "community": 5,
       "norm_label": "step 7.8 \u2013 final smoke test & go live"
     },
     {
@@ -3672,7 +4356,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L176",
       "id": "prompts_phase_7_deployment_codeblock_8",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:block8 (phase 7, step 7.8.)"
     },
     {
@@ -3681,7 +4365,7 @@
       "source_file": "docs/prompts/phase-7-deployment.md",
       "source_location": "L197",
       "id": "prompts_phase_7_deployment_phase_7_production_readiness",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 7 \u2014 production readiness"
     },
     {
@@ -3690,7 +4374,7 @@
       "source_file": "docs/testing/phase-1-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_1_testing_md",
-      "community": 32,
+      "community": 39,
       "norm_label": "phase-1-testing.md"
     },
     {
@@ -3699,7 +4383,7 @@
       "source_file": "docs/testing/phase-1-testing.md",
       "source_location": "L1",
       "id": "testing_phase_1_testing_phase_1_testing_prompt_for_claude",
-      "community": 32,
+      "community": 39,
       "norm_label": "phase 1 \u2014 testing prompt (for claude)"
     },
     {
@@ -3708,7 +4392,7 @@
       "source_file": "docs/testing/phase-1-testing.md",
       "source_location": "L5",
       "id": "testing_phase_1_testing_codeblock_1",
-      "community": 32,
+      "community": 39,
       "norm_label": "code:block1 (we have completed phase 1: foundation & authentication.)"
     },
     {
@@ -3717,7 +4401,7 @@
       "source_file": "docs/testing/phase-2-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_2_testing_md",
-      "community": 33,
+      "community": 40,
       "norm_label": "phase-2-testing.md"
     },
     {
@@ -3726,7 +4410,7 @@
       "source_file": "docs/testing/phase-2-testing.md",
       "source_location": "L1",
       "id": "testing_phase_2_testing_phase_2_testing_prompt_for_claude",
-      "community": 33,
+      "community": 40,
       "norm_label": "phase 2 \u2014 testing prompt (for claude)"
     },
     {
@@ -3735,7 +4419,7 @@
       "source_file": "docs/testing/phase-2-testing.md",
       "source_location": "L3",
       "id": "testing_phase_2_testing_codeblock_1",
-      "community": 33,
+      "community": 40,
       "norm_label": "code:block1 (we've built phase 2: user management.)"
     },
     {
@@ -3744,7 +4428,7 @@
       "source_file": "docs/testing/phase-3-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_3_testing_md",
-      "community": 34,
+      "community": 41,
       "norm_label": "phase-3-testing.md"
     },
     {
@@ -3753,7 +4437,7 @@
       "source_file": "docs/testing/phase-3-testing.md",
       "source_location": "L1",
       "id": "testing_phase_3_testing_phase_3_testing_prompt_for_claude",
-      "community": 34,
+      "community": 41,
       "norm_label": "phase 3 \u2014 testing prompt (for claude)"
     },
     {
@@ -3762,7 +4446,7 @@
       "source_file": "docs/testing/phase-3-testing.md",
       "source_location": "L3",
       "id": "testing_phase_3_testing_codeblock_1",
-      "community": 34,
+      "community": 41,
       "norm_label": "code:block1 (phase 3 is complete (tasks).)"
     },
     {
@@ -3771,7 +4455,7 @@
       "source_file": "docs/testing/phase-4-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_4_testing_md",
-      "community": 35,
+      "community": 42,
       "norm_label": "phase-4-testing.md"
     },
     {
@@ -3780,7 +4464,7 @@
       "source_file": "docs/testing/phase-4-testing.md",
       "source_location": "L1",
       "id": "testing_phase_4_testing_phase_4_testing_prompt_for_claude",
-      "community": 35,
+      "community": 42,
       "norm_label": "phase 4 \u2014 testing prompt (for claude)"
     },
     {
@@ -3789,7 +4473,7 @@
       "source_file": "docs/testing/phase-4-testing.md",
       "source_location": "L3",
       "id": "testing_phase_4_testing_codeblock_1",
-      "community": 35,
+      "community": 42,
       "norm_label": "code:block1 (phase 4 email integration is done.)"
     },
     {
@@ -3798,7 +4482,7 @@
       "source_file": "docs/testing/phase-5-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_5_testing_md",
-      "community": 36,
+      "community": 43,
       "norm_label": "phase-5-testing.md"
     },
     {
@@ -3807,7 +4491,7 @@
       "source_file": "docs/testing/phase-5-testing.md",
       "source_location": "L1",
       "id": "testing_phase_5_testing_phase_5_testing_prompt_for_claude",
-      "community": 36,
+      "community": 43,
       "norm_label": "phase 5 \u2014 testing prompt (for claude)"
     },
     {
@@ -3816,7 +4500,7 @@
       "source_file": "docs/testing/phase-5-testing.md",
       "source_location": "L3",
       "id": "testing_phase_5_testing_codeblock_1",
-      "community": 36,
+      "community": 43,
       "norm_label": "code:block1 (phase 5 is ui/ux polish.)"
     },
     {
@@ -3825,7 +4509,7 @@
       "source_file": "docs/testing/phase-6-testing.md",
       "source_location": "L1",
       "id": "docs_testing_phase_6_testing_md",
-      "community": 37,
+      "community": 44,
       "norm_label": "phase-6-testing.md"
     },
     {
@@ -3834,7 +4518,7 @@
       "source_file": "docs/testing/phase-6-testing.md",
       "source_location": "L1",
       "id": "testing_phase_6_testing_phase_6_testing_prompt_for_claude",
-      "community": 37,
+      "community": 44,
       "norm_label": "phase 6 \u2014 testing prompt (for claude)"
     },
     {
@@ -3843,7 +4527,7 @@
       "source_file": "docs/testing/phase-6-testing.md",
       "source_location": "L3",
       "id": "testing_phase_6_testing_codeblock_1",
-      "community": 37,
+      "community": 44,
       "norm_label": "code:block1 (phase 6 security hardening is complete.)"
     },
     {
@@ -3852,7 +4536,7 @@
       "source_file": "docs/testing/phase-7-production-readiness.md",
       "source_location": "L1",
       "id": "docs_testing_phase_7_production_readiness_md",
-      "community": 38,
+      "community": 45,
       "norm_label": "phase-7-production-readiness.md"
     },
     {
@@ -3861,7 +4545,7 @@
       "source_file": "docs/testing/phase-7-production-readiness.md",
       "source_location": "L1",
       "id": "testing_phase_7_production_readiness_phase_7_production_readiness_for_claude",
-      "community": 38,
+      "community": 45,
       "norm_label": "phase 7 \u2014 production readiness (for claude)"
     },
     {
@@ -3870,7 +4554,7 @@
       "source_file": "docs/testing/phase-7-production-readiness.md",
       "source_location": "L3",
       "id": "testing_phase_7_production_readiness_codeblock_1",
-      "community": 38,
+      "community": 45,
       "norm_label": "code:block1 (deployment to ec2 is complete. no further ai test generation)"
     },
     {
@@ -3879,7 +4563,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L1",
       "id": "frontend_readme_md",
-      "community": 20,
+      "community": 25,
       "norm_label": "readme.md"
     },
     {
@@ -3888,7 +4572,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L1",
       "id": "frontend_readme_react_typescript_vite",
-      "community": 20,
+      "community": 25,
       "norm_label": "react + typescript + vite"
     },
     {
@@ -3897,7 +4581,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L10",
       "id": "frontend_readme_react_compiler",
-      "community": 20,
+      "community": 25,
       "norm_label": "react compiler"
     },
     {
@@ -3906,7 +4590,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L14",
       "id": "frontend_readme_expanding_the_eslint_configuration",
-      "community": 20,
+      "community": 25,
       "norm_label": "expanding the eslint configuration"
     },
     {
@@ -3915,7 +4599,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L18",
       "id": "frontend_readme_codeblock_1",
-      "community": 20,
+      "community": 25,
       "norm_label": "code:js (export default defineconfig([)"
     },
     {
@@ -3924,7 +4608,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L48",
       "id": "frontend_readme_codeblock_2",
-      "community": 20,
+      "community": 25,
       "norm_label": "code:js (// eslint.config.js)"
     },
     {
@@ -3932,7 +4616,7 @@
       "file_type": "code",
       "source_file": "scripts/start-dev.ps1",
       "source_location": "L1",
-      "community": 61,
+      "community": 70,
       "norm_label": "start-dev.ps1",
       "id": "scripts_start_dev_ps1"
     }
@@ -4183,6 +4867,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "routes_uploads_upload_file",
+      "target": "app_permissions_can_modify_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/routes/tasks.py",
       "source_location": "L113",
       "weight": 1.0,
@@ -4209,6 +4904,28 @@
       "source_location": "L129",
       "weight": 1.0,
       "source": "routes_company_deactivate_user",
+      "target": "app_permissions_user_belongs_to_company"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "routes_group_tasks_create_group_task",
+      "target": "app_permissions_user_belongs_to_company"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "routes_group_tasks_update_group_task",
       "target": "app_permissions_user_belongs_to_company"
     },
     {
@@ -4267,6 +4984,39 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_create",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_update",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_push_attachment",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/models/notification.py",
       "source_location": "L16",
       "weight": 1.0,
@@ -4293,6 +5043,28 @@
       "source_location": "L32",
       "weight": 1.0,
       "source": "models_task_taskrepository_update",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "models_task_taskrepository_push_attachment",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "models_task_taskrepository_remove_attachment",
       "target": "app_utils_utcnow"
     },
     {
@@ -4344,6 +5116,17 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "routes_group_tasks_complete_group_task",
+      "target": "app_utils_utcnow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/routes/tasks.py",
       "source_location": "L119",
       "weight": 1.0,
@@ -4359,6 +5142,50 @@
       "source_location": "L13",
       "weight": 1.0,
       "source": "models_company_companyrepository_find_by_id",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_find_by_id",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_update",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_delete",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_push_attachment",
       "target": "app_utils_oid"
     },
     {
@@ -4454,6 +5281,28 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "models_task_taskrepository_push_attachment",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "models_task_taskrepository_remove_attachment",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/models/user.py",
       "source_location": "L18",
       "weight": 1.0,
@@ -4487,10 +5336,32 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "routes_super_admin_list_admin_employees",
+      "target": "app_utils_oid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/models/company.py",
       "source_location": "L26",
       "weight": 1.0,
       "source": "models_company_to_public",
+      "target": "app_utils_serialize_doc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "models_group_task_grouptaskrepository_populate_users",
       "target": "app_utils_serialize_doc"
     },
     {
@@ -4524,6 +5395,39 @@
       "source_location": "L52",
       "weight": 1.0,
       "source": "models_user_to_public",
+      "target": "app_utils_serialize_doc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "routes_super_admin_list_admins",
+      "target": "app_utils_serialize_doc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "routes_super_admin_list_admin_employees",
+      "target": "app_utils_serialize_doc"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "routes_super_admin_get_employee_detail",
       "target": "app_utils_serialize_doc"
     },
     {
@@ -4639,6 +5543,140 @@
       "confidence_score": 1.0,
       "source": "models_company_companyrepository_create",
       "target": "models_company_companyrepository_find_by_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_models_group_task_py",
+      "target": "models_group_task_grouptaskrepository"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_models_group_task_py",
+      "target": "models_group_task_collection"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_find_by_id"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_create"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_delete"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_push_attachment"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_list_for_user"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository",
+      "target": "models_group_task_grouptaskrepository_populate_users"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository_create",
+      "target": "models_group_task_grouptaskrepository_find_by_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository_update",
+      "target": "models_group_task_grouptaskrepository_find_by_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository_push_attachment",
+      "target": "models_group_task_grouptaskrepository_find_by_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/group_task.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_group_task_grouptaskrepository_populate_users",
+      "target": "models_group_task_grouptaskrepository_find_by_id"
     },
     {
       "relation": "contains",
@@ -4805,6 +5843,26 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/models/task.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_task_taskrepository",
+      "target": "models_task_taskrepository_push_attachment"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_task_taskrepository",
+      "target": "models_task_taskrepository_remove_attachment"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/task.py",
       "source_location": "L39",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4841,6 +5899,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "models_task_taskrepository_update",
+      "target": "models_task_taskrepository_find_by_id"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/models/task.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "models_task_taskrepository_push_attachment",
       "target": "models_task_taskrepository_find_by_id"
     },
     {
@@ -5024,6 +6093,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_app_routes_auth_py",
+      "target": "routes_auth_get_user"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/auth.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_auth_py",
       "target": "routes_auth_logout"
     },
     {
@@ -5045,6 +6124,16 @@
       "confidence_score": 1.0,
       "source": "backend_app_routes_auth_py",
       "target": "routes_auth_reset_password"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/auth.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_auth_py",
+      "target": "routes_auth_update_profile"
     },
     {
       "relation": "contains",
@@ -5217,6 +6306,109 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_get_company"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_list_group_tasks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_create_group_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_get_group_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_update_group_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_delete_group_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_group_tasks_py",
+      "target": "routes_group_tasks_complete_group_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_group_tasks_create_group_task",
+      "target": "routes_group_tasks_get_company"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_group_tasks_get_group_task",
+      "target": "routes_group_tasks_get_company"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/group_tasks.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_group_tasks_update_group_task",
+      "target": "routes_group_tasks_get_company"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "backend/app/routes/health.py",
       "source_location": "L7",
       "weight": 1.0,
@@ -5263,6 +6455,36 @@
       "confidence_score": 1.0,
       "source": "backend_app_routes_notifications_py",
       "target": "routes_notifications_mark_all_read"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_super_admin_py",
+      "target": "routes_super_admin_list_admins"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_super_admin_py",
+      "target": "routes_super_admin_list_admin_employees"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/super_admin.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_super_admin_py",
+      "target": "routes_super_admin_get_employee_detail"
     },
     {
       "relation": "contains",
@@ -5334,6 +6556,110 @@
       "weight": 1.0,
       "source": "routes_tasks_create_task",
       "target": "services_email_service_send_task_assigned_email"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_ext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_allowed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_upload_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_serve_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_upload_group_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_routes_uploads_py",
+      "target": "routes_uploads_upload_profile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_uploads_allowed",
+      "target": "routes_uploads_ext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_uploads_upload_file",
+      "target": "routes_uploads_allowed"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_uploads_upload_group_file",
+      "target": "routes_uploads_allowed"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routes/uploads.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_uploads_upload_profile",
+      "target": "routes_uploads_allowed"
     },
     {
       "relation": "contains",
@@ -5984,6 +7310,87 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selectcontexttype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selectcontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_select"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selecttrigger"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selectvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selectcontent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_select_tsx",
+      "target": "ui_select_selectitem"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/components/ui/select.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "ui_select_selectitem",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/ui/skeleton.tsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -6001,6 +7408,16 @@
       "weight": 1.0,
       "source": "ui_skeleton_skeleton",
       "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_ui_textarea_tsx",
+      "target": "ui_textarea_textarea"
     },
     {
       "relation": "contains",
@@ -6028,10 +7445,54 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/CompletedGroupTasksPage.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "pages_completedgrouptaskspage_completedgrouptaskspage",
+      "target": "hooks_redux_useappdispatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "frontend/src/pages/CompletedTasksPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
       "source": "pages_completedtaskspage_completedtaskspage",
+      "target": "hooks_redux_useappdispatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/DashboardPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "pages_dashboardpage_dashboardpage",
+      "target": "hooks_redux_useappdispatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/GroupTaskDetailPage.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pages_grouptaskdetailpage_grouptaskdetailpage",
+      "target": "hooks_redux_useappdispatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "pages_grouptaskspage_grouptaskspage",
       "target": "hooks_redux_useappdispatch"
     },
     {
@@ -6054,6 +7515,17 @@
       "source_location": "L12",
       "weight": 1.0,
       "source": "pages_mytaskspage_mytaskspage",
+      "target": "hooks_redux_useappdispatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/pages/ProfilePage.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pages_profilepage_profilepage",
       "target": "hooks_redux_useappdispatch"
     },
     {
@@ -6102,6 +7574,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/AdminEmployeesPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_adminemployeespage_tsx",
+      "target": "pages_adminemployeespage_employeeinfo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/AdminEmployeesPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_adminemployeespage_tsx",
+      "target": "pages_adminemployeespage_adminemployeespage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/AdminPage.tsx",
       "source_location": "L15",
       "weight": 1.0,
@@ -6142,12 +7634,32 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/CompletedGroupTasksPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_completedgrouptaskspage_tsx",
+      "target": "pages_completedgrouptaskspage_completedgrouptaskspage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/CompletedTasksPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_pages_completedtaskspage_tsx",
       "target": "pages_completedtaskspage_completedtaskspage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/DashboardPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_dashboardpage_tsx",
+      "target": "pages_dashboardpage_colors"
     },
     {
       "relation": "contains",
@@ -6178,6 +7690,36 @@
       "confidence_score": 1.0,
       "source": "frontend_src_pages_forgotpasswordpage_tsx",
       "target": "pages_forgotpasswordpage_forgotpasswordpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GroupTaskDetailPage.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_grouptaskdetailpage_tsx",
+      "target": "pages_grouptaskdetailpage_grouptaskdetailpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_grouptaskspage_tsx",
+      "target": "pages_grouptaskspage_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GroupTasksPage.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_grouptaskspage_tsx",
+      "target": "pages_grouptaskspage_grouptaskspage"
     },
     {
       "relation": "contains",
@@ -6232,6 +7774,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/ProfilePage.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_profilepage_tsx",
+      "target": "pages_profilepage_profilepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/ResetPasswordPage.tsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -6248,6 +7800,46 @@
       "confidence_score": 1.0,
       "source": "frontend_src_pages_resetpasswordpage_tsx",
       "target": "pages_resetpasswordpage_resetpasswordpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/SuperAdminDashboardPage.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_superadmindashboardpage_tsx",
+      "target": "pages_superadmindashboardpage_admininfo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/SuperAdminDashboardPage.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_superadmindashboardpage_tsx",
+      "target": "pages_superadmindashboardpage_superadmindashboardpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeDetailPage.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_superadminemployeedetailpage_tsx",
+      "target": "pages_superadminemployeedetailpage_superadminemployeedetailpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/SuperAdminEmployeeProfilePage.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_pages_superadminemployeeprofilepage_tsx",
+      "target": "pages_superadminemployeeprofilepage_superadminemployeeprofilepage"
     },
     {
       "relation": "contains",
@@ -6420,6 +8012,118 @@
       "confidence_score": 1.0,
       "source": "frontend_src_store_index_ts",
       "target": "store_authslice_authslice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_grouptasksstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_initialstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_fetchgrouptasks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_fetchgrouptaskbyid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_creategrouptask"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_updategrouptask"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_completegrouptask"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_deletegrouptask"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/groupTasksSlice.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_grouptasksslice_ts",
+      "target": "store_grouptasksslice_grouptasksslice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_index_ts",
+      "target": "frontend_src_store_grouptasksslice_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/store/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_store_index_ts",
+      "target": "store_grouptasksslice_grouptasksslice"
     },
     {
       "relation": "imports_from",
@@ -6853,11 +8557,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/types/index.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_types_index_ts",
+      "target": "types_index_attachment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/types/index.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_types_index_ts",
+      "target": "types_index_tasklink"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/types/index.ts",
       "source_location": "L31",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_types_index_ts",
       "target": "types_index_notificationtype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/types/index.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_types_index_ts",
+      "target": "types_index_grouptask"
     },
     {
       "relation": "contains",
@@ -8400,5 +10134,6 @@
       "target": "frontend_readme_codeblock_2"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "3e532bb5dd2bccc7b515dd85b91bf058ae798a9a"
 }

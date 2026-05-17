@@ -107,7 +107,7 @@ export function GroupTasksPage() {
       reset();
       setSelectedIds([]);
       setLinks([]);
-    } else toast.error("Failed to update");
+    } else toast.error("Failed to update group task");
   };
 
   const openEdit = (t: GroupTask) => {
@@ -149,8 +149,8 @@ export function GroupTasksPage() {
                     </div>
                     <div className="flex gap-1">
                       <Button size="sm" variant="outline" onClick={() => openEdit(t)}>Edit</Button>
-                      <Button size="sm" variant="default" onClick={async () => { await dispatch(completeGroupTask(t.id)); toast.success("Completed"); }}>Complete</Button>
-                      <Button size="sm" variant="destructive" onClick={async () => { if (confirm("Delete?")) { await dispatch(deleteGroupTask(t.id)); toast.success("Deleted"); } }}>Delete</Button>
+                      <Button size="sm" variant="default" onClick={async () => { const r = await dispatch(completeGroupTask(t.id)); if (completeGroupTask.fulfilled.match(r)) toast.success("Completed"); else toast.error("Failed"); }}>Complete</Button>
+                      <Button size="sm" variant="destructive" onClick={async () => { if (confirm("Delete?")) { const r = await dispatch(deleteGroupTask(t.id)); if (deleteGroupTask.fulfilled.match(r)) toast.success("Deleted"); else toast.error("Failed to delete"); } }}>Delete</Button>
                     </div>
                   </div>
                   {t.description && <p className="text-sm text-muted-foreground">{t.description}</p>}

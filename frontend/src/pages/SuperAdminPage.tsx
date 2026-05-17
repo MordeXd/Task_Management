@@ -43,10 +43,12 @@ export function SuperAdminPage() {
     if (!editId) return;
     const payload: Record<string, unknown> = { id: editId, name: data.name, email: data.email };
     if (data.department) payload.department = data.department;
-    await dispatch(updateUser(payload as Parameters<typeof updateUser>[0]));
-    toast.success("Admin updated");
-    setEditId(null);
-    reset();
+    const result = await dispatch(updateUser(payload as Parameters<typeof updateUser>[0]));
+    if (updateUser.fulfilled.match(result)) {
+      toast.success("Admin updated");
+      setEditId(null);
+      reset();
+    } else toast.error("Failed to update admin");
   };
 
   return (
@@ -101,7 +103,7 @@ export function SuperAdminPage() {
                     <td className="p-2 text-muted-foreground">{a.department || "—"}</td>
                     <td className="p-2 flex gap-2 flex-wrap">
                       <Button size="sm" variant="outline" onClick={() => { setEditId(a.id); reset({ name: a.name, email: a.email, department: a.department || "" }); }}>Edit</Button>
-                      <Button size="sm" variant="destructive" onClick={() => { if (confirm("Deactivate?")) { dispatch(deactivateUser(a.id)); toast.success("Deactivated"); } }}>Deactivate</Button>
+                      <Button size="sm" variant="destructive" onClick={async () => { if (confirm("Deactivate?")) { const r = await dispatch(deactivateUser(a.id)); if (deactivateUser.fulfilled.match(r)) toast.success("Deactivated"); else toast.error("Failed to deactivate"); } }}>Deactivate</Button>
                     </td>
                   </tr>
                 ))}
