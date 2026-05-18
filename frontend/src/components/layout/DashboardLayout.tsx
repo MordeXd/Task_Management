@@ -5,11 +5,12 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
+  Moon,
+  Sun,
   UserCircle,
   UserCog,
   Users,
 } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -25,7 +26,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { NotificationBell } from "@/components/notifications/NotificationBell";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { logout } from "@/store/authSlice";
-import { setSidebarOpen } from "@/store/uiSlice";
+import { setSidebarOpen, toggleTheme } from "@/store/uiSlice";
 import { cn } from "@/lib/utils";
 import type { UserRole } from "@/types";
 
@@ -39,51 +40,93 @@ const navItems: { to: string; label: string; icon: React.ElementType; roles: Use
   { to: "/admin", label: "Manage Employees", icon: Users, roles: ["admin"] },
   { to: "/group-tasks", label: "Group Tasks", icon: Group, roles: ["super_admin", "admin", "employee"] },
   { to: "/completed-group-tasks", label: "Completed Group", icon: CheckSquare, roles: ["super_admin", "admin", "employee"] },
-  { to: "/profile", label: "Profile", icon: UserCircle, roles: ["super_admin", "admin", "employee"] },
 ];
 
 function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const user = useAppSelector((s) => s.auth.user);
+  const theme = useAppSelector((s) => s.ui.theme);
   const items = navItems.filter((i) => user && i.roles.includes(user.role));
 
   return (
-    <nav className="flex flex-col gap-1 p-4">
-      <Link to="/dashboard" className="flex h-14 items-center px-2 font-bold text-lg">TaskFlow</Link>
-      <Separator className="my-2" />
-      {items.map(({ to, label, icon: Icon }) => (
-        <NavLink
-          key={to}
-          to={to}
-          onClick={onNavigate}
-          className={({ isActive }) =>
-            cn(
-              "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
-              isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent"
-            )
-          }
-        >
-          <Icon className="h-5 w-5 shrink-0" />
-          {label}
-        </NavLink>
-      ))}
-    </nav>
+    <div className="flex flex-col h-full overflow-hidden">
+      <nav className="flex flex-col gap-1 p-4 flex-1 overflow-y-auto">
+        <Link to="/dashboard" className="flex h-14 items-center px-2 font-bold text-lg shrink-0">TaskFlow</Link>
+        <Separator className="my-2 shrink-0" />
+        {items.map(({ to, label, icon: Icon }) => (
+          <NavLink
+            key={to}
+            to={to}
+            onClick={onNavigate}
+            className={({ isActive }) =>
+              cn(
+                "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors shrink-0",
+                isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent"
+              )
+            }
+          >
+            <Icon className="h-5 w-5 shrink-0" />
+            {label}
+          </NavLink>
+        ))}
+      </nav>
+
+      <div className="border-t p-3 space-y-2 shrink-0">
+        <div className="flex items-center justify-between px-2">
+          <NotificationBell />
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => dispatch(toggleTheme())}
+            title={theme === "dark" ? "Light mode" : "Dark mode"}
+          >
+            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </Button>
+        </div>
+        <Separator />
+        <div className="flex items-center gap-3 px-2">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="flex items-center gap-2 px-0 h-auto hover:bg-transparent w-full">
+                <Avatar className="h-8 w-8 shrink-0">
+                  {user?.profile_picture ? (
+                    <AvatarImage src={`/uploads/${user.profile_picture}`} alt={user.name} />
+                  ) : null}
+                  <AvatarFallback className="text-xs font-bold">
+                    {user?.name?.charAt(0)?.toUpperCase()}
+                  </AvatarFallback>
+                </Avatar>
+                <div className="flex-1 text-left min-w-0">
+                  <p className="text-sm font-medium truncate">{user?.name}</p>
+                  <p className="text-xs text-muted-foreground truncate">{user?.email}</p>
+                </div>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" side="top" className="w-48">
+              <DropdownMenuLabel>{user?.name}</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={() => { navigate("/profile"); onNavigate?.(); }}>
+                <UserCircle className="h-4 w-4 mr-2" />Profile
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => { dispatch(logout()); navigate("/login"); }} className="text-destructive">
+                <LogOut className="h-4 w-4 mr-2" />Logout
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+      </div>
+    </div>
   );
 }
 
 export function DashboardLayout() {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
-  const user = useAppSelector((s) => s.auth.user);
   const sidebarOpen = useAppSelector((s) => s.ui.sidebarOpen);
 
-  const handleLogout = () => {
-    dispatch(logout());
-    navigate("/login");
-  };
-
   return (
-    <div className="flex min-h-screen bg-background">
-      <aside className="hidden w-64 shrink-0 border-r md:block">
+    <div className="flex h-screen overflow-hidden bg-background">
+      <aside className="hidden w-64 shrink-0 border-r md:flex md:flex-col h-screen sticky top-0">
         <SidebarContent />
       </aside>
 
@@ -99,39 +142,8 @@ export function DashboardLayout() {
         </SheetContent>
       </Sheet>
 
-      <div className="flex flex-1 flex-col min-w-0">
-        <header className="sticky top-0 z-40 flex h-16 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur">
-          <div className="flex-1 font-semibold truncate ml-8 md:ml-0">TaskFlow</div>
-          <NotificationBell />
-          <ThemeToggle />
-
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-2 px-2">
-                <Avatar className="h-8 w-8">
-                  {user?.profile_picture ? (
-                    <AvatarImage src={`/uploads/${user.profile_picture}`} alt={user.name} />
-                  ) : null}
-                  <AvatarFallback className="text-xs font-bold">
-                    {user?.name?.charAt(0)?.toUpperCase()}
-                  </AvatarFallback>
-                </Avatar>
-                <span className="hidden sm:inline text-sm text-muted-foreground">{user?.name}</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-48">
-              <DropdownMenuLabel>{user?.name}</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => navigate("/profile")}>
-                <UserCircle className="h-4 w-4 mr-2" />Profile
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={handleLogout} className="text-destructive">
-                <LogOut className="h-4 w-4 mr-2" />Logout
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </header>
-        <main className="flex-1 p-4 md:p-6 overflow-auto">
+      <div className="flex flex-1 flex-col min-w-0 h-screen overflow-hidden">
+        <main className="flex-1 p-4 md:p-6 overflow-y-auto">
           <Outlet />
         </main>
       </div>

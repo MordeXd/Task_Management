@@ -1,0 +1,36 @@
+- what is network
+- types of network
+- topologies
+- OSI model
+- TCP/IP model
+- all layers of networking
+- ports
+- ports security
+- protocols
+- HTTP
+- SSH, Telnet, RDP, FTP
+- networking devices: routers, switches, hubs, cables, connectors, ethernet standards, wireless standards
+- IP
+- IP addressing
+- packet switching
+- routing
+- static routes, dynamic routing
+- DHCP config
+- packets info
+- firewalls
+- IDS, IPS
+- cloud computing
+- virtualization
+- hypervisor type 1 and hypervisor type 2
+- network function virtualization
+- SaaS, PaaS, IaaS
+- AWS, Azure
+- cloud security
+- Docker
+- GitHub
+- Kubernetes
+- Terraform
+- network function virtualization
+- virtual routing
+- virtual switching
+- DNS

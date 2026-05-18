@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -34,7 +33,7 @@ export function TeamTasksPage() {
   const admins = useAppSelector((s) => s.users.admins);
   const user = useAppSelector((s) => s.auth.user);
   const [open, setOpen] = useState(false);
-  const [editTask, setEditTask] = useState<Task | null>(null);
+  const [editTask, setEditTask] = useState <Task | null>(null);
   const [statusFilter, setStatusFilter] = useState<"" | "pending" | "completed">("pending");
   const [links, setLinks] = useState<TaskLink[]>([]);
   const [assigneeFilter, setAssigneeFilter] = useState("");

@@ -20,6 +20,7 @@ import { TeamTasksPage } from "@/pages/TeamTasksPage";
 import { CompletedTasksPage } from "@/pages/CompletedTasksPage";
 import { TaskDetailPage } from "@/pages/TaskDetailPage";
 import { ProfilePage } from "@/pages/ProfilePage";
+import { NotificationsPage } from "@/pages/NotificationsPage";
 import { GroupTasksPage } from "@/pages/GroupTasksPage";
 import { GroupTaskDetailPage } from "@/pages/GroupTaskDetailPage";
 import { CompletedGroupTasksPage } from "@/pages/CompletedGroupTasksPage";
@@ -54,6 +55,7 @@ function AppRoutes() {
             <Route element={<RoleGuard roles={["admin", "super_admin"]} />}>
               <Route path="/team-tasks" element={<TeamTasksPage />} />
             </Route>
+            <Route path="/notifications" element={<NotificationsPage />} />
             <Route path="/completed-tasks" element={<CompletedTasksPage />} />
             <Route element={<RoleGuard roles={["super_admin"]} />}>
               <Route path="/super-admin" element={<SuperAdminPage />} />
